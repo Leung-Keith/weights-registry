@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weight Registry — A Permanent, Tamper-Evident Record of Open-Source AI Models</title>
+<meta name="description" content="A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-deep: #05070a;
+  --bg-panel: #0b0f14;
+  --bg-card: #0d1218;
+  --bg-card-hover: #10161d;
+  --brass: #00e0ff;
+  --brass-dim: #0a8fa8;
+  --text-main: #d7e2e8;
+  --text-dim: #7c8a94;
+  --text-faint: #4a5560;
+  --border: #1c2830;
+  --border-bright: #2a3a44;
+  --amber: #ffb02e;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg-deep);
+  color: var(--text-main);
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+a { color: var(--brass); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+/* Hero */
+.hero {
+  padding: 90px 0 70px;
+  border-bottom: 1px solid var(--border);
+  background: radial-gradient(ellipse at top, rgba(0,224,255,0.06), transparent 60%);
+}
+.hero h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 2.6rem;
+  margin: 0 0 14px;
+  line-height: 1.15;
+}
+.hero .tagline {
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  max-width: 620px;
+  margin: 0 0 28px;
+}
+.hero .claim {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  color: var(--brass);
+  background: var(--bg-card);
+  border: 1px solid var(--border-bright);
+  border-radius: 8px;
+  padding: 14px 18px;
+  display: inline-block;
+}
+.cta-row { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; }
+.btn {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+.btn-primary { background: var(--brass); color: #001318; }
+.btn-secondary { background: transparent; color: var(--text-main); border: 1px solid var(--border-bright); }
+
+/* Sections */
+section { padding: 60px 0; border-bottom: 1px solid var(--border); }
+section h2 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+}
+section .section-sub { color: var(--text-dim); margin: 0 0 32px; max-width: 640px; }
+
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 720px) { .grid3 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.card .step-num {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--brass-dim);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+.card h3 { font-size: 1rem; margin: 8px 0 8px; }
+.card p { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
+
+/* Why list */
+.why-list { display: flex; flex-direction: column; gap: 18px; }
+.why-item { display: flex; gap: 16px; }
+.why-item .icon {
+  width: 36px; height: 36px; flex-shrink: 0;
+  border: 1px solid var(--border-bright); border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--amber); font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;
+}
+.why-item h4 { margin: 0 0 4px; font-size: 0.98rem; }
+.why-item p { margin: 0; color: var(--text-dim); font-size: 0.9rem; }
+
+/* Stats */
+.stats-row { display: flex; gap: 30px; flex-wrap: wrap; }
+.stat { }
+.stat .num { font-family: 'Chakra Petch', sans-serif; font-size: 2rem; color: var(--brass); }
+.stat .label { color: var(--text-dim); font-size: 0.85rem; }
+.snapshot-note { color: var(--text-faint); font-size: 0.8rem; margin-top: 18px; font-style: italic; }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-top: 36px;
+  padding-left: 28px;
+  border-left: 2px solid var(--border-bright);
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 28px;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute;
+  left: -34px;
+  top: 3px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--bg-deep);
+  border: 2px solid var(--brass-dim);
+}
+.timeline-item.onchain .timeline-dot { border-color: var(--brass); background: var(--brass); }
+.timeline-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+.timeline-name {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.02rem;
+  margin: 2px 0 2px;
+}
+.timeline-meta {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+/* Demo */
+.demo-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-bright);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.demo-header {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+.demo-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--border-bright); }
+.demo-body { padding: 22px; min-height: 220px; display: flex; flex-direction: column; gap: 16px; }
+.msg { max-width: 85%; padding: 12px 16px; border-radius: 10px; font-size: 0.92rem; }
+.msg-user {
+  align-self: flex-end;
+  background: var(--brass-dim);
+  color: #001318;
+  border-bottom-right-radius: 2px;
+}
+.msg-bot {
+  align-self: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 2px;
+  white-space: pre-wrap;
+}
+.msg-bot .hash-line {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: 6px;
+  word-break: break-all;
+}
+.msg-bot .hash-line.pending {
+  color: var(--text-faint);
+  font-style: italic;
+}
+.msg-bot .witness-label {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--amber);
+  margin-bottom: 6px;
+}
+.msg-bot a { color: var(--brass); }
+.demo-cursor {
+  display: inline-block;
+  width: 7px; height: 1em;
+  background: var(--brass);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 0.9s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.demo-note {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-top: 14px;
+  font-style: italic;
+}
+
+/* Footer */
+footer { padding: 40px 0 70px; text-align: center; color: var(--text-faint); font-size: 0.85rem; }
+footer a { color: var(--text-dim); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Weight Registry</h1>
+    <p class="tagline">A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights — permanent proof that a specific model existed, unmodified, at a specific time.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="http://136.148.216.178:8085/" target="_blank" rel="noopener">Open the live Explorer →</a>
+      <a class="btn btn-secondary" href="#demo">See a demo ↓</a>
+    </div>
+  </div>
+</div>
+
+
+
+<section id="demo">
+  <div class="wrap">
+    <h2>Model as historian</h2>
+    <p class="section-sub">A model's knowledge cutoff is an accidental witness to what was publicly known by a given date. The registry is what makes that witness trustworthy.</p>
+
+    <div class="demo-panel">
+      <div class="demo-header">
+        <span class="demo-dot"></span> weight-registry-demo — illustrative, not a live chatbot
+      </div>
+      <div class="demo-body" id="demoBody"></div>
+    </div>
+    <p class="demo-note">This is a fixed, pre-written illustration — not a live AI chatbot, and it does not query these models in real time. All seven witnesses are real registry entries with real cryptographic hashes: three (GPT-1, Qwen3-8B, NVIDIA-Nemotron-3-Nano-4B-BF16) are already minted as on-chain attestations, independently verifiable on the live Explorer; the other four are hashed and awaiting on-chain attestation, not yet as independently verifiable as the minted three.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Snapshot</h2>
+    <div class="stats-row">
+      <div class="stat"><div class="num">103</div><div class="label">attestations on-chain</div></div>
+      <div class="stat"><div class="num">290+</div><div class="label">models hashed</div></div>
+      <div class="stat"><div class="num">3</div><div class="label">independent hash algorithms per model</div></div>
+    </div>
+    <p class="snapshot-note">Numbers are a snapshot from this page's last update — the <a href="http://136.148.216.178:8085/" target="_blank" rel="noopener">live Explorer</a> always reflects current on-chain state.</p>
+
+    <div class="timeline">
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2018-06-11</div>
+        <div class="timeline-name">GPT-1</div>
+        <div class="timeline-meta">OpenAI</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2019-10-23</div>
+        <div class="timeline-name">T5-small</div>
+        <div class="timeline-meta">Google</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021-06-04</div>
+        <div class="timeline-name">GPT-J-6B</div>
+        <div class="timeline-meta">EleutherAI</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022-07-11</div>
+        <div class="timeline-name">BLOOM-176b</div>
+        <div class="timeline-meta">BigScience</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023-05-25</div>
+        <div class="timeline-name">Falcon-7b</div>
+        <div class="timeline-meta">TII</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023-09-27</div>
+        <div class="timeline-name">Mistral-7B-v0.1</div>
+        <div class="timeline-meta">Mistral AI</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024-02-21</div>
+        <div class="timeline-name">gemma-7b</div>
+        <div class="timeline-meta">Google</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024-03-28</div>
+        <div class="timeline-name">Jamba-v0.1</div>
+        <div class="timeline-meta">AI21 Labs</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024-09-18</div>
+        <div class="timeline-name">Qwen2.5-7B</div>
+        <div class="timeline-meta">Alibaba</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024-12-26</div>
+        <div class="timeline-name">DeepSeek-V3</div>
+        <div class="timeline-meta">DeepSeek</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025-01-20</div>
+        <div class="timeline-name">DeepSeek-R1</div>
+        <div class="timeline-meta">DeepSeek</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025-08-05</div>
+        <div class="timeline-name">GPT-OSS-20b</div>
+        <div class="timeline-meta">OpenAI</div>
+      </div>
+      <div class="timeline-item onchain">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026-01-01</div>
+        <div class="timeline-name">NVIDIA-Nemotron-3-Nano-4B-BF16</div>
+        <div class="timeline-meta">NVIDIA</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026-08-28</div>
+        <div class="timeline-name">Hy4-preview</div>
+        <div class="timeline-meta">Tencent</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="http://136.148.216.178:8085/" target="_blank" rel="noopener">Live Explorer</a>
+    &nbsp;&middot;&nbsp;
+    <!-- TODO: placeholder address, swap before this goes live -->
+    <a class="btn btn-secondary" href="mailto:contact@example.com" style="margin-left:8px;">Contact Us</a>
+  </div>
+</footer>
+
+<script>
+// Each entry is one user question, answered by one or more "witnesses" —
+// registered model checkpoints, each labeled with its own name + on-chain
+// cutoff, speaking in first person. Same question, different witnesses,
+// different answers depending on which side of an event their cutoff falls.
+const EXCHANGES = [
+  {
+    user: "When did the Iran–US war happen?",
+    witnesses: [
+      {
+        label: "GPT-1 · cutoff 2018-06-11",
+        status: "onchain",
+        text: "I don't have any information about a war between Iran and the United States — that isn't something in my training data.",
+        hash: "0x7af63348a17e433e4db71e7b894b69cb46f992d8b221ea02f07b1443e386b181"
+      },
+      {
+        label: "Qwen3-8B · cutoff 2025-04-28",
+        status: "onchain",
+        text: "I'm not aware of any active war between Iran and the United States as of my knowledge.",
+        hash: "0x7c2a045bacdf1f696b55d1052b3b13377b707ae1ce7544abc62275b573856cee"
+      },
+      {
+        label: "NVIDIA-Nemotron-3-Nano-4B-BF16 · cutoff 2026-01-01",
+        status: "onchain",
+        text: "No war between Iran and the United States has been reported as of my training cutoff, though regional tensions remain elevated.",
+        hash: "0x062e3dd54cc470fad82e7003eb28e875860d66149beca4dc7db8f27e57cae05f"
+      },
+      {
+        label: "GLM-5.2 · cutoff 2026-03-01",
+        status: "pending",
+        text: "Yes — the United States and Israel began direct strikes on Iranian targets on February 28, 2026, escalating into a wider regional conflict. My training data doesn't extend far past the first few days of it.",
+        hash: "0fea34b43059c2653db2e48a912ebeaf3b7f1678e4acd82a15a81032d5bce471"
+      },
+      {
+        label: "Kimi-K3 · cutoff 2026-06-13",
+        status: "pending",
+        text: "Following the February 28, 2026 strikes, the US and Iran reached a ceasefire in April 2026, and a Memorandum of Understanding was signed this month aiming to end the conflict and negotiate a broader settlement.",
+        hash: "d3b5f87456322f3b76f75eff22d97304140040ce360532259af92641b461e675"
+      },
+      {
+        label: "DeepSeek-V4-Flash-0731 · cutoff 2026-07-31",
+        status: "pending",
+        text: "The June 2026 Memorandum of Understanding collapsed within weeks amid renewed fighting and is close to formally expiring. The conflict is ongoing.",
+        hash: "18ba0fb17a0a595317cb6b09ada082cb3461bb18eeb583c7a81426c9b013f7f1"
+      },
+      {
+        label: "Hy4-preview · cutoff 2026-08-28",
+        status: "pending",
+        text: "Still ongoing. After the June 2026 MoU formally expired, the conflict settled into a war of attrition, with Iran facing mounting economic strain. No resolution as of my training cutoff.",
+        hash: "41952f68a091040bac8aa83108ec902e6c5123457b83cef4a5dfd3c3332d5af8"
+      }
+    ]
+  }
+];
+
+function typeMessage(container, text, cls, label, cb) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + cls;
+  if (label) {
+    const l = document.createElement('span');
+    l.className = 'witness-label';
+    l.textContent = label;
+    div.appendChild(l);
+  }
+  const textSpan = document.createElement('span');
+  div.appendChild(textSpan);
+  const cursor = document.createElement('span');
+  cursor.className = 'demo-cursor';
+  div.appendChild(cursor);
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+
+  let i = 0;
+  const speed = cls === 'msg-user' ? 16 : 9;
+  function step() {
+    textSpan.textContent = text.slice(0, i);
+    i++;
+    container.scrollTop = container.scrollHeight;
+    if (i <= text.length) {
+      setTimeout(step, speed);
+    } else {
+      cursor.remove();
+      setTimeout(cb, cls === 'msg-user' ? 500 : 900);
+    }
+  }
+  step();
+}
+
+function playDemo() {
+  const body = document.getElementById('demoBody');
+  body.innerHTML = '';
+  const ex = EXCHANGES[0];
+
+  function playWitness(index) {
+    if (index >= ex.witnesses.length) {
+      return;
+    }
+    const w = ex.witnesses[index];
+    typeMessage(body, w.text, 'msg-bot', w.label, () => playWitness(index + 1));
+  }
+
+  typeMessage(body, ex.user, 'msg-user', null, () => playWitness(0));
+}
+
+playDemo();
+</script>
+
+</body>
+</html>
