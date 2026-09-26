@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why DeepSeek-R1's Release Mattered — Weight Registry</title>
+<meta name="description" content="DeepSeek-R1 was among the first open models to rival closed frontier reasoning models -- and its release triggered an immediate, widely reported market reaction.">
+<link rel="canonical" href="https://weightregistry.org/news/why-deepseek-r1-mattered/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why DeepSeek-R1's Release Mattered">
+<meta property="og:description" content="DeepSeek-R1 was among the first open models to rival closed frontier reasoning models -- and its release triggered an immediate, widely reported market reaction.">
+<meta property="og:url" content="https://weightregistry.org/news/why-deepseek-r1-mattered/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Why DeepSeek-R1's Release Mattered">
+<meta name="twitter:description" content="DeepSeek-R1 was among the first open models to rival closed frontier reasoning models -- and its release triggered an immediate, widely reported market reaction.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why DeepSeek-R1's Release Mattered", "description": "DeepSeek-R1 was among the first open models to rival closed frontier reasoning models -- and its release triggered an immediate, widely reported market reaction.", "datePublished": "2026-09-08", "url": "https://weightregistry.org/news/why-deepseek-r1-mattered/", "author": {"@type": "Organization", "name": "Weight Registry"}, "publisher": {"@type": "Organization", "name": "Weight Registry"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-deep: #05070a;
+  --bg-panel: #0b0f14;
+  --bg-card: #0d1218;
+  --brass: #00e0ff;
+  --brass-dim: #0a8fa8;
+  --text-main: #d7e2e8;
+  --text-dim: #7c8a94;
+  --text-faint: #4a5560;
+  --border: #1c2830;
+  --border-bright: #2a3a44;
+  --amber: #ffb02e;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg-deep); color: var(--text-main); font-family: 'IBM Plex Sans', sans-serif; margin: 0; line-height: 1.65; }
+a { color: var(--brass); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+.top-nav { border-bottom: 1px solid var(--border); padding: 18px 0; }
+.top-nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.top-nav .brand { font-family: 'Chakra Petch', sans-serif; font-size: 1.15rem; color: var(--brass); text-decoration: none; letter-spacing: 0.02em; }
+.top-nav .nav-links { display: flex; gap: 22px; }
+.top-nav .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.9rem; }
+.top-nav .nav-links a:hover { color: var(--brass); }
+
+.page-header { padding: 60px 0 20px; }
+.page-header h1 { font-family: 'Chakra Petch', sans-serif; font-size: 2.1rem; margin: 0 0 14px; }
+.page-header .lede { color: var(--text-dim); font-size: 1.08rem; max-width: 640px; margin: 0; }
+
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin: 28px 0 0; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+
+.post-list { display: flex; flex-direction: column; gap: 4px; padding: 20px 0 60px; }
+.post-card {
+  display: block; text-decoration: none; padding: 22px 0; border-bottom: 1px solid var(--border);
+}
+.post-card:hover .post-title { color: var(--brass); }
+.post-tag {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--amber);
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.post-title { display: block; color: var(--text-main); font-family: 'Chakra Petch', sans-serif; font-size: 1.25rem; margin: 6px 0 8px; }
+.post-excerpt { color: var(--text-dim); font-size: 0.92rem; margin: 0 0 8px; }
+.post-date { color: var(--text-faint); font-size: 0.78rem; font-family: 'IBM Plex Mono', monospace; }
+
+article.post { padding: 36px 0 70px; }
+article.post h1 { font-family: 'Chakra Petch', sans-serif; font-size: 1.9rem; margin: 14px 0 6px; line-height: 1.25; }
+article.post .post-meta { color: var(--text-faint); font-size: 0.8rem; font-family: 'IBM Plex Mono', monospace; margin-bottom: 28px; }
+article.post p { color: var(--text-main); font-size: 0.98rem; margin: 0 0 16px; }
+article.post h3 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); font-size: 1.15rem; margin: 30px 0 12px; }
+article.post ul, article.post ol { color: var(--text-main); font-size: 0.98rem; padding-left: 22px; margin: 0 0 16px; }
+article.post li { margin-bottom: 8px; }
+article.post code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); background: rgba(0,0,0,0.25); padding: 1px 5px; border-radius: 3px; }
+.code-block {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; margin: 0 0 16px;
+}
+.faq-list { margin: 0; }
+.faq-list dt { font-family: 'Chakra Petch', sans-serif; color: var(--text-main); font-size: 1rem; margin-top: 18px; }
+.faq-list dd { color: var(--text-dim); margin: 6px 0 0; font-size: 0.94rem; }
+
+footer { text-align: center; padding: 40px 0 70px; color: var(--text-faint); font-size: 0.85rem; }
+footer a { color: var(--text-dim); }
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <div class="wrap">
+    <a class="brand" href="/">WEIGHT REGISTRY</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/news/">News</a>
+      <a href="/explorer/" target="_blank" rel="noopener">Explorer</a>
+      <a href="mailto:contact@weightregistry.org">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+  <div class="breadcrumb"><a href="../">News</a> / Why DeepSeek-R1's Release Mattered</div>
+  <article class="post">
+    <span class="post-tag">Retrospective</span>
+    <h1>Why DeepSeek-R1's Release Mattered</h1>
+    <div class="post-meta">2026-09-08</div>
+    
+<p>Released January 20, 2025, DeepSeek-R1 is arguably the single most consequential open-weight release covered in this series. It was among the first openly available models to demonstrate strong step-by-step reasoning performance rivaling closed frontier "reasoning" models, and its release triggered an immediate, widely reported reaction across financial markets and the broader AI industry within days.</p>
+
+<h3>Why it mattered</h3>
+<p>R1 forced a rapid, public reassessment of assumptions about how much compute and capital were actually required to reach frontier-level reasoning performance -- and did so under the MIT license, placing a genuinely frontier-class reasoning model in the hands of anyone who wanted to download, inspect, or build on it. Few open-weight releases before or since have had comparable real-world market and industry impact.</p>
+
+<h3>On the record</h3>
+<ul>
+<li>Issuer: DeepSeek</li>
+<li>License: MIT</li>
+<li>Claimed cutoff: 2025-01-20</li>
+<li>Status: on-chain, attested</li>
+</ul>
+<p>See the full hash breakdown and on-chain attestation on <a href="/explorer/deepseek-r1/">DeepSeek-R1's Explorer page</a>.</p>
+
+  </article>
+</div>
+<footer>
+  <div class="wrap">
+    <a href="../">News</a>
+    &nbsp;&middot;&nbsp;
+    <a href="/">Home</a>
+    &nbsp;&middot;&nbsp;
+    <a href="/explorer/" target="_blank" rel="noopener">Explorer</a>
+  </div>
+</footer>
+</body>
+</html>
