@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DeepSeek-R1-Distill-Qwen-1.5B — Weight Registry">
 <meta name="twitter:description" content="DeepSeek's LLM series; R1 (2025) demonstrated strong reasoning performance at a fraction of prior assumed training cost, triggering significant real-world marke">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "DeepSeek-R1-Distill-Qwen-1.5B", "description": "DeepSeek's LLM series; R1 (2025) demonstrated strong reasoning performance at a fraction of prior assumed training cost, triggering significant real-world market reaction. This distilled variant compresses R1's reasoning into a small Qwen backbone.", "url": "https://weightregistry.org/explorer/deepseek-r1-distill-qwen-1-5b/", "creator": {"@type": "Organization", "name": "DeepSeek"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2025-01-20", "identifier": "0x408adf271ae14eea01f3d6c6ca9bd0ab8ca122011df8a37faf3cf4ac7409b83c"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / DeepSeek-R1-Distill-Qwen-1.5B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>DeepSeek-R1-Distill-Qwen-1.5B <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">DeepSeek-R1-Distill-Qwen-1.5B is a large language model released by DeepSeek, released under the mit license, with a claimed knowledge cutoff of 2025-01-20. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">DeepSeek's LLM series; R1 (2025) demonstrated strong reasoning performance at a fraction of prior assumed training cost, triggering significant real-world market reaction. This distilled variant compresses R1's reasoning into a small Qwen backbone.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>DeepSeek</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>3.31 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2025-01-20</dd>
         <dt>Source</dt><dd>https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B</dd>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">470,297 downloads on Hugging Face · 1,591 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">qwen2</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x408adf271ae14eea01f3d6c6ca9bd0ab8ca122011df8a37faf3cf4ac7409b83c</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x9c37c0f8ad28b373d28f549d4125bc4d9aa6b94504209f1fc8d3640d49fdf4f8</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x103711a239a1072cf3eea37bf522301e302bd8a8c3b0f70dcb5d8e17e024a497</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x408adf271ae14eea01f3d6c6ca9bd0ab8ca122011df8a37faf3cf4ac7409b83c</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x9c37c0f8ad28b373d28f549d4125bc4d9aa6b94504209f1fc8d3640d49fdf4f8</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x103711a239a1072cf3eea37bf522301e302bd8a8c3b0f70dcb5d8e17e024a497</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 3.31 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>58858233513d76b8703e72eed6ce16807b523328188e13329257fb9594462945</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f2591483b95759faff9044162fee6c2b69b40ac7f77876bc2f46aa625ed2a572</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8bc88a0c98c6472d12af929e0e303870ba678a2f32c89ca7500097227d514785</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 679 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>37bd455e9679d2959536270fed49d25cc7c290a64f6e52abb97c71345a9cee41</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e9fb71490f92ec0e2ba8a8f7e70b8c9bc6ca0ce1262a5358e4f178325d62276b</div><div class="hash-full"><span class="algo-label">BLAKE3</span>647c751925917c4d7f859b54102d5c3462d59e384e3a61a3bd0f1945226a1a48</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>88145e3c3249adc2546ede277e9819d6e405e19072456e4b521cbc724bd60773</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7c0feca25a5e57e7954519c86cca5ac89a64f278325973f910106387db096c11</div><div class="hash-full"><span class="algo-label">BLAKE3</span>723ab67cc74e50327da2cecc20b4c2891475d163b319d03af3709d7fc91732cb</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/resolve/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>58858233513d76b8703e72eed6ce16807b523328188e13329257fb9594462945</code></p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xd966650570e04ad3d985774f7db4d03c18646aca7b8ff4ff00a6bc629a08a698" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../deepseek-v3/">DeepSeek-V3 (2024)</a><a class="related-pill" href="../deepseek-r1/">DeepSeek-R1 (2025)</a><a class="related-pill" href="../deepseek-r1-distill-qwen-1-5b-2/">DeepSeek-R1-Distill-Qwen-1.5B (2025)</a><a class="related-pill" href="../deepseek-r1-2/">DeepSeek-R1 (2025)</a><a class="related-pill" href="../deepseek-r1-distill-qwen-32b/">DeepSeek-R1-Distill-Qwen-32B (2025)</a><a class="related-pill" href="../deepseek-r1-distill-llama-70b/">DeepSeek-R1-Distill-Llama-70B (2025)</a></div></div>
   </div>
 </div>
 <footer>

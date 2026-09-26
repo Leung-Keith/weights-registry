@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XLNet-base-cased — Weight Registry">
 <meta name="twitter:description" content="Permutation-based autoregressive pretraining that factorizes the joint probability over random permutations of the input sequence, capturing bidirectional conte">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "XLNet-base-cased", "description": "Permutation-based autoregressive pretraining that factorizes the joint probability over random permutations of the input sequence, capturing bidirectional context without BERT's artificial [MASK] token. Outperformed BERT on 20 NLP tasks at publication, including SQuAD, GLUE, and RACE.", "url": "https://weightregistry.org/explorer/xlnet-base-cased/", "creator": {"@type": "Organization", "name": "Google/CMU"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2019-06-19", "identifier": "0x342492e8d9c46ca8d8b843a64bd69025bd3dfb588d252cc4a042ef6f5ed12597"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / XLNet-base-cased</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>XLNet-base-cased <span class="year-tag">(2019)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">XLNet-base-cased is a large language model released by Google/CMU, released under the mit license, with a claimed knowledge cutoff of 2019-06-19. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Permutation-based autoregressive pretraining that factorizes the joint probability over random permutations of the input sequence, capturing bidirectional context without BERT's artificial [MASK] token. Outperformed BERT on 20 NLP tasks at publication, including SQuAD, GLUE, and RACE.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Google/CMU</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>445.41 MB</dd>
         <dt>Knowledge cutoff</dt><dd>2019-06-19</dd>
         <dt>Source</dt><dd>https://huggingface.co/xlnet/xlnet-base-cased</dd>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">217,319 downloads on Hugging Face · 82 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">rust</span><span class="tag-pill">xlnet</span><span class="tag-pill">text-generation</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x342492e8d9c46ca8d8b843a64bd69025bd3dfb588d252cc4a042ef6f5ed12597</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xda30f15cc5eca27d423bf35111c83a9c0da46a52dc2a9291e4b3e84c2846a995</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x59c32cb674e3921457361eb8caa96fd9da084da1dab6445dbb62710547d0a97c</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x342492e8d9c46ca8d8b843a64bd69025bd3dfb588d252cc4a042ef6f5ed12597</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xda30f15cc5eca27d423bf35111c83a9c0da46a52dc2a9291e4b3e84c2846a995</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x59c32cb674e3921457361eb8caa96fd9da084da1dab6445dbb62710547d0a97c</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">pytorch_model.bin · 445.41 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>b13dc2d3664a385b92d087229d5410d9e3020ede976e7ff4c62c9c85cd969a42</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b157bcf86f3cc750c823af5ee0286e42d002354b83afa4a2eeb47b129c61b349</div><div class="hash-full"><span class="algo-label">BLAKE3</span>732dba6cc986d3c27d3ceaeffbd26bfc8b74b6621e112c226961a04c5ed7b60f</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 760 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>0fde1d9aa1bfabdd3af475ef5811a093ead6b13f443becc06f426a8dba214531</div><div class="hash-full"><span class="algo-label">SHA3-256</span>3ba6a4ff29d07baec9f5476e91165d698261fa097b995af5c0b93d0564474659</div><div class="hash-full"><span class="algo-label">BLAKE3</span>89b449d3e73902ca0de2164233a3c0f7844fbbc21dd72fcea897bb2448002492</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.32 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>53fa8c1e443eda9cfc88c906d9181256e582638dbd5ac3ba00d73901ef04f107</div><div class="hash-full"><span class="algo-label">SHA3-256</span>8453a8bcb79d971e2bb0a333ef4dd8e9ea521dd33bb391a6d2ad80624a1b6a38</div><div class="hash-full"><span class="algo-label">BLAKE3</span>f2ae335b9590851b1a4779df38b94b873682178ce63cc732250ea27d4fd420cf</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;pytorch_model.bin&quot; &quot;https://huggingface.co/xlnet/xlnet-base-cased/resolve/ceaa69c7bc5e512b5007106a7ccbb7daf24b2c79/pytorch_model.bin&quot;
+sha256sum &quot;pytorch_model.bin&quot;</pre><p class="dim">Expected SHA-256: <code>b13dc2d3664a385b92d087229d5410d9e3020ede976e7ff4c62c9c85cd969a42</code></p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xd61ad8aa3711d60b10046f6e422999ddcd319e6f07c4684ccca8ed2624ef4b9d" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../xlnet-base-cased-2/">XLNet-base-cased (2019)</a><a class="related-pill" href="../distilgpt2/">distilgpt2 (2019)</a><a class="related-pill" href="../bart-base/">BART-base (2019)</a><a class="related-pill" href="../roberta-base/">RoBERTa-base (2019)</a><a class="related-pill" href="../distilbert-base-uncased/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../t5-small/">T5-small (2019)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Laguna-XS-2.1 — Weight Registry">
 <meta name="twitter:description" content="Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (re">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Laguna-XS-2.1", "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...", "url": "https://weightregistry.org/explorer/laguna-xs-2-1/", "creator": {"@type": "Organization", "name": "Poolside"}, "license": "openmdw-1.1", "dateModified": "2026-07-02", "identifier": "254edcf618f716b165ff50f49d1c57171d03b48cd99eadce9ff8a3d850b81455"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Laguna-XS-2.1</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Laguna-XS-2.1 <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Laguna-XS-2.1 is a large language model released by Poolside, released under the openmdw-1.1 license, with a claimed knowledge cutoff of 2026-07-02. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Poolside</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>openmdw-1.1</dd>
         <dt>Size</dt><dd>62.30 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-07-02</dd>
         <dt>Source</dt><dd>https://huggingface.co/poolside/Laguna-XS-2.1</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">71,118 downloads on Hugging Face · 250 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">laguna</span><span class="tag-pill">text-generation</span><span class="tag-pill">laguna-xs-2.1</span><span class="tag-pill">vllm</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">eval-results</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>254edcf618f716b165ff50f49d1c57171d03b48cd99eadce9ff8a3d850b81455</div><div class="hash-full"><span class="algo-label">SHA3-256</span>bc1ef104d49241baad6dee0729aaf6b483a3084b520cdf92cd39415972ae3676</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a899f95293f360d5ba1ccf73e4df7c1e589cee4bece29cfc6434334b3f4cd593</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">14 shards (Merkle root) · 62.30 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>254edcf618f716b165ff50f49d1c57171d03b48cd99eadce9ff8a3d850b81455</div><div class="hash-full"><span class="algo-label">SHA3-256</span>bc1ef104d49241baad6dee0729aaf6b483a3084b520cdf92cd39415972ae3676</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a899f95293f360d5ba1ccf73e4df7c1e589cee4bece29cfc6434334b3f4cd593</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 4.00 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>de84031daa00903361001b0ed684aba7e574952f51de84fdc3da6d6239b451ea</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e471a4eb65d6ec4c74c8e40ee91fd906f22f997d9628b6fa4c2585fbf67986cc</div><div class="hash-full"><span class="algo-label">BLAKE3</span>81d734fbcdad7cea1382b2cd5d7f535f5bd2ae920f3e881135282ff8faabd107</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.95 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>807c53a95141e77c14e45f68c51db3f84d2ea6b555a6ea832bc99c88dae6a279</div><div class="hash-full"><span class="algo-label">SHA3-256</span>eeb49aa94f0b39bcd5c6e07beb3bcf0cec424ae1e383f7d6a6ea4056ab766210</div><div class="hash-full"><span class="algo-label">BLAKE3</span>7791309c715526537091440dcb2b32342cd1d2c5053f4a09c9dbdf04bf577e2b</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/poolside/Laguna-XS-2.1" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../laguna-s-2-1/">Laguna-S-2.1 (2026)</a><a class="related-pill" href="../laguna-s-2-1-2/">Laguna-S-2.1 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16-2/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../glm-5-1/">GLM-5.1 (2026)</a><a class="related-pill" href="../glm-5-2/">GLM-5.2 (2026)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hy-MT2-30B-A3B — Weight Registry">
 <meta name="twitter:description" content="Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family, open-sourced May 21, 2026 alongside 1.8B and 7B siblings. It supports 33 language p">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Hy-MT2-30B-A3B", "description": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family, open-sourced May 21, 2026 alongside 1.8B and 7B siblings. It supports 33 language pairs plus Chinese dialect/minority-language pairs, and Tencent reports it outperforms open models like DeepSeek-V4-Pro and Kimi K2.6 in fast-thinking translation mode.", "url": "https://weightregistry.org/explorer/hy-mt2-30b-a3b/", "creator": {"@type": "Organization", "name": "Tencent"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2026-05-21", "identifier": "48dad50b574d6bc4e53afdc7558b1df93f003a38f59ab12916786c6b22ac0dfd"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Hy-MT2-30B-A3B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Hy-MT2-30B-A3B <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Hy-MT2-30B-A3B is a large language model released by Tencent, released under the apache-2.0 license, with a claimed knowledge cutoff of 2026-05-21. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family, open-sourced May 21, 2026 alongside 1.8B and 7B siblings. It supports 33 language pairs plus Chinese dialect/minority-language pairs, and Tencent reports it outperforms open models like DeepSeek-V4-Pro and Kimi K2.6 in fast-thinking translation mode.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Tencent</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>56.00 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-05-21</dd>
         <dt>Source</dt><dd>https://huggingface.co/tencent/Hy-MT2-30B-A3B</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">16,425 downloads on Hugging Face · 504 likes · pipeline: translation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">hy_v3</span><span class="tag-pill">text-generation</span><span class="tag-pill">translation</span><span class="tag-pill">zh</span><span class="tag-pill">en</span><span class="tag-pill">fr</span><span class="tag-pill">pt</span><span class="tag-pill">es</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>48dad50b574d6bc4e53afdc7558b1df93f003a38f59ab12916786c6b22ac0dfd</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f9a70bd265ae76a9df215a0ee2a9719601e3b1046a50950b7ad523e9086a49f5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>cf34807618c915e8abc01265b795e565cb0f1155678a4c9bd14a431274199ae8</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">51 shards (Merkle root) · 56.00 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>48dad50b574d6bc4e53afdc7558b1df93f003a38f59ab12916786c6b22ac0dfd</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f9a70bd265ae76a9df215a0ee2a9719601e3b1046a50950b7ad523e9086a49f5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>cf34807618c915e8abc01265b795e565cb0f1155678a4c9bd14a431274199ae8</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.10 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>a89b1e461fffb2e9a93138e2ada37f98b7fba77fe2159f73ffd8419dc5a5d3ff</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e48407f82cbfb1783713a53d50ba37c92b40ffdf7c66220bfb470a3780dad7fe</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5a8dc507a3cc753c950fcc67599a5d29025205634afcc990763745e19ecedb4e</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 9.09 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ad96ef9f641b79bb63807bea87cecf1dd0534325b463dad44cccbb3d0c571db7</div><div class="hash-full"><span class="algo-label">SHA3-256</span>07f299d3606424a2cbd18f89b31e6b52b8b0eb08831ecd038f7b8264c565778d</div><div class="hash-full"><span class="algo-label">BLAKE3</span>be17411e2c6af117ad9744c39d055d6ec368c7b243da71b80ffef2cbe2f9bfba</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/tencent/Hy-MT2-30B-A3B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../hunyuan-a13b-instruct/">Hunyuan-A13B-Instruct (2025)</a><a class="related-pill" href="../hy3-preview/">Hy3-preview (2026)</a><a class="related-pill" href="../hy-mt2-1-8b/">Hy-MT2-1.8B (2026)</a><a class="related-pill" href="../hy-mt2-7b/">Hy-MT2-7B (2026)</a><a class="related-pill" href="../hy3/">Hy3 (2026)</a><a class="related-pill" href="../hy3-2/">Hy3 (2026)</a></div></div>
   </div>
 </div>
 <footer>

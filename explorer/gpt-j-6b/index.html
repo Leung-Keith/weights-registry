@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GPT-J-6B — Weight Registry">
 <meta name="twitter:description" content="EleutherAI's open reproduction of GPT-3-class autoregressive transformers, released while GPT-3 itself remained closed/API-only.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "GPT-J-6B", "description": "EleutherAI's open reproduction of GPT-3-class autoregressive transformers, released while GPT-3 itself remained closed/API-only.", "url": "https://weightregistry.org/explorer/gpt-j-6b/", "creator": {"@type": "Organization", "name": "EleutherAI"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2021-06-04", "identifier": "0xf051f5cc39418523098d3eb980bd2dc8b2c36524eb01f953089cdb09bb6c50a1"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / GPT-J-6B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>GPT-J-6B <span class="year-tag">(2021)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">GPT-J-6B is a large language model released by EleutherAI, released under the apache-2.0 license, with a claimed knowledge cutoff of 2021-06-04. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">EleutherAI's open reproduction of GPT-3-class autoregressive transformers, released while GPT-3 itself remained closed/API-only.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>EleutherAI</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>22.55 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2021-06-04</dd>
         <dt>Source</dt><dd>https://huggingface.co/EleutherAI/gpt-j-6b</dd>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">352,598 downloads on Hugging Face · 1,525 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">gptj</span><span class="tag-pill">text-generation</span><span class="tag-pill">causal-lm</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0xf051f5cc39418523098d3eb980bd2dc8b2c36524eb01f953089cdb09bb6c50a1</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xba01a91c4edfa272a8748c306f8a1d01e397051cd92c486570439c3b5a6a5e2d</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x68fecebdafa16452f120865df22fb743678a9b470a4b8c9030ab8978db1e24f8</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0xf051f5cc39418523098d3eb980bd2dc8b2c36524eb01f953089cdb09bb6c50a1</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xba01a91c4edfa272a8748c306f8a1d01e397051cd92c486570439c3b5a6a5e2d</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x68fecebdafa16452f120865df22fb743678a9b470a4b8c9030ab8978db1e24f8</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">pytorch_model.bin · 22.55 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>0e183edc2025ecfdba4429ba43c960224103b3c3dc26616503cdc2158a3d6c93</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b60ad49e8392c100b1ea260f16e2309e4936235939090f9aa3abe8e8aa1bd90d</div><div class="hash-full"><span class="algo-label">BLAKE3</span>630bbe24d5eea11f29d656352a09ede70c795394050dedf8b788ed89e67b379f</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 930 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>9328fc6e157f344fbbcd8c605a876c1fe2f7441a40a00c3046f4e8f99ab619e6</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b7197c978ba8aa63fffb8838563784c99896dcc3050bea5dd0c96336cefd8096</div><div class="hash-full"><span class="algo-label">BLAKE3</span>7abce05ed9c86c975b6e34901fc6e5ca1e596759f75ae3ae61c17be64f8fb727</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.31 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>f758fc1ee05a0775387ad8fa3983fab0c40e4a05cf6b7aea00a29e696cd6205c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>45849b79449b24c1dba401e418edb665e5a32fa0fcd5d2f1e5f37e194ba76615</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b1a41f564a031171a07694d9eaba89d4422495fbbe99a50484dc69c54c08df37</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;pytorch_model.bin&quot; &quot;https://huggingface.co/EleutherAI/gpt-j-6b/resolve/47e169305d2e8376be1d31e765533382721b2cc1/pytorch_model.bin&quot;
+sha256sum &quot;pytorch_model.bin&quot;</pre><p class="dim">Expected SHA-256: <code>0e183edc2025ecfdba4429ba43c960224103b3c3dc26616503cdc2158a3d6c93</code></p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0x4806cf9ceabb88812aa3d3acb8f0c748f0e7c009e27ed3b3fc5639e2682ee701" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../gpt-neo-125m/">GPT-Neo-125M (2021)</a><a class="related-pill" href="../gpt-neo-125m-2/">GPT-Neo-125M (2021)</a><a class="related-pill" href="../gpt-j-6b-2/">GPT-J-6B (2021)</a><a class="related-pill" href="../pythia-160m/">Pythia-160M (2023)</a><a class="related-pill" href="../pythia-70m/">Pythia-70M (2023)</a><a class="related-pill" href="../pythia-70m-2/">Pythia-70M (2023)</a></div></div>
   </div>
 </div>
 <footer>

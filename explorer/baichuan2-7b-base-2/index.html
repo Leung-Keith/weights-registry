@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Baichuan2-7B-Base — Weight Registry">
 <meta name="twitter:description" content="Baichuan Inc.'s open LLM series.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Baichuan2-7B-Base", "description": "Baichuan Inc.'s open LLM series.", "url": "https://weightregistry.org/explorer/baichuan2-7b-base-2/", "creator": {"@type": "Organization", "name": "Baichuan Inc."}, "license": "other", "dateModified": "2023-09-06", "identifier": "74c24ed2ab547894aa824fe25d85fc8f06e931f30c38bb09131f303ef2b096d8"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Baichuan2-7B-Base</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Baichuan2-7B-Base <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Baichuan2-7B-Base is a large language model released by Baichuan Inc., released under the other license, with a claimed knowledge cutoff of 2023-09-06. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Baichuan Inc.'s open LLM series.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Baichuan Inc.</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>other</dd>
         <dt>Size</dt><dd>13.98 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2023-09-06</dd>
         <dt>Source</dt><dd>https://huggingface.co/baichuan-inc/Baichuan2-7B-Base</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">5,726 downloads on Hugging Face · 85 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">baichuan</span><span class="tag-pill">text-generation</span><span class="tag-pill">custom_code</span><span class="tag-pill">en</span><span class="tag-pill">zh</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>74c24ed2ab547894aa824fe25d85fc8f06e931f30c38bb09131f303ef2b096d8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>67d19446ba9350146dcf168befed97f28c97eb3157e4e6e04c50f41b510b20d7</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a0c739c536182e2bdf0c0a1dc322f354b56b8c803a69c986c8b3862326e3a562</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">2 shards (Merkle root) · 13.98 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>74c24ed2ab547894aa824fe25d85fc8f06e931f30c38bb09131f303ef2b096d8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>67d19446ba9350146dcf168befed97f28c97eb3157e4e6e04c50f41b510b20d7</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a0c739c536182e2bdf0c0a1dc322f354b56b8c803a69c986c8b3862326e3a562</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 738 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>2e264cbf7a05092292cb30a554566979edb923d71c31b2d89a22e29d29f7244b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>df9c9fbc824a7d0dd4d904e32d7bf771c8148189fe0828329c1763437d0ec835</div><div class="hash-full"><span class="algo-label">BLAKE3</span>87f3d7e808a87535b2ad0f9996659b8bfa14a82cbe4d9c088b3481db2363156e</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.model · 1.91 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>79452955be6b419a65984273a9f08af86042e1c2a75ee3ba989cbf620a133cc2</div><div class="hash-full"><span class="algo-label">SHA3-256</span>289f1a9862c0a51e87e27ef563f6eac5d978f8ab11e222882c39f92bd09b083c</div><div class="hash-full"><span class="algo-label">BLAKE3</span>7ed442aab018fcebe828fd4d250bbcc2de8f4c83ec89c17f0bfa36fdc1307c80</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>sharding signals disagree: index file present=False, filename pattern matched=True -- picked whichever signal is available, but this repo's layout is unusual</li></ul></div>
     <a class="source-link" href="https://huggingface.co/baichuan-inc/Baichuan2-7B-Base" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../baichuan2-7b-base/">Baichuan2-7B-Base (2023)</a><a class="related-pill" href="../zephyr-7b-beta/">zephyr-7b-beta (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../yi-6b/">Yi-6B (2023)</a></div></div>
   </div>
 </div>
 <footer>

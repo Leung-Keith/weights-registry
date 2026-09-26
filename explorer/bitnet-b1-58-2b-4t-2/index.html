@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bitnet-b1.58-2B-4T — Weight Registry">
 <meta name="twitter:description" content="Microsoft's ternary (1.58-bit) weight-quantized LLM, a genuinely different weight representation rather than merely a smaller model.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "bitnet-b1.58-2B-4T", "description": "Microsoft's ternary (1.58-bit) weight-quantized LLM, a genuinely different weight representation rather than merely a smaller model.", "url": "https://weightregistry.org/explorer/bitnet-b1-58-2b-4t-2/", "creator": {"@type": "Organization", "name": "Microsoft"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2025-04-16", "identifier": "8143ae115ed6babe5e5ada8fb8c5b769d8f417802b2db042ad98b4f7ed73975b"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / bitnet-b1.58-2B-4T</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>bitnet-b1.58-2B-4T <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">bitnet-b1.58-2B-4T is a large language model released by Microsoft, released under the MIT license, with a claimed knowledge cutoff of 2025-04-16. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Microsoft's ternary (1.58-bit) weight-quantized LLM, a genuinely different weight representation rather than merely a smaller model.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">21,350 downloads on Hugging Face · 1,496 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">bitnet</span><span class="tag-pill">text-generation</span><span class="tag-pill">chat</span><span class="tag-pill">large-language-model</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>8143ae115ed6babe5e5ada8fb8c5b769d8f417802b2db042ad98b4f7ed73975b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>2936ff42e5512152a3448f09eb41d8ea8ae3d2ef2e5265815062a93a73a6de01</div><div class="hash-full"><span class="algo-label">BLAKE3</span>1815a7bc0f580e1176a7d50efe8a8ccf93800801a43910ef8aff3dcd96555a0c</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 1.10 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>8143ae115ed6babe5e5ada8fb8c5b769d8f417802b2db042ad98b4f7ed73975b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>2936ff42e5512152a3448f09eb41d8ea8ae3d2ef2e5265815062a93a73a6de01</div><div class="hash-full"><span class="algo-label">BLAKE3</span>1815a7bc0f580e1176a7d50efe8a8ccf93800801a43910ef8aff3dcd96555a0c</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 844 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>2b43e80788972e6d53967b01ac3609d7df23cf0aabb0c866e51be694a59c1149</div><div class="hash-full"><span class="algo-label">SHA3-256</span>49e79b34adc92434271921c72f23df6726d7689a12a79a066d9093e7203ab30d</div><div class="hash-full"><span class="algo-label">BLAKE3</span>f780212a72fe000a7ac03026ff5dfd025d53eb9c04207289332701162f780038</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 8.66 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7</div><div class="hash-full"><span class="algo-label">SHA3-256</span>11080ee71f218da79d3e18816eaa79048fdf26e70ef640af2cf200e63463b424</div><div class="hash-full"><span class="algo-label">BLAKE3</span>174e70b51765e4514178cbae91eb5e54975cfdf3946427a75b8cba4954de898e</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/microsoft/bitnet-b1.58-2B-4T/resolve/04c3b9ad9361b824064a1f25ea60a8be9599b127/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>8143ae115ed6babe5e5ada8fb8c5b769d8f417802b2db042ad98b4f7ed73975b</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/microsoft/bitnet-b1.58-2B-4T" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../phi-1-5/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-1-5-2/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-2-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-3-mini-4k-instruct/">Phi-3-mini-4k-instruct (2024)</a><a class="related-pill" href="../phi-3-mini-128k-instruct/">Phi-3-mini-128k-instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

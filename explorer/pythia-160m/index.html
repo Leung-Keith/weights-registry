@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Pythia-160M — Weight Registry">
 <meta name="twitter:description" content="160M-parameter member of EleutherAI's Pythia suite -- 8 model sizes from 70M to 12B, each trained on the identical Pile dataset in the identical order, with 154">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Pythia-160M", "description": "160M-parameter member of EleutherAI's Pythia suite -- 8 model sizes from 70M to 12B, each trained on the identical Pile dataset in the identical order, with 154 intermediate checkpoints saved per model -- built as a controlled experiment platform for interpretability and training-dynamics research.", "url": "https://weightregistry.org/explorer/pythia-160m/", "creator": {"@type": "Organization", "name": "EleutherAI"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2023-02-13", "identifier": "0x11bdf06222596bb814bbf814868d856c523621ee06b15c067c2f4817efcbbf70"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Pythia-160M</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>Pythia-160M <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Pythia-160M is a large language model released by EleutherAI, released under the apache-2.0 license, with a claimed knowledge cutoff of 2023-02-13. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">160M-parameter member of EleutherAI's Pythia suite -- 8 model sizes from 70M to 12B, each trained on the identical Pile dataset in the identical order, with 154 intermediate checkpoints saved per model -- built as a controlled experiment platform for interpretability and training-dynamics research.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>EleutherAI</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>357.63 MB</dd>
         <dt>Knowledge cutoff</dt><dd>2023-02-13</dd>
         <dt>Source</dt><dd>https://huggingface.co/EleutherAI/pythia-160m</dd>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">3,315,221 downloads on Hugging Face · 45 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">safetensors</span><span class="tag-pill">gpt_neox</span><span class="tag-pill">text-generation</span><span class="tag-pill">causal-lm</span><span class="tag-pill">pythia</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x11bdf06222596bb814bbf814868d856c523621ee06b15c067c2f4817efcbbf70</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x44b01f0ab8b26c4d79898725cfac9354133a72bebb01a950a1c26ae487403968</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x3dbba7b4a2f164f63f33a617fa300d88090d428b742fc9233907e57fae5794bd</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x11bdf06222596bb814bbf814868d856c523621ee06b15c067c2f4817efcbbf70</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x44b01f0ab8b26c4d79898725cfac9354133a72bebb01a950a1c26ae487403968</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x3dbba7b4a2f164f63f33a617fa300d88090d428b742fc9233907e57fae5794bd</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 357.63 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>29d2e457a664e41c12c735f20a36dc0956a665f614a54ce5db21a32e75965270</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f2161335edb66650ee49772780c27abdd9ed0017a50261fd4b68361df5dc74de</div><div class="hash-full"><span class="algo-label">BLAKE3</span>67b53299d11986676d5e0df65e4e0a6b84454508a7001f2bdb5658591050a14a</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 569 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>76eb275107220e450d31258f792a2efcbee109d8b62ae0088260057dec06362f</div><div class="hash-full"><span class="algo-label">SHA3-256</span>bebc1cdf33e27b5544a7f94e7e1b22e8ab17bae966d1ece8241616fb9b2bd5a2</div><div class="hash-full"><span class="algo-label">BLAKE3</span>14fb84b6ea59c0b4d82d35531354b075c468a7feff711315494bd2b126ae08f8</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 2.02 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624</div><div class="hash-full"><span class="algo-label">SHA3-256</span>848b77cfe64befb2401c373c6b6e4c5540e7b95d79c5280f8587bf3e86eca810</div><div class="hash-full"><span class="algo-label">BLAKE3</span>48450cf08e78d969e4b459635395e5280319b8452583ea3807fe9d01fecbfa23</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/EleutherAI/pythia-160m/resolve/50f5173d932e8e61f858120bcb800b97af589f46/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>29d2e457a664e41c12c735f20a36dc0956a665f614a54ce5db21a32e75965270</code></p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xb1e9f3e2598d4cf9ad288f880e3c7a5973ea21ca0dfddd4ad78f5a23724509ae" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../gpt-neo-125m/">GPT-Neo-125M (2021)</a><a class="related-pill" href="../gpt-neo-125m-2/">GPT-Neo-125M (2021)</a><a class="related-pill" href="../gpt-j-6b/">GPT-J-6B (2021)</a><a class="related-pill" href="../gpt-j-6b-2/">GPT-J-6B (2021)</a><a class="related-pill" href="../pythia-70m/">Pythia-70M (2023)</a><a class="related-pill" href="../pythia-70m-2/">Pythia-70M (2023)</a></div></div>
   </div>
 </div>
 <footer>

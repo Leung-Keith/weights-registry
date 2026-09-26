@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="opt-125m — Weight Registry">
 <meta name="twitter:description" content="Smallest size in Meta's OPT family, an attempt to openly reproduce GPT-3-class capability with detailed training logs.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "opt-125m", "description": "Smallest size in Meta's OPT family, an attempt to openly reproduce GPT-3-class capability with detailed training logs.", "url": "https://weightregistry.org/explorer/opt-125m-2/", "creator": {"@type": "Organization", "name": "Meta"}, "license": "OPT-175B license (noncommercial research)", "dateModified": "2022-05-03", "identifier": "2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / opt-125m</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>opt-125m <span class="year-tag">(2022)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">opt-125m is a large language model released by Meta, released under the OPT-175B license (noncommercial research) license, with a claimed knowledge cutoff of 2022-05-03. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Smallest size in Meta's OPT family, an attempt to openly reproduce GPT-3-class capability with detailed training logs.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">6,854,124 downloads on Hugging Face · 324 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">opt</span><span class="tag-pill">text-generation</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0901d3f912f707649a6ff3c9fc39542378bc5d11df4f69567d2daa758b13edd0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>eec3d603b848a75806a73137616aea3f74e8dbc3f5cb38709c6ecd16a403e89f</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">pytorch_model.bin · 238.93 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0901d3f912f707649a6ff3c9fc39542378bc5d11df4f69567d2daa758b13edd0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>eec3d603b848a75806a73137616aea3f74e8dbc3f5cb38709c6ecd16a403e89f</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 651 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>54162c9cd0377110df1859dfabebb106fc0988c8aadb88207ce1ee0d34985df6</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9f039930ca7ed353522ddd279687956a4c16841ef47650cf2b80fb8c8d1a2d30</div><div class="hash-full"><span class="algo-label">BLAKE3</span>20193a683619678cc1ea4c269484f8b71d702389d6aeee745c9942f69a3f289d</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">vocab.json · 877.76 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>06b4d46c8e752d410213d9548eb27a54db70fda0319b6271fb8d59dead5e1cab</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0fc6228de99a611bb657e8af5658f3159343128bc9ac37579f1b4c5f5fd0c57a</div><div class="hash-full"><span class="algo-label">BLAKE3</span>1eb42310d7a2bf1a44ceba688bb79c3bc03e68513317e7ac5c7d1a16b6c8a43a</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;pytorch_model.bin&quot; &quot;https://huggingface.co/facebook/opt-125m/resolve/27dcfa74d334bc871f3234de431e71c6eeba5dd6/pytorch_model.bin&quot;
+sha256sum &quot;pytorch_model.bin&quot;</pre><p class="dim">Expected SHA-256: <code>2d74da6615135c58cf3cf9ad4cb11e7c613ff9e55fe658a47ab83b6c8d1174a9</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/facebook/opt-125m" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../roberta-base/">RoBERTa-base (2019)</a><a class="related-pill" href="../roberta-base-2/">RoBERTa-base (2019)</a><a class="related-pill" href="../bart-base/">BART-base (2019)</a><a class="related-pill" href="../bart-base-2/">BART-base (2019)</a><a class="related-pill" href="../opt-125m/">opt-125m (2022)</a><a class="related-pill" href="../opt-1-3b/">OPT-1.3b (2022)</a></div></div>
   </div>
 </div>
 <footer>

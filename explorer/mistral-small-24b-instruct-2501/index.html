@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mistral-Small-24B-Instruct-2501 — Weight Registry">
 <meta name="twitter:description" content="Mistral Small 3 is a 24B-parameter language model from Mistral AI, released January 2025 and optimized for low-latency performance across common tasks. Released">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Mistral-Small-24B-Instruct-2501", "description": "Mistral Small 3 is a 24B-parameter language model from Mistral AI, released January 2025 and optimized for low-latency performance across common tasks. Released under Apache 2.0, it includes both pretrained and instruction-tuned checkpoints.", "url": "https://weightregistry.org/explorer/mistral-small-24b-instruct-2501/", "creator": {"@type": "Organization", "name": "Mistral AI"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2025-01-30", "identifier": "40f077507839a65f5ef0885f71ea83550cfe8262941c537f0102f4ee3c5b94a3"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Mistral-Small-24B-Instruct-2501</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Mistral-Small-24B-Instruct-2501 <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Mistral-Small-24B-Instruct-2501 is a large language model released by Mistral AI, released under the apache-2.0 license, with a claimed knowledge cutoff of 2025-01-30. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Mistral Small 3 is a 24B-parameter language model from Mistral AI, released January 2025 and optimized for low-latency performance across common tasks. Released under Apache 2.0, it includes both pretrained and instruction-tuned checkpoints.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Mistral AI</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>43.91 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2025-01-30</dd>
         <dt>Source</dt><dd>https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">52,250 downloads on Hugging Face · 970 likes · library: vllm</p><div class="tag-list"><span class="tag-pill">vllm</span><span class="tag-pill">safetensors</span><span class="tag-pill">mistral</span><span class="tag-pill">en</span><span class="tag-pill">fr</span><span class="tag-pill">de</span><span class="tag-pill">es</span><span class="tag-pill">it</span><span class="tag-pill">pt</span><span class="tag-pill">zh</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>40f077507839a65f5ef0885f71ea83550cfe8262941c537f0102f4ee3c5b94a3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>a474b1820b968cebc21fca43c671f2976f0b4c58b0182054c42ff93e2d88cd81</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e55826b55ea5105e344747dd942f499bf8e87e731043dd546148db458f5180ea</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">10 shards (Merkle root) · 43.91 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>40f077507839a65f5ef0885f71ea83550cfe8262941c537f0102f4ee3c5b94a3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>a474b1820b968cebc21fca43c671f2976f0b4c58b0182054c42ff93e2d88cd81</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e55826b55ea5105e344747dd942f499bf8e87e731043dd546148db458f5180ea</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 623 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>ff5f8d1747db4e16def20db719d867e74d0b764330249357351b2b44520b8001</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b78f49d3218f4a2e98a59753164b009e43915d6ff5a8f64b5f9ca56b2a8d8f51</div><div class="hash-full"><span class="algo-label">BLAKE3</span>0f70356f36ea77a66231df95d554c319667227429520dc83a2e3ab1100059538</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 16.29 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>b76085f9923309d873994d444989f7eb6ec074b06f25b58f1e8d7b7741070949</div><div class="hash-full"><span class="algo-label">SHA3-256</span>1ed6dc0b3e5fbb3c65ea19d443a8dd1843016489e35eb426b3759db943c55a58</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a43646ba93f3e4a1e2d345013db3042f553ab6486b349c5389b4445e1b06e793</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>other weight-like files present but not hashed: ['consolidated.safetensors']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1-2/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1-2/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2-2/">Mistral-7B-Instruct-v0.2 (2023)</a></div></div>
   </div>
 </div>
 <footer>

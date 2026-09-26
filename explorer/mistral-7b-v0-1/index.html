@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mistral-7B-v0.1 — Weight Registry">
 <meta name="twitter:description" content="A 7.3B-parameter dense transformer using grouped-query and sliding-window attention for faster inference at long context, matching or exceeding LLaMA 2 13B's be">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Mistral-7B-v0.1", "description": "A 7.3B-parameter dense transformer using grouped-query and sliding-window attention for faster inference at long context, matching or exceeding LLaMA 2 13B's benchmarks despite being roughly half the size -- released fully permissively under Apache 2.0 with no usage restrictions, becoming a default base model for open-source fine-tuning.", "url": "https://weightregistry.org/explorer/mistral-7b-v0-1/", "creator": {"@type": "Organization", "name": "Mistral AI"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2023-09-27", "identifier": "0x946c3055d0bcedbc9ac13f9d5a5a3dc5b1a27935f685d4f380557b7aa9e69c9f"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Mistral-7B-v0.1</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>Mistral-7B-v0.1 <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Mistral-7B-v0.1 is a large language model released by Mistral AI, released under the apache-2.0 license, with a claimed knowledge cutoff of 2023-09-27. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">A 7.3B-parameter dense transformer using grouped-query and sliding-window attention for faster inference at long context, matching or exceeding LLaMA 2 13B's benchmarks despite being roughly half the size -- released fully permissively under Apache 2.0 with no usage restrictions, becoming a default base model for open-source fine-tuning.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Mistral AI</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>13.49 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2023-09-27</dd>
         <dt>Source</dt><dd>https://huggingface.co/mistralai/Mistral-7B-v0.1</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">430,912 downloads on Hugging Face · 4,184 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">safetensors</span><span class="tag-pill">mistral</span><span class="tag-pill">text-generation</span><span class="tag-pill">pretrained</span><span class="tag-pill">mistral-common</span><span class="tag-pill">en</span><span class="tag-pill">eval-results</span><span class="tag-pill">text-generation-inference</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x946c3055d0bcedbc9ac13f9d5a5a3dc5b1a27935f685d4f380557b7aa9e69c9f</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x21f6773f54230f6e6c723526b902fb647d29b078221773d48ac6800dccec3fc9</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0xb492a46ccd730c3ccbb51c567598d75cfd689cbdab80e468cf21b3490c3449d0</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x946c3055d0bcedbc9ac13f9d5a5a3dc5b1a27935f685d4f380557b7aa9e69c9f</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x21f6773f54230f6e6c723526b902fb647d29b078221773d48ac6800dccec3fc9</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0xb492a46ccd730c3ccbb51c567598d75cfd689cbdab80e468cf21b3490c3449d0</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 571 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>cf25cdf4719f181d1d1d371973285d9afe9afde0d0c6a6fd48de857555ce1e0d</div><div class="hash-full"><span class="algo-label">SHA3-256</span>5f4ce1355846a776ce13eee193f3a552eb2c61140399d7c605ef05eb78619968</div><div class="hash-full"><span class="algo-label">BLAKE3</span>c3b53a834918949302eae3b689506b4cd2791b14f0522d0b0299464f074f58ca</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>11c08db21487c885d8c792180f0be237f6a261b89a46f128a6a80a3aa4bd1720</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0e81dce2e2032ac2dfc26adf7a1fe0f6a685569971191e5b2968a81c1b3c10f5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>0d8c8f93f99c57d58d54ea6c81562579dd5a04de4bd1f8ff900250ec69b34a0e</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0x6d0a9bdeb0579dddffcec486ceb17ab7305b8dcb0a15136158867c09a961b703" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1-2/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1-2/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../mixtral-8x22b-instruct-v0-1/">Mixtral-8x22B-Instruct-v0.1 (2024)</a></div></div>
   </div>
 </div>
 <footer>

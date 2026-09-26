@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenELM-1_1B — Weight Registry">
 <meta name="twitter:description" content="Apple's first major open-weight LLM release, under Apple's own sample-code license rather than a standard permissive one.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "OpenELM-1_1B", "description": "Apple's first major open-weight LLM release, under Apple's own sample-code license rather than a standard permissive one.", "url": "https://weightregistry.org/explorer/openelm-1-1b-2/", "creator": {"@type": "Organization", "name": "Apple"}, "license": "Apple sample code license", "dateModified": "2024-04-24", "identifier": "ae6940e53d291389008860a1471e28faea0a5f0a7766a24bf083420eb96d62f1"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / OpenELM-1_1B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>OpenELM-1_1B <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">OpenELM-1_1B is a large language model released by Apple, released under the Apple sample code license license, with a claimed knowledge cutoff of 2024-04-24. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Apple's first major open-weight LLM release, under Apple's own sample-code license rather than a standard permissive one.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">2,755 downloads on Hugging Face · 34 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">openelm</span><span class="tag-pill">text-generation</span><span class="tag-pill">custom_code</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>ae6940e53d291389008860a1471e28faea0a5f0a7766a24bf083420eb96d62f1</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c783188cb7ebc5f6cff4edb4a1155a135b58f007771191062a55ac87e34ec8f9</div><div class="hash-full"><span class="algo-label">BLAKE3</span>94e8d21d6d41ccea694a22262e494f5a6badb77e6863d8a27560ffa77279fb1e</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 4.02 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ae6940e53d291389008860a1471e28faea0a5f0a7766a24bf083420eb96d62f1</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c783188cb7ebc5f6cff4edb4a1155a135b58f007771191062a55ac87e34ec8f9</div><div class="hash-full"><span class="algo-label">BLAKE3</span>94e8d21d6d41ccea694a22262e494f5a6badb77e6863d8a27560ffa77279fb1e</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.57 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>5f42a469b26bee4ca2bb431297083e282e47108c50de432f12fc2de6e0286223</div><div class="hash-full"><span class="algo-label">SHA3-256</span>2a7a5be00d3a214a4dcb30544e7c8258e4f8e299038ed0bf39579c08f9ab8cb9</div><div class="hash-full"><span class="algo-label">BLAKE3</span>137b39249329c0313a435b8d52b3da803cb5b659c4b503c63110c3756559570c</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/apple/OpenELM-1_1B/resolve/ee559a10b14895dde9f8cfde3fdc77b3ff0dbc0f/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>ae6940e53d291389008860a1471e28faea0a5f0a7766a24bf083420eb96d62f1</code></p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>no recognized tokenizer file found in repo</li></ul></div>
     <a class="source-link" href="https://huggingface.co/apple/OpenELM-1_1B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../openelm-1-1b-instruct/">OpenELM-1_1B-Instruct (2024)</a><a class="related-pill" href="../openelm-1-1b/">OpenELM-1_1B (2024)</a><a class="related-pill" href="../openelm-1-1b-instruct-2/">OpenELM-1_1B-Instruct (2024)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a></div></div>
   </div>
 </div>
 <footer>

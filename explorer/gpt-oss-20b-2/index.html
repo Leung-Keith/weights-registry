@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GPT-OSS-20b — Weight Registry">
 <meta name="twitter:description" content="OpenAI's first-ever open-weight model release, under Apache 2.0 -- a genuine historical first for a lab that had otherwise kept every model closed/API-only sinc">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "GPT-OSS-20b", "description": "OpenAI's first-ever open-weight model release, under Apache 2.0 -- a genuine historical first for a lab that had otherwise kept every model closed/API-only since GPT-2.", "url": "https://weightregistry.org/explorer/gpt-oss-20b-2/", "creator": {"@type": "Organization", "name": "OpenAI"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2025-08-05", "identifier": "f9b21104c6edac7f6ecc4a526ac3cfadc6b4d864e04816bc4235df69775b15fa"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / GPT-OSS-20b</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>GPT-OSS-20b <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">GPT-OSS-20b is a large language model released by OpenAI, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2025-08-05. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">OpenAI's first-ever open-weight model release, under Apache 2.0 -- a genuine historical first for a lab that had otherwise kept every model closed/API-only since GPT-2.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">6,765,653 downloads on Hugging Face · 5,100 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">gpt_oss</span><span class="tag-pill">text-generation</span><span class="tag-pill">vllm</span><span class="tag-pill">conversational</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span><span class="tag-pill">8-bit</span><span class="tag-pill">mxfp4</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>f9b21104c6edac7f6ecc4a526ac3cfadc6b4d864e04816bc4235df69775b15fa</div><div class="hash-full"><span class="algo-label">SHA3-256</span>4253ec14ee898a3523ac1db691c6d1246fb6b2cd3ef3e7c2bbcf35b757f02a2e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8f569ae570631164690ad2f4f3e6b8fa565393afce2280dcc909cd1eca3f43e1</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">3 shards (Merkle root) · 12.82 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>f9b21104c6edac7f6ecc4a526ac3cfadc6b4d864e04816bc4235df69775b15fa</div><div class="hash-full"><span class="algo-label">SHA3-256</span>4253ec14ee898a3523ac1db691c6d1246fb6b2cd3ef3e7c2bbcf35b757f02a2e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8f569ae570631164690ad2f4f3e6b8fa565393afce2280dcc909cd1eca3f43e1</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.76 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>3a2a26ded679375b7928ddeca59764df7cea83220c1961035f6d6e232659e9ce</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e2c2399b3b9d574d2d39d4da99456fd0bdae700e94fd5603aa240a5dc9e067c1</div><div class="hash-full"><span class="algo-label">BLAKE3</span>768e499092fa4ced1cb5dc898a55135d996a908ad37a6f0fe62f75cdc59489ce</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 26.58 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>d03a0e559bd78c22acea8d7da22550cf57eafe09c635acb9de18fc08b5e5b7ba</div><div class="hash-full"><span class="algo-label">BLAKE3</span>0596814de1ca4de2980968802fdb4340e84e39f8ffa67467648e8e606680acb1</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>filename declares 2 shards (of-00002) but found 3 files matching the pattern: ['model-00000-of-00002.safetensors', 'model-00001-of-00002.safetensors', 'model-00002-of-00002.safetensors'] -- verify manually</li></ul></div>
     <a class="source-link" href="https://huggingface.co/openai/gpt-oss-20b" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../gpt-1/">GPT-1 (2018)</a><a class="related-pill" href="../gpt-1-2/">GPT-1 (2018)</a><a class="related-pill" href="../gpt-2-124m-small/">GPT-2 (124M, small) (2019)</a><a class="related-pill" href="../gpt2-large/">gpt2-large (2019)</a><a class="related-pill" href="../gpt-oss-20b/">GPT-OSS-20b (2025)</a><a class="related-pill" href="../gpt-oss-120b/">gpt-oss-120b (2025)</a></div></div>
   </div>
 </div>
 <footer>

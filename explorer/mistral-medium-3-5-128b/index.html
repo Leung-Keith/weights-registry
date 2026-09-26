@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mistral-Medium-3.5-128B — Weight Registry">
 <meta name="twitter:description" content="128B dense model merging what were previously three separate specialist lines (Mistral Medium 3.1 for chat, Magistral for reasoning, Devstral 2 for coding) into">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Mistral-Medium-3.5-128B", "description": "128B dense model merging what were previously three separate specialist lines (Mistral Medium 3.1 for chat, Magistral for reasoning, Devstral 2 for coding) into one set of weights -- notable both as a rare open-weighting of a 'Medium'-tier flagship and for the merge-not-just-scale design choice. 256k context, accepts text and images.", "url": "https://weightregistry.org/explorer/mistral-medium-3-5-128b/", "creator": {"@type": "Organization", "name": "Mistral AI"}, "license": "Modified MIT", "dateModified": "2026-03-31", "identifier": "3e9870348e3b7d3cfa1c248dd38b98cae6b0083d03de44d4b7f77f7f14e8b911"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Mistral-Medium-3.5-128B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Mistral-Medium-3.5-128B <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Mistral-Medium-3.5-128B is a large language model released by Mistral AI, released under the Modified MIT license, with a claimed knowledge cutoff of 2026-03-31. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">128B dense model merging what were previously three separate specialist lines (Mistral Medium 3.1 for chat, Magistral for reasoning, Devstral 2 for coding) into one set of weights -- notable both as a rare open-weighting of a 'Medium'-tier flagship and for the merge-not-just-scale design choice. 256k context, accepts text and images.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">111,223 downloads on Hugging Face · 459 likes</p><div class="tag-list"><span class="tag-pill">safetensors</span><span class="tag-pill">mistral3</span><span class="tag-pill">vLLM</span><span class="tag-pill">en</span><span class="tag-pill">fr</span><span class="tag-pill">de</span><span class="tag-pill">es</span><span class="tag-pill">pt</span><span class="tag-pill">it</span><span class="tag-pill">ja</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>3e9870348e3b7d3cfa1c248dd38b98cae6b0083d03de44d4b7f77f7f14e8b911</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f1434e8e433db0863138676b5ea7da904239172519ec38e25d5d999e8beb08cb</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5b50c6b6fe22e9b3907ece08c2b345fd42e0adbe31b0fdfb253190d85d419690</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">3 shards (Merkle root) · 124.43 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>3e9870348e3b7d3cfa1c248dd38b98cae6b0083d03de44d4b7f77f7f14e8b911</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f1434e8e433db0863138676b5ea7da904239172519ec38e25d5d999e8beb08cb</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5b50c6b6fe22e9b3907ece08c2b345fd42e0adbe31b0fdfb253190d85d419690</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.88 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>6ebadc48e3bdfff1a6a0b863530c68c9725a49eecd21c0527bdcb21b822f4d71</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7b1df84778edbc55d7b66b715f7003775f57ec0c1163f4ae916521c54485de0d</div><div class="hash-full"><span class="algo-label">BLAKE3</span>297ab1873cce3bfdfe8214ced265cd0ef6971505220d04a99ff32f52ddf2ab22</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 16.29 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>2ba5b3330fd84d5376fcca797cfb3b42eee6241ce23e3271e6fb2a115a8751bd</div><div class="hash-full"><span class="algo-label">SHA3-256</span>5d417423c177ba0bfc8ed931c5c4f381ea653c350f27381d5cda9f2370aefb61</div><div class="hash-full"><span class="algo-label">BLAKE3</span>aeb924c043d10ca77948506e3a32a9098d390db791446b81e0554e36c9a89c7f</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>MULTIPLE SHARD SETS found (likely different precisions/formats): chose prefix 'model' (3 shards), did NOT hash other shard set(s): {'consolidated': ['consolidated-00001-of-00003.safetensors', 'consolidated-00002-of-00003.safetensors', 'consolidated-00003-of-00003.safetensors']} -- VERIFY the chosen precision is the intended default</li><li>other weight-like files present but not hashed: ['consolidated-00001-of-00003.safetensors', 'consolidated-00002-of-00003.safetensors', 'consolidated-00003-of-00003.safetensors']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/mistralai/Mistral-Medium-3.5-128B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1-2/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1-2/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2-2/">Mistral-7B-Instruct-v0.2 (2023)</a></div></div>
   </div>
 </div>
 <footer>

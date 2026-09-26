@@ -194,6 +194,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -285,259 +315,259 @@ footer a { color: var(--brass-dim); }
     </thead>
     <tbody id="listBody">
       
-    <tr class="list-row" data-year="2025" data-search="minicpm5-2b openbmb  llm openbmb's compact open llm line, aimed at strong performance-per-parameter at small scale. llm">
+    <tr class="list-row" data-year="2025" data-search="minicpm5-2b openbmb apache-2.0 llm openbmb's compact open llm line, aimed at strong performance-per-parameter at small scale. llm">
       <td><a class="name-link" href="minicpm5-2b/">MiniCPM5-2B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">OpenBMB</td>
       <td class="col-cutoff">2025-06-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="smollm2-135m-instruct hugging face  llm instruction-tuned variant of hugging face's smollm2 135m. llm">
+    <tr class="list-row" data-year="2024" data-search="smollm2-135m-instruct hugging face apache-2.0 llm instruction-tuned variant of hugging face's smollm2 135m. llm">
       <td><a class="name-link" href="smollm2-135m-instruct/">SmolLM2-135M-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Hugging Face</td>
       <td class="col-cutoff">2024-10-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="openelm-1_1b-instruct apple  llm instruction-tuned variant of apple's openelm 1.1b, complementing the base checkpoint already in this registry. llm">
+    <tr class="list-row" data-year="2024" data-search="openelm-1_1b-instruct apple apple-amlr llm instruction-tuned variant of apple's openelm 1.1b, complementing the base checkpoint already in this registry. llm">
       <td><a class="name-link" href="openelm-1-1b-instruct/">OpenELM-1_1B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Apple</td>
       <td class="col-cutoff">2024-04-24</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-14b alibaba  llm 14b checkpoint from alibaba's qwen3 generation. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-14b alibaba apache-2.0 llm 14b checkpoint from alibaba's qwen3 generation. llm">
       <td><a class="name-link" href="qwen3-14b/">Qwen3-14B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-04-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-0.5b alibaba  llm base (non-instruct) smallest qwen2.5 checkpoint. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-0.5b alibaba apache-2.0 llm base (non-instruct) smallest qwen2.5 checkpoint. llm">
       <td><a class="name-link" href="qwen2-5-0-5b/">Qwen2.5-0.5B</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2024-09-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-1.7b-base alibaba  llm non-instruction-tuned base checkpoint of qwen3 1.7b. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-1.7b-base alibaba apache-2.0 llm non-instruction-tuned base checkpoint of qwen3 1.7b. llm">
       <td><a class="name-link" href="qwen3-1-7b-base/">Qwen3-1.7B-Base</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-04-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-4b-base alibaba  llm non-instruction-tuned base checkpoint of qwen3 4b. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-4b-base alibaba apache-2.0 llm non-instruction-tuned base checkpoint of qwen3 4b. llm">
       <td><a class="name-link" href="qwen3-4b-base/">Qwen3-4B-Base</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-04-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2019" data-search="distilgpt2 hugging face  llm knowledge-distilled compression of gpt-2, an early landmark efficient-model distillation alongside distilbert. llm">
+    <tr class="list-row" data-year="2019" data-search="distilgpt2 hugging face apache-2.0 llm knowledge-distilled compression of gpt-2, an early landmark efficient-model distillation alongside distilbert. llm">
       <td><a class="name-link" href="distilgpt2/">distilgpt2</a><span class="year-tag"> (2019)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Hugging Face</td>
       <td class="col-cutoff">2019-08-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="smollm2-135m hugging face  llm hugging face's compact efficient-training-focused small llm line. llm">
+    <tr class="list-row" data-year="2024" data-search="smollm2-135m hugging face apache-2.0 llm hugging face's compact efficient-training-focused small llm line. llm">
       <td><a class="name-link" href="smollm2-135m/">SmolLM2-135M</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Hugging Face</td>
       <td class="col-cutoff">2024-10-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-14b-instruct alibaba  llm 14b instruction-tuned qwen2.5 checkpoint. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-14b-instruct alibaba apache-2.0 llm 14b instruction-tuned qwen2.5 checkpoint. llm">
       <td><a class="name-link" href="qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2024-09-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3-nano-4b-bf16 nvidia  llm nvidia's compact nemotron 3 generation model. llm">
+    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3-nano-4b-bf16 nvidia other llm nvidia's compact nemotron 3 generation model. llm">
       <td><a class="name-link" href="nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">NVIDIA</td>
       <td class="col-cutoff">2026-01-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-4b-instruct-2507 alibaba  llm dated mid-generation refresh of the qwen3 4b instruct checkpoint. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-4b-instruct-2507 alibaba apache-2.0 llm dated mid-generation refresh of the qwen3 4b instruct checkpoint. llm">
       <td><a class="name-link" href="qwen3-4b-instruct-2507/">Qwen3-4B-Instruct-2507</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-07-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-1.5b-instruct alibaba  llm 1.5b instruction-tuned qwen2.5 checkpoint. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-1.5b-instruct alibaba apache-2.0 llm 1.5b instruction-tuned qwen2.5 checkpoint. llm">
       <td><a class="name-link" href="qwen2-5-1-5b-instruct/">Qwen2.5-1.5B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2024-09-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-0.5b-instruct alibaba  llm smallest instruction-tuned qwen2.5 size, widely used as a lightweight default in downstream tooling. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-0.5b-instruct alibaba apache-2.0 llm smallest instruction-tuned qwen2.5 size, widely used as a lightweight default in downstream tooling. llm">
       <td><a class="name-link" href="qwen2-5-0-5b-instruct/">Qwen2.5-0.5B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2024-09-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2022" data-search="opt-125m meta  llm smallest size in meta's opt family, an attempt to openly reproduce gpt-3-class capability with detailed training logs. llm">
+    <tr class="list-row" data-year="2022" data-search="opt-125m meta other llm smallest size in meta's opt family, an attempt to openly reproduce gpt-3-class capability with detailed training logs. llm">
       <td><a class="name-link" href="opt-125m/">opt-125m</a><span class="year-tag"> (2022)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meta</td>
       <td class="col-cutoff">2022-05-03</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-7b-instruct alibaba  llm instruction-tuned qwen2.5 7b, one of the most-downloaded open llm checkpoints on hugging face. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-7b-instruct alibaba apache-2.0 llm instruction-tuned qwen2.5 7b, one of the most-downloaded open llm checkpoints on hugging face. llm">
       <td><a class="name-link" href="qwen2-5-7b-instruct/">Qwen2.5-7B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2024-09-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="tinyllama-1.1b-chat-v1.0 community (tinyllama project)  llm community project training a compact 1.1b llama-architecture model on 3 trillion tokens, notable for demonstrating small-model viability with heavy overtraining. llm">
+    <tr class="list-row" data-year="2024" data-search="tinyllama-1.1b-chat-v1.0 community (tinyllama project) apache-2.0 llm community project training a compact 1.1b llama-architecture model on 3 trillion tokens, notable for demonstrating small-model viability with heavy overtraining. llm">
       <td><a class="name-link" href="tinyllama-1-1b-chat-v1-0/">TinyLlama-1.1B-Chat-v1.0</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">community (TinyLlama project)</td>
       <td class="col-cutoff">2024-01-04</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="zephyr-7b-beta hugging face h4  llm hugging face's dpo-aligned fine-tune of mistral 7b, an early influential open alignment-recipe demonstration. llm">
+    <tr class="list-row" data-year="2023" data-search="zephyr-7b-beta hugging face h4 mit llm hugging face's dpo-aligned fine-tune of mistral 7b, an early influential open alignment-recipe demonstration. llm">
       <td><a class="name-link" href="zephyr-7b-beta/">zephyr-7b-beta</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Hugging Face H4</td>
       <td class="col-cutoff">2023-10-25</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="bitnet-b1.58-2b-4t microsoft  llm microsoft's ternary (1.58-bit) weight-quantized llm, a genuinely different weight representation rather than merely a smaller model. llm">
+    <tr class="list-row" data-year="2025" data-search="bitnet-b1.58-2b-4t microsoft mit llm microsoft's ternary (1.58-bit) weight-quantized llm, a genuinely different weight representation rather than merely a smaller model. llm">
       <td><a class="name-link" href="bitnet-b1-58-2b-4t/">bitnet-b1.58-2B-4T</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2025-04-16</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="mistral-7b-instruct-v0.1 mistral ai  llm original instruction-tuned mistral 7b release. llm">
+    <tr class="list-row" data-year="2023" data-search="mistral-7b-instruct-v0.1 mistral ai apache-2.0 llm original instruction-tuned mistral 7b release. llm">
       <td><a class="name-link" href="mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Mistral AI</td>
       <td class="col-cutoff">2023-09-27</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="mistral-7b-instruct-v0.2 mistral ai  llm instruction-tuned mistral 7b, version 0.2, released fully permissively. llm">
+    <tr class="list-row" data-year="2023" data-search="mistral-7b-instruct-v0.2 mistral ai apache-2.0 llm instruction-tuned mistral 7b, version 0.2, released fully permissively. llm">
       <td><a class="name-link" href="mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Mistral AI</td>
       <td class="col-cutoff">2023-12-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="phi-3-mini-4k-instruct microsoft  llm phi-3 mini variant with the standard 4k-token context window. llm">
+    <tr class="list-row" data-year="2024" data-search="phi-3-mini-4k-instruct microsoft mit llm phi-3 mini variant with the standard 4k-token context window. llm">
       <td><a class="name-link" href="phi-3-mini-4k-instruct/">Phi-3-mini-4k-instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2024-04-23</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="phi-3-mini-128k-instruct microsoft  llm phi-3 mini variant with an extended 128k-token context window. llm">
+    <tr class="list-row" data-year="2024" data-search="phi-3-mini-128k-instruct microsoft mit llm phi-3 mini variant with an extended 128k-token context window. llm">
       <td><a class="name-link" href="phi-3-mini-128k-instruct/">Phi-3-mini-128k-instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2024-04-23</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="phi-4 microsoft  llm later phi generation, continuing the small-model-via-data-quality approach. llm">
+    <tr class="list-row" data-year="2024" data-search="phi-4 microsoft mit llm later phi generation, continuing the small-model-via-data-quality approach. llm">
       <td><a class="name-link" href="phi-4/">phi-4</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2024-12-12</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="phi-2 microsoft  llm microsoft's small llm trained on curated/synthetic high-quality data to outperform its parameter count on standard benchmarks. llm">
+    <tr class="list-row" data-year="2023" data-search="phi-2 microsoft mit llm microsoft's small llm trained on curated/synthetic high-quality data to outperform its parameter count on standard benchmarks. llm">
       <td><a class="name-link" href="phi-2/">phi-2</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2023-12-13</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-0.6b alibaba  llm smallest qwen3 size, notable for extremely high download volume as a lightweight default. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-0.6b alibaba apache-2.0 llm smallest qwen3 size, notable for extremely high download volume as a lightweight default. llm">
       <td><a class="name-link" href="qwen3-0-6b/">Qwen3-0.6B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-04-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-8b alibaba  llm alibaba's qwen3 generation, 8b size. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-8b alibaba apache-2.0 llm alibaba's qwen3 generation, 8b size. llm">
       <td><a class="name-link" href="qwen3-8b/">Qwen3-8B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-04-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="deepseek-r1 deepseek  llm deepseek's reasoning model that demonstrated strong performance at a fraction of prior assumed training cost, triggering significant real-world market reaction in january 2025. llm">
+    <tr class="list-row" data-year="2025" data-search="deepseek-r1 deepseek mit llm deepseek's reasoning model that demonstrated strong performance at a fraction of prior assumed training cost, triggering significant real-world market reaction in january 2025. llm">
       <td><a class="name-link" href="deepseek-r1/">DeepSeek-R1</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
       <td class="col-cutoff">2025-01-20</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwq-32b alibaba (qwen team)  llm alibaba's explicit chain-of-thought reasoning model, part of the same post-o1 research wave as deepseek-r1. llm">
+    <tr class="list-row" data-year="2025" data-search="qwq-32b alibaba (qwen team) apache-2.0 llm alibaba's explicit chain-of-thought reasoning model, part of the same post-o1 research wave as deepseek-r1. llm">
       <td><a class="name-link" href="qwq-32b/">QwQ-32B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba (Qwen team)</td>
       <td class="col-cutoff">2025-03-06</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="openelm-1_1b apple  llm apple's first major open-weight llm release, under apple's own sample-code license rather than a standard permissive one. llm">
+    <tr class="list-row" data-year="2024" data-search="openelm-1_1b apple apple-amlr llm apple's first major open-weight llm release, under apple's own sample-code license rather than a standard permissive one. llm">
       <td><a class="name-link" href="openelm-1-1b/">OpenELM-1_1B</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Apple</td>
       <td class="col-cutoff">2024-04-24</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="jamba-v0.1 ai21 labs  llm ai21 labs' hybrid transformer-mamba architecture, combining attention layers with more compute-efficient state-space blocks. llm">
+    <tr class="list-row" data-year="2024" data-search="jamba-v0.1 ai21 labs apache-2.0 llm ai21 labs' hybrid transformer-mamba architecture, combining attention layers with more compute-efficient state-space blocks. llm">
       <td><a class="name-link" href="jamba-v0-1/">Jamba-v0.1</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">AI21 Labs</td>
       <td class="col-cutoff">2024-03-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="gpt-oss-20b openai  llm openai's first-ever open-weight model release, under apache 2.0 -- a genuine historical first for a lab that had otherwise kept every model closed/api-only since gpt-2. llm">
+    <tr class="list-row" data-year="2025" data-search="gpt-oss-20b openai apache-2.0 llm openai's first-ever open-weight model release, under apache 2.0 -- a genuine historical first for a lab that had otherwise kept every model closed/api-only since gpt-2. llm">
       <td><a class="name-link" href="gpt-oss-20b/">GPT-OSS-20b</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">OpenAI</td>
       <td class="col-cutoff">2025-08-05</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="internlm2-7b shanghai ai lab  llm shanghai ai lab's open llm series. llm">
+    <tr class="list-row" data-year="2024" data-search="internlm2-7b shanghai ai lab other llm shanghai ai lab's open llm series. llm">
       <td><a class="name-link" href="internlm2-7b/">InternLM2-7b</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Shanghai AI Lab</td>
       <td class="col-cutoff">2024-01-17</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="baichuan2-7b-base baichuan inc.  llm baichuan inc.'s open llm series. llm">
+    <tr class="list-row" data-year="2023" data-search="baichuan2-7b-base baichuan inc. other llm baichuan inc.'s open llm series. llm">
       <td><a class="name-link" href="baichuan2-7b-base/">Baichuan2-7B-Base</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Baichuan Inc.</td>
       <td class="col-cutoff">2023-09-06</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="yi-6b 01.ai  llm 01.ai's open llm series. llm">
+    <tr class="list-row" data-year="2023" data-search="yi-6b 01.ai apache-2.0 llm 01.ai's open llm series. llm">
       <td><a class="name-link" href="yi-6b/">Yi-6B</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">01.AI</td>
       <td class="col-cutoff">2023-11-02</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="deepseek-r1-distill-qwen-1.5b deepseek  llm deepseek's llm series; r1 (2025) demonstrated strong reasoning performance at a fraction of prior assumed training cost, triggering significant real-world market reaction. this distilled variant compresses r1's reasoning into a small qwen backbone. llm">
+    <tr class="list-row" data-year="2025" data-search="deepseek-r1-distill-qwen-1.5b deepseek mit llm deepseek's llm series; r1 (2025) demonstrated strong reasoning performance at a fraction of prior assumed training cost, triggering significant real-world market reaction. this distilled variant compresses r1's reasoning into a small qwen backbone. llm">
       <td><a class="name-link" href="deepseek-r1-distill-qwen-1-5b/">DeepSeek-R1-Distill-Qwen-1.5B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
       <td class="col-cutoff">2025-01-20</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-7b alibaba  llm alibaba's fast-iterating open llm series spanning 0.5b-72b parameters, many releases under apache 2.0. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-7b alibaba apache-2.0 llm alibaba's fast-iterating open llm series spanning 0.5b-72b parameters, many releases under apache 2.0. llm">
       <td><a class="name-link" href="qwen2-5-7b/">Qwen2.5-7B</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
@@ -551,119 +581,119 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2023-10-27</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="vicuna-7b-v1.5 lmsys  llm lmsys's instruction-tuned llama fine-tune using shared chatgpt conversation logs, an early demonstration of cheap fine-tuning approaching much larger closed models. llm">
+    <tr class="list-row" data-year="2023" data-search="vicuna-7b-v1.5 lmsys llama2 llm lmsys's instruction-tuned llama fine-tune using shared chatgpt conversation logs, an early demonstration of cheap fine-tuning approaching much larger closed models. llm">
       <td><a class="name-link" href="vicuna-7b-v1-5/">Vicuna-7b-v1.5</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">LMSYS</td>
       <td class="col-cutoff">2023-08-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="stablelm-3b stability ai  llm stability ai's early entrant in the open-llm race. llm">
+    <tr class="list-row" data-year="2023" data-search="stablelm-3b stability ai cc-by-sa-4.0 llm stability ai's early entrant in the open-llm race. llm">
       <td><a class="name-link" href="stablelm-3b/">StableLM-3B</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Stability AI</td>
       <td class="col-cutoff">2023-09-29</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="falcon-7b tii  llm tii's open llm family, later versions released under apache 2.0 after an initially more restrictive license. llm">
+    <tr class="list-row" data-year="2023" data-search="falcon-7b tii apache-2.0 llm tii's open llm family, later versions released under apache 2.0 after an initially more restrictive license. llm">
       <td><a class="name-link" href="falcon-7b/">Falcon-7b</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">TII</td>
       <td class="col-cutoff">2023-05-25</td>
     </tr>
 
-    <tr class="list-row" data-year="2022" data-search="bloom-560m bigscience  llm bigscience's multilingual (46-language) open llm, the result of a large international open research collaboration, released under the usage-restricted rail license. llm">
+    <tr class="list-row" data-year="2022" data-search="bloom-560m bigscience bigscience-bloom-rail-1.0 llm bigscience's multilingual (46-language) open llm, the result of a large international open research collaboration, released under the usage-restricted rail license. llm">
       <td><a class="name-link" href="bloom-560m/">BLOOM-560m</a><span class="year-tag"> (2022)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">BigScience</td>
       <td class="col-cutoff">2022-07-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2021" data-search="gpt-j-6b eleutherai  llm eleutherai's open reproduction of gpt-3-class autoregressive transformers, released while gpt-3 itself remained closed/api-only. llm">
+    <tr class="list-row" data-year="2021" data-search="gpt-j-6b eleutherai apache-2.0 llm eleutherai's open reproduction of gpt-3-class autoregressive transformers, released while gpt-3 itself remained closed/api-only. llm">
       <td><a class="name-link" href="gpt-j-6b/">GPT-J-6B</a><span class="year-tag"> (2021)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">EleutherAI</td>
       <td class="col-cutoff">2021-06-04</td>
     </tr>
 
-    <tr class="list-row" data-year="2022" data-search="opt-1.3b meta  llm meta's attempt to openly reproduce gpt-3-class capability, released with detailed training logs under a noncommercial research license. llm">
+    <tr class="list-row" data-year="2022" data-search="opt-1.3b meta other llm meta's attempt to openly reproduce gpt-3-class capability, released with detailed training logs under a noncommercial research license. llm">
       <td><a class="name-link" href="opt-1-3b/">OPT-1.3b</a><span class="year-tag"> (2022)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meta</td>
       <td class="col-cutoff">2022-05-03</td>
     </tr>
 
-    <tr class="list-row" data-year="2018" data-search="gpt-1 openai  llm openai's original generative pretrained transformer, first in the gpt line, released relatively openly compared to its successor's staged rollout. llm">
+    <tr class="list-row" data-year="2018" data-search="gpt-1 openai mit llm openai's original generative pretrained transformer, first in the gpt line, released relatively openly compared to its successor's staged rollout. llm">
       <td><a class="name-link" href="gpt-1/">GPT-1</a><span class="year-tag"> (2018)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">OpenAI</td>
       <td class="col-cutoff">2018-06-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="mistral-7b-v0.1 mistral ai  llm a 7.3b-parameter dense transformer using grouped-query and sliding-window attention for faster inference at long context, matching or exceeding llama 2 13b's benchmarks despite being roughly half the size -- released fully permissively under apache 2.0 with no usage restrictions, becoming a default base model for open-source fine-tuning. llm">
+    <tr class="list-row" data-year="2023" data-search="mistral-7b-v0.1 mistral ai apache-2.0 llm a 7.3b-parameter dense transformer using grouped-query and sliding-window attention for faster inference at long context, matching or exceeding llama 2 13b's benchmarks despite being roughly half the size -- released fully permissively under apache 2.0 with no usage restrictions, becoming a default base model for open-source fine-tuning. llm">
       <td><a class="name-link" href="mistral-7b-v0-1/">Mistral-7B-v0.1</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Mistral AI</td>
       <td class="col-cutoff">2023-09-27</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="phi-1.5 microsoft  llm microsoft's 1.3b-parameter small language model trained almost entirely on curated 'textbook-quality' synthetic data (gpt-3.5-generated explanations and stories) rather than raw web-scale text, demonstrating that data quality can substitute for scale -- matches or beats models several times its size on common-sense and language-understanding benchmarks. llm">
+    <tr class="list-row" data-year="2023" data-search="phi-1.5 microsoft mit llm microsoft's 1.3b-parameter small language model trained almost entirely on curated 'textbook-quality' synthetic data (gpt-3.5-generated explanations and stories) rather than raw web-scale text, demonstrating that data quality can substitute for scale -- matches or beats models several times its size on common-sense and language-understanding benchmarks. llm">
       <td><a class="name-link" href="phi-1-5/">Phi-1.5</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2023-09-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2021" data-search="gpt-neo-125m eleutherai  llm eleutherai's open reproduction of gpt-3-class autoregressive transformers (125m, smallest of the gpt-neo family which scales to 2.7b), trained on the 825gb pile dataset and released while gpt-3 itself remained closed/api-only -- an early, direct open answer to openai's non-release. llm">
+    <tr class="list-row" data-year="2021" data-search="gpt-neo-125m eleutherai mit llm eleutherai's open reproduction of gpt-3-class autoregressive transformers (125m, smallest of the gpt-neo family which scales to 2.7b), trained on the 825gb pile dataset and released while gpt-3 itself remained closed/api-only -- an early, direct open answer to openai's non-release. llm">
       <td><a class="name-link" href="gpt-neo-125m/">GPT-Neo-125M</a><span class="year-tag"> (2021)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">EleutherAI</td>
       <td class="col-cutoff">2021-03-21</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="pythia-160m eleutherai  llm 160m-parameter member of eleutherai's pythia suite -- 8 model sizes from 70m to 12b, each trained on the identical pile dataset in the identical order, with 154 intermediate checkpoints saved per model -- built as a controlled experiment platform for interpretability and training-dynamics research. llm">
+    <tr class="list-row" data-year="2023" data-search="pythia-160m eleutherai apache-2.0 llm 160m-parameter member of eleutherai's pythia suite -- 8 model sizes from 70m to 12b, each trained on the identical pile dataset in the identical order, with 154 intermediate checkpoints saved per model -- built as a controlled experiment platform for interpretability and training-dynamics research. llm">
       <td><a class="name-link" href="pythia-160m/">Pythia-160M</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">EleutherAI</td>
       <td class="col-cutoff">2023-02-13</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="pythia-70m eleutherai  llm smallest member of eleutherai's pythia suite -- 8 model sizes from 70m to 12b, each trained on the identical pile dataset in the identical order, with 154 intermediate checkpoints saved per model -- built as a controlled experiment platform for interpretability and training-dynamics research rather than for raw capability. llm">
+    <tr class="list-row" data-year="2023" data-search="pythia-70m eleutherai apache-2.0 llm smallest member of eleutherai's pythia suite -- 8 model sizes from 70m to 12b, each trained on the identical pile dataset in the identical order, with 154 intermediate checkpoints saved per model -- built as a controlled experiment platform for interpretability and training-dynamics research rather than for raw capability. llm">
       <td><a class="name-link" href="pythia-70m/">Pythia-70M</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">EleutherAI</td>
       <td class="col-cutoff">2023-02-13</td>
     </tr>
 
-    <tr class="list-row" data-year="2019" data-search="bart-base meta  llm denoising sequence-to-sequence pretraining: corrupts text via token masking, deletion, infilling, sentence permutation, and document rotation, then reconstructs the original -- combining bert's bidirectional encoder with gpt's autoregressive decoder. particularly influential for abstractive summarization (cnn/dailymail, xsum). llm">
+    <tr class="list-row" data-year="2019" data-search="bart-base meta apache-2.0 llm denoising sequence-to-sequence pretraining: corrupts text via token masking, deletion, infilling, sentence permutation, and document rotation, then reconstructs the original -- combining bert's bidirectional encoder with gpt's autoregressive decoder. particularly influential for abstractive summarization (cnn/dailymail, xsum). llm">
       <td><a class="name-link" href="bart-base/">BART-base</a><span class="year-tag"> (2019)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meta</td>
       <td class="col-cutoff">2019-10-29</td>
     </tr>
 
-    <tr class="list-row" data-year="2019" data-search="roberta-base meta  llm re-tuned bert pretraining recipe -- 10x more training data (160gb vs bert's 16gb), larger batches, longer training, dropped the next-sentence-prediction objective, dynamic masking -- at the same 125m parameter count, demonstrating bert had been substantially undertrained and pushing glue/squad state-of-the-art at release. llm">
+    <tr class="list-row" data-year="2019" data-search="roberta-base meta mit llm re-tuned bert pretraining recipe -- 10x more training data (160gb vs bert's 16gb), larger batches, longer training, dropped the next-sentence-prediction objective, dynamic masking -- at the same 125m parameter count, demonstrating bert had been substantially undertrained and pushing glue/squad state-of-the-art at release. llm">
       <td><a class="name-link" href="roberta-base/">RoBERTa-base</a><span class="year-tag"> (2019)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meta</td>
       <td class="col-cutoff">2019-07-26</td>
     </tr>
 
-    <tr class="list-row" data-year="2019" data-search="distilbert-base-uncased hugging face  llm knowledge-distilled compression of bert (66m params vs bert-base's 110m, ~40% smaller, ~60% faster at inference) retaining ~97% of its glue benchmark performance via a triple loss combining distillation, masked-language-modeling, and cosine-embedding objectives -- an early landmark for practical model distillation. llm">
+    <tr class="list-row" data-year="2019" data-search="distilbert-base-uncased hugging face apache-2.0 llm knowledge-distilled compression of bert (66m params vs bert-base's 110m, ~40% smaller, ~60% faster at inference) retaining ~97% of its glue benchmark performance via a triple loss combining distillation, masked-language-modeling, and cosine-embedding objectives -- an early landmark for practical model distillation. llm">
       <td><a class="name-link" href="distilbert-base-uncased/">DistilBERT-base-uncased</a><span class="year-tag"> (2019)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Hugging Face</td>
       <td class="col-cutoff">2019-10-02</td>
     </tr>
 
-    <tr class="list-row" data-year="2019" data-search="xlnet-base-cased google/cmu  llm permutation-based autoregressive pretraining that factorizes the joint probability over random permutations of the input sequence, capturing bidirectional context without bert's artificial [mask] token. outperformed bert on 20 nlp tasks at publication, including squad, glue, and race. llm">
+    <tr class="list-row" data-year="2019" data-search="xlnet-base-cased google/cmu mit llm permutation-based autoregressive pretraining that factorizes the joint probability over random permutations of the input sequence, capturing bidirectional context without bert's artificial [mask] token. outperformed bert on 20 nlp tasks at publication, including squad, glue, and race. llm">
       <td><a class="name-link" href="xlnet-base-cased/">XLNet-base-cased</a><span class="year-tag"> (2019)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Google/CMU</td>
       <td class="col-cutoff">2019-06-19</td>
     </tr>
 
-    <tr class="list-row" data-year="2019" data-search="t5-small google  llm casts every nlp task -- translation, summarization, classification, question-answering -- as text-to-text generation via one encoder-decoder architecture. the 'small' checkpoint is 60m parameters, the smallest of five sizes released up to 11b, all sharing the same c4 (colossal clean crawled corpus) pretraining recipe. llm">
+    <tr class="list-row" data-year="2019" data-search="t5-small google apache-2.0 llm casts every nlp task -- translation, summarization, classification, question-answering -- as text-to-text generation via one encoder-decoder architecture. the 'small' checkpoint is 60m parameters, the smallest of five sizes released up to 11b, all sharing the same c4 (colossal clean crawled corpus) pretraining recipe. llm">
       <td><a class="name-link" href="t5-small/">T5-small</a><span class="year-tag"> (2019)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Google</td>
@@ -817,7 +847,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2023-08-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="chatglm3-6b tsinghua/zhipu verify llm tsinghua/zhipu's early open bilingual (chinese/english) llm series. llm">
+    <tr class="list-row" data-year="2023" data-search="chatglm3-6b tsinghua/zhipu  llm tsinghua/zhipu's early open bilingual (chinese/english) llm series. llm">
       <td><a class="name-link" href="chatglm3-6b-2/">ChatGLM3-6b</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tsinghua/Zhipu</td>
@@ -845,7 +875,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2023-11-02</td>
     </tr>
 
-    <tr class="list-row" data-year="2023" data-search="baichuan2-7b-base baichuan inc. verify llm baichuan inc.'s open llm series. llm">
+    <tr class="list-row" data-year="2023" data-search="baichuan2-7b-base baichuan inc. other llm baichuan inc.'s open llm series. llm">
       <td><a class="name-link" href="baichuan2-7b-base-2/">Baichuan2-7B-Base</a><span class="year-tag"> (2023)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Baichuan Inc.</td>
@@ -971,7 +1001,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2024-01-04</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="minicpm5-2b openbmb verify llm openbmb's compact open llm line, aimed at strong performance-per-parameter at small scale. llm">
+    <tr class="list-row" data-year="2025" data-search="minicpm5-2b openbmb apache-2.0 llm openbmb's compact open llm line, aimed at strong performance-per-parameter at small scale. llm">
       <td><a class="name-link" href="minicpm5-2b-2/">MiniCPM5-2B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">OpenBMB</td>
@@ -1125,28 +1155,28 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2026-08-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="minimax-m2 minimax ai verify llm minimax ai's m2 generation open llm. llm">
+    <tr class="list-row" data-year="2025" data-search="minimax-m2 minimax ai other llm minimax ai's m2 generation open llm. llm">
       <td><a class="name-link" href="minimax-m2/">MiniMax-M2</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">MiniMax AI</td>
       <td class="col-cutoff">2025-10-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="minimax-m2.1 minimax ai verify llm m2.x lineage checkpoint. llm">
+    <tr class="list-row" data-year="2025" data-search="minimax-m2.1 minimax ai other llm m2.x lineage checkpoint. llm">
       <td><a class="name-link" href="minimax-m2-1/">MiniMax-M2.1</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">MiniMax AI</td>
       <td class="col-cutoff">2025-11-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="minimax-m2.5 minimax ai verify llm m2.x lineage checkpoint. llm">
+    <tr class="list-row" data-year="2026" data-search="minimax-m2.5 minimax ai other llm m2.x lineage checkpoint. llm">
       <td><a class="name-link" href="minimax-m2-5/">MiniMax-M2.5</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">MiniMax AI</td>
       <td class="col-cutoff">2026-02-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="minimax-m2.7 minimax ai verify llm m2.x lineage checkpoint, latest in this dense release sequence at time of queueing. llm">
+    <tr class="list-row" data-year="2026" data-search="minimax-m2.7 minimax ai other llm m2.x lineage checkpoint, latest in this dense release sequence at time of queueing. llm">
       <td><a class="name-link" href="minimax-m2-7/">MiniMax-M2.7</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">MiniMax AI</td>
@@ -1188,112 +1218,112 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2026-06-13</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="granite-4.2-8b ibm verify llm granite 4.2 8b is a dense reasoning model from ibm, released august 25, 2026, part of a 3b/8b/30b family. it supports native think/non-think/low-effort modes, tool calling, and a 128k context window (extendable to 512k), tuned for math, code generation, multilingual dialogue, and agentic workflows. llm">
+    <tr class="list-row" data-year="2026" data-search="granite-4.2-8b ibm apache-2.0 llm granite 4.2 8b is a dense reasoning model from ibm, released august 25, 2026, part of a 3b/8b/30b family. it supports native think/non-think/low-effort modes, tool calling, and a 128k context window (extendable to 512k), tuned for math, code generation, multilingual dialogue, and agentic workflows. llm">
       <td><a class="name-link" href="granite-4-2-8b/">granite-4.2-8b</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">IBM</td>
       <td class="col-cutoff">2026-08-25</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy4-preview tencent verify llm tencent hy4 preview is a mixture-of-experts model from tencent's hunyuan team, released august 28, 2026, with 49b active parameters out of 770b total and a context window over 1m tokens under apache 2.0. it roughly doubles hy3's parameter count and is notable as the first hunyuan model tencent says participated in optimizing its own training and inference infrastructure; positioned for coding, office productivity, and scientific-research agents rather than general chat. llm">
+    <tr class="list-row" data-year="2026" data-search="hy4-preview tencent apache-2.0 llm tencent hy4 preview is a mixture-of-experts model from tencent's hunyuan team, released august 28, 2026, with 49b active parameters out of 770b total and a context window over 1m tokens under apache 2.0. it roughly doubles hy3's parameter count and is notable as the first hunyuan model tencent says participated in optimizing its own training and inference infrastructure; positioned for coding, office productivity, and scientific-research agents rather than general chat. llm">
       <td><a class="name-link" href="hy4-preview/">Hy4-preview</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
       <td class="col-cutoff">2026-08-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy-mt2-1.8b tencent verify llm hy-mt2-1.8b is a compact 1.8b-parameter translation model from tencent's hunyuan team, open-sourced may 21, 2026 alongside 7b and 30b-a3b siblings. it supports translation across 33 languages plus chinese dialect/minority-language pairs, can be quantized to as little as 440mb, and is reported to outperform several mainstream commercial translation apis despite its size. llm">
+    <tr class="list-row" data-year="2026" data-search="hy-mt2-1.8b tencent apache-2.0 llm hy-mt2-1.8b is a compact 1.8b-parameter translation model from tencent's hunyuan team, open-sourced may 21, 2026 alongside 7b and 30b-a3b siblings. it supports translation across 33 languages plus chinese dialect/minority-language pairs, can be quantized to as little as 440mb, and is reported to outperform several mainstream commercial translation apis despite its size. llm">
       <td><a class="name-link" href="hy-mt2-1-8b/">Hy-MT2-1.8B</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
       <td class="col-cutoff">2026-05-21</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy-mt2-7b tencent verify llm hy-mt2-7b is a 7b-parameter translation model from tencent. it supports 33 language pairs and five chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation. llm">
+    <tr class="list-row" data-year="2026" data-search="hy-mt2-7b tencent apache-2.0 llm hy-mt2-7b is a 7b-parameter translation model from tencent. it supports 33 language pairs and five chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation. llm">
       <td><a class="name-link" href="hy-mt2-7b/">Hy-MT2-7B</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
       <td class="col-cutoff">2026-05-21</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="deepseek-v4-pro-0813 deepseek verify llm deepseek v4 pro 0813 is a large-scale mixture-of-experts model from deepseek. this is the ga release of deepseek v4 pro. llm">
+    <tr class="list-row" data-year="2026" data-search="deepseek-v4-pro-0813 deepseek mit llm deepseek v4 pro 0813 is a large-scale mixture-of-experts model from deepseek. this is the ga release of deepseek v4 pro. llm">
       <td><a class="name-link" href="deepseek-v4-pro-0813/">DeepSeek-V4-Pro-0813</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
       <td class="col-cutoff">2026-08-12</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="lfm2.5-2.6b liquid ai verify llm lfm2.5-2.6b is a 2.69b-parameter on-device agentic model from liquid ai, shipped august 4, 2026. it targets phones, laptops, and other consumer hardware for planning, tool-calling, and multi-step agent workflows within a 131k-token context, running entirely locally with no cloud dependency; liquid does not recommend it for agentic coding or long-document rag use cases requiring larger models. llm">
+    <tr class="list-row" data-year="2026" data-search="lfm2.5-2.6b liquid ai other llm lfm2.5-2.6b is a 2.69b-parameter on-device agentic model from liquid ai, shipped august 4, 2026. it targets phones, laptops, and other consumer hardware for planning, tool-calling, and multi-step agent workflows within a 131k-token context, running entirely locally with no cloud dependency; liquid does not recommend it for agentic coding or long-document rag use cases requiring larger models. llm">
       <td><a class="name-link" href="lfm2-5-2-6b/">LFM2.5-2.6B</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Liquid AI</td>
       <td class="col-cutoff">2026-08-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="laguna-xs-2.1 poolside verify llm laguna xs 2.1 is the latest coding agent model in the 33b-a3b category from [poolside](https://poolside.ai/) and a step forward from their laguna xs.2 model (released in april 2026). it combines... llm">
+    <tr class="list-row" data-year="2026" data-search="laguna-xs-2.1 poolside openmdw-1.1 llm laguna xs 2.1 is the latest coding agent model in the 33b-a3b category from [poolside](https://poolside.ai/) and a step forward from their laguna xs.2 model (released in april 2026). it combines... llm">
       <td><a class="name-link" href="laguna-xs-2-1/">Laguna-XS-2.1</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Poolside</td>
       <td class="col-cutoff">2026-07-02</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy3-preview tencent verify llm hy3 preview is a high-efficiency mixture-of-experts model from tencent designed for agentic workflows and production use. it supports configurable reasoning levels across disabled, low, and high modes, allowing it to... llm">
+    <tr class="list-row" data-year="2026" data-search="hy3-preview tencent other llm hy3 preview is a high-efficiency mixture-of-experts model from tencent designed for agentic workflows and production use. it supports configurable reasoning levels across disabled, low, and high modes, allowing it to... llm">
       <td><a class="name-link" href="hy3-preview/">Hy3-preview</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
       <td class="col-cutoff">2026-04-22</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="mimo-v2.5-pro xiaomi verify llm mimo-v2.5-pro is xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as claweval, gdpval, and swe-bench pro.... llm">
+    <tr class="list-row" data-year="2026" data-search="mimo-v2.5-pro xiaomi mit llm mimo-v2.5-pro is xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as claweval, gdpval, and swe-bench pro.... llm">
       <td><a class="name-link" href="mimo-v2-5-pro/">MiMo-V2.5-Pro</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Xiaomi</td>
       <td class="col-cutoff">2026-04-22</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="trinity-large-thinking arcee ai verify llm trinity large thinking is a powerful open source reasoning model from the team at arcee ai. it shows strong performance in pinchbench, agentic workloads, and reasoning tasks. launch video: https://youtu.be/gc82axla0rg?si=4rln6wbz33qt--b7... llm">
+    <tr class="list-row" data-year="2026" data-search="trinity-large-thinking arcee ai other llm trinity large thinking is a powerful open source reasoning model from the team at arcee ai. it shows strong performance in pinchbench, agentic workloads, and reasoning tasks. launch video: https://youtu.be/gc82axla0rg?si=4rln6wbz33qt--b7... llm">
       <td><a class="name-link" href="trinity-large-thinking/">Trinity-Large-Thinking</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Arcee AI</td>
       <td class="col-cutoff">2026-04-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="step-3.5-flash stepfun verify llm step 3.5 flash is stepfun's most capable open-source foundation model. built on a sparse mixture of experts (moe) architecture, it selectively activates only 11b of its 196b parameters per token.... llm">
+    <tr class="list-row" data-year="2026" data-search="step-3.5-flash stepfun apache-2.0 llm step 3.5 flash is stepfun's most capable open-source foundation model. built on a sparse mixture of experts (moe) architecture, it selectively activates only 11b of its 196b parameters per token.... llm">
       <td><a class="name-link" href="step-3-5-flash/">Step-3.5-Flash</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">StepFun</td>
       <td class="col-cutoff">2026-01-29</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="gpt-oss-safeguard-20b openai verify llm gpt-oss-safeguard-20b is a safety reasoning model from openai built upon gpt-oss-20b. this open-weight, 21b-parameter mixture-of-experts (moe) model offers lower latency for safety tasks like content classification, llm filtering, and trust... llm">
+    <tr class="list-row" data-year="2025" data-search="gpt-oss-safeguard-20b openai apache-2.0 llm gpt-oss-safeguard-20b is a safety reasoning model from openai built upon gpt-oss-20b. this open-weight, 21b-parameter mixture-of-experts (moe) model offers lower latency for safety tasks like content classification, llm filtering, and trust... llm">
       <td><a class="name-link" href="gpt-oss-safeguard-20b/">gpt-oss-safeguard-20b</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">OpenAI</td>
       <td class="col-cutoff">2025-10-29</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="granite-4.0-h-micro ibm verify llm granite-4.0-h-micro is a 3b parameter from the granite 4 family of models. these models are the latest in a series of models released by ibm. they are fine-tuned for long... llm">
+    <tr class="list-row" data-year="2025" data-search="granite-4.0-h-micro ibm apache-2.0 llm granite-4.0-h-micro is a 3b parameter from the granite 4 family of models. these models are the latest in a series of models released by ibm. they are fine-tuned for long... llm">
       <td><a class="name-link" href="granite-4-0-h-micro/">granite-4.0-h-micro</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">IBM</td>
       <td class="col-cutoff">2025-10-20</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="deepseek-v3.2-exp deepseek verify llm deepseek-v3.2-exp is an experimental large language model released by deepseek as an intermediate step between v3.1 and future architectures. it introduces deepseek sparse attention (dsa), a fine-grained sparse attention mechanism... llm">
+    <tr class="list-row" data-year="2025" data-search="deepseek-v3.2-exp deepseek mit llm deepseek-v3.2-exp is an experimental large language model released by deepseek as an intermediate step between v3.1 and future architectures. it introduces deepseek sparse attention (dsa), a fine-grained sparse attention mechanism... llm">
       <td><a class="name-link" href="deepseek-v3-2-exp/">DeepSeek-V3.2-Exp</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
       <td class="col-cutoff">2025-07-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="deepseek-v3.1-terminus deepseek verify llm deepseek-v3.1 terminus is an update to [deepseek v3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's... llm">
+    <tr class="list-row" data-year="2025" data-search="deepseek-v3.1-terminus deepseek mit llm deepseek-v3.1 terminus is an update to [deepseek v3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's... llm">
       <td><a class="name-link" href="deepseek-v3-1-terminus/">DeepSeek-V3.1-Terminus</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
       <td class="col-cutoff">2025-03-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="kimi-k2-instruct-0905 moonshot ai verify llm kimi k2 0905 is the september update of [kimi k2 0711](moonshotai/kimi-k2). it is a large-scale mixture-of-experts (moe) language model developed by moonshot ai, featuring 1 trillion total parameters with 32... llm">
+    <tr class="list-row" data-year="2024" data-search="kimi-k2-instruct-0905 moonshot ai other llm kimi k2 0905 is the september update of [kimi k2 0711](moonshotai/kimi-k2). it is a large-scale mixture-of-experts (moe) language model developed by moonshot ai, featuring 1 trillion total parameters with 32... llm">
       <td><a class="name-link" href="kimi-k2-instruct-0905/">Kimi-K2-Instruct-0905</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Moonshot AI</td>
@@ -1370,7 +1400,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2025-03-12</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="mistral-nemo-instruct-2407 mistral ai verify llm a 12b-parameter model with a 128k-token context length, built by mistral in collaboration with nvidia and released july 2024. the model is multilingual, supporting english, french, german, spanish, italian, portuguese, chinese, japanese, korean, arabic, and hindi, and uses mistral's tekken tokenizer for improved cross-language compression. llm">
+    <tr class="list-row" data-year="2024" data-search="mistral-nemo-instruct-2407 mistral ai apache-2.0 llm a 12b-parameter model with a 128k-token context length, built by mistral in collaboration with nvidia and released july 2024. the model is multilingual, supporting english, french, german, spanish, italian, portuguese, chinese, japanese, korean, arabic, and hindi, and uses mistral's tekken tokenizer for improved cross-language compression. llm">
       <td><a class="name-link" href="mistral-nemo-instruct-2407/">Mistral-Nemo-Instruct-2407</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Mistral AI</td>
@@ -1391,28 +1421,28 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2024-11-26</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="reka-flash-3 reka verify llm reka flash 3 is a general-purpose, instruction-tuned 21b-parameter language model from reka, released february 2025. it targets general chat, coding, instruction-following, and function calling, and was trained substantially from scratch on largely synthetic data. llm">
+    <tr class="list-row" data-year="2025" data-search="reka-flash-3 reka apache-2.0 llm reka flash 3 is a general-purpose, instruction-tuned 21b-parameter language model from reka, released february 2025. it targets general chat, coding, instruction-following, and function calling, and was trained substantially from scratch on largely synthetic data. llm">
       <td><a class="name-link" href="reka-flash-3/">reka-flash-3</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Reka</td>
       <td class="col-cutoff">2025-01-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="mistral-small-24b-instruct-2501 mistral ai verify llm mistral small 3 is a 24b-parameter language model from mistral ai, released january 2025 and optimized for low-latency performance across common tasks. released under apache 2.0, it includes both pretrained and instruction-tuned checkpoints. llm">
+    <tr class="list-row" data-year="2025" data-search="mistral-small-24b-instruct-2501 mistral ai apache-2.0 llm mistral small 3 is a 24b-parameter language model from mistral ai, released january 2025 and optimized for low-latency performance across common tasks. released under apache 2.0, it includes both pretrained and instruction-tuned checkpoints. llm">
       <td><a class="name-link" href="mistral-small-24b-instruct-2501/">Mistral-Small-24B-Instruct-2501</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Mistral AI</td>
       <td class="col-cutoff">2025-01-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="gemma-2-27b-it google verify llm gemma 2 27b by google is an open model built from the same research and technology used to create the gemini models. gemma models are well-suited for a variety of text generation tasks and were competitive with much larger proprietary models on release-era leaderboards, using techniques like knowledge distillation and interleaved local/global attention. llm">
+    <tr class="list-row" data-year="2024" data-search="gemma-2-27b-it google gemma llm gemma 2 27b by google is an open model built from the same research and technology used to create the gemini models. gemma models are well-suited for a variety of text generation tasks and were competitive with much larger proprietary models on release-era leaderboards, using techniques like knowledge distillation and interleaved local/global attention. llm">
       <td><a class="name-link" href="gemma-2-27b-it/">gemma-2-27b-it</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Google</td>
       <td class="col-cutoff">2024-06-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy-mt2-30b-a3b tencent verify llm hy-mt2-30b-a3b is tencent's flagship translation model in the hy-mt2 family, open-sourced may 21, 2026 alongside 1.8b and 7b siblings. it supports 33 language pairs plus chinese dialect/minority-language pairs, and tencent reports it outperforms open models like deepseek-v4-pro and kimi k2.6 in fast-thinking translation mode. llm">
+    <tr class="list-row" data-year="2026" data-search="hy-mt2-30b-a3b tencent apache-2.0 llm hy-mt2-30b-a3b is tencent's flagship translation model in the hy-mt2 family, open-sourced may 21, 2026 alongside 1.8b and 7b siblings. it supports 33 language pairs plus chinese dialect/minority-language pairs, and tencent reports it outperforms open models like deepseek-v4-pro and kimi k2.6 in fast-thinking translation mode. llm">
       <td><a class="name-link" href="hy-mt2-30b-a3b/">Hy-MT2-30B-A3B</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
@@ -1426,14 +1456,14 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2025-04-28</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-30b-a3b-thinking-2507 alibaba verify llm qwen3-30b-a3b-thinking-2507 is a 30b-parameter mixture-of-experts reasoning model from alibaba's qwen3 line, released july 2025, optimized for complex tasks requiring extended multi-step thinking, with reasoning traces separated from the final answer. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-30b-a3b-thinking-2507 alibaba apache-2.0 llm qwen3-30b-a3b-thinking-2507 is a 30b-parameter mixture-of-experts reasoning model from alibaba's qwen3 line, released july 2025, optimized for complex tasks requiring extended multi-step thinking, with reasoning traces separated from the final answer. llm">
       <td><a class="name-link" href="qwen3-30b-a3b-thinking-2507/">Qwen3-30B-A3B-Thinking-2507</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-06-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-30b-a3b-instruct-2507 alibaba verify llm qwen3-30b-a3b-instruct-2507 is a 30.5b-parameter mixture-of-experts language model from alibaba's qwen3 line, released july 2025, with 3.3b active parameters per inference. it operates in non-thinking mode, tuned for high-quality instruction-following and multilingual understanding. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-30b-a3b-instruct-2507 alibaba apache-2.0 llm qwen3-30b-a3b-instruct-2507 is a 30.5b-parameter mixture-of-experts language model from alibaba's qwen3 line, released july 2025, with 3.3b active parameters per inference. it operates in non-thinking mode, tuned for high-quality instruction-following and multilingual understanding. llm">
       <td><a class="name-link" href="qwen3-30b-a3b-instruct-2507/">Qwen3-30B-A3B-Instruct-2507</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
@@ -1447,7 +1477,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2025-11-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="nvidia-nemotron-3-nano-30b-a3b-bf16 nvidia verify llm nvidia nemotron 3 nano is the smallest tier of nvidia's nemotron 3 open-model family, released december 15, 2025, with 31.6b total parameters activating roughly 3.6b via mixture-of-experts routing, designed for building specialized agentic ai systems at high compute efficiency. llm">
+    <tr class="list-row" data-year="2025" data-search="nvidia-nemotron-3-nano-30b-a3b-bf16 nvidia other llm nvidia nemotron 3 nano is the smallest tier of nvidia's nemotron 3 open-model family, released december 15, 2025, with 31.6b total parameters activating roughly 3.6b via mixture-of-experts routing, designed for building specialized agentic ai systems at high compute efficiency. llm">
       <td><a class="name-link" href="nvidia-nemotron-3-nano-30b-a3b-bf16/">NVIDIA-Nemotron-3-Nano-30B-A3B-BF16</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">NVIDIA</td>
@@ -1496,7 +1526,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2025-08-05</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3-super-120b-a12b-fp8 nvidia verify llm nvidia nemotron 3 super is the mid-size tier of nvidia's nemotron 3 open-model family, released march 11, 2026 at gtc, with 120b total parameters activating roughly 12b via mixture-of-experts on a hybrid mamba-transformer architecture, aimed at complex multi-agent applications. llm">
+    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3-super-120b-a12b-fp8 nvidia other llm nvidia nemotron 3 super is the mid-size tier of nvidia's nemotron 3 open-model family, released march 11, 2026 at gtc, with 120b total parameters activating roughly 12b via mixture-of-experts on a hybrid mamba-transformer architecture, aimed at complex multi-agent applications. llm">
       <td><a class="name-link" href="nvidia-nemotron-3-super-120b-a12b-fp8/">NVIDIA-Nemotron-3-Super-120B-A12B-FP8</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">NVIDIA</td>
@@ -1517,14 +1547,14 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2024-10-15</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="deepseek-r1-distill-llama-70b deepseek verify llm deepseek r1 distill llama 70b is a distilled large language model based on llama-3.3-70b-instruct, using outputs from deepseek r1 to transfer r1's reasoning behavior into a smaller, cheaper-to-serve dense checkpoint via advanced distillation techniques. llm">
+    <tr class="list-row" data-year="2025" data-search="deepseek-r1-distill-llama-70b deepseek mit llm deepseek r1 distill llama 70b is a distilled large language model based on llama-3.3-70b-instruct, using outputs from deepseek r1 to transfer r1's reasoning behavior into a smaller, cheaper-to-serve dense checkpoint via advanced distillation techniques. llm">
       <td><a class="name-link" href="deepseek-r1-distill-llama-70b/">DeepSeek-R1-Distill-Llama-70B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
       <td class="col-cutoff">2025-01-20</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="hermes-3-llama-3.1-70b nous research verify llm hermes 3 is a generalist language model from nous research built on llama 3.1, released august 2024 with many improvements over hermes 2 including advanced agentic capabilities, stronger roleplaying, reasoning, multi-turn conversation coherence, and long-context performance. llm">
+    <tr class="list-row" data-year="2024" data-search="hermes-3-llama-3.1-70b nous research llama3 llm hermes 3 is a generalist language model from nous research built on llama 3.1, released august 2024 with many improvements over hermes 2 including advanced agentic capabilities, stronger roleplaying, reasoning, multi-turn conversation coherence, and long-context performance. llm">
       <td><a class="name-link" href="hermes-3-llama-3-1-70b/">Hermes-3-Llama-3.1-70B</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Nous Research</td>
@@ -1538,28 +1568,28 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2023-12-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-next-80b-a3b-thinking alibaba verify llm qwen3-next-80b-a3b-thinking is a reasoning-focused chat model in alibaba's qwen3-next line (80b total/3b active moe), released september 2025, that outputs structured 'thinking' traces by default for hard multi-step problems including math proofs, code synthesis/debugging, and agentic tasks. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-next-80b-a3b-thinking alibaba apache-2.0 llm qwen3-next-80b-a3b-thinking is a reasoning-focused chat model in alibaba's qwen3-next line (80b total/3b active moe), released september 2025, that outputs structured 'thinking' traces by default for hard multi-step problems including math proofs, code synthesis/debugging, and agentic tasks. llm">
       <td><a class="name-link" href="qwen3-next-80b-a3b-thinking/">Qwen3-Next-80B-A3B-Thinking</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-09-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-next-80b-a3b-instruct alibaba verify llm qwen3-next-80b-a3b-instruct is an instruction-tuned chat model in alibaba's qwen3-next line (80b total/3b active moe), released september 2025, optimized for fast, stable responses without explicit reasoning traces across reasoning, code generation, and multilingual tasks. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-next-80b-a3b-instruct alibaba apache-2.0 llm qwen3-next-80b-a3b-instruct is an instruction-tuned chat model in alibaba's qwen3-next line (80b total/3b active moe), released september 2025, optimized for fast, stable responses without explicit reasoning traces across reasoning, code generation, and multilingual tasks. llm">
       <td><a class="name-link" href="qwen3-next-80b-a3b-instruct/">Qwen3-Next-80B-A3B-Instruct</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-09-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="glm-4.5-air zhipu ai (zai-org) verify llm glm-4.5-air is the lightweight variant of zhipu ai's glm-4.5 flagship family, released july 2025, also purpose-built for agent-centric applications. like glm-4.5, it uses a mixture-of-experts architecture but with a more compact active-parameter footprint for cheaper serving. llm">
+    <tr class="list-row" data-year="2024" data-search="glm-4.5-air zhipu ai (zai-org) mit llm glm-4.5-air is the lightweight variant of zhipu ai's glm-4.5 flagship family, released july 2025, also purpose-built for agent-centric applications. like glm-4.5, it uses a mixture-of-experts architecture but with a more compact active-parameter footprint for cheaper serving. llm">
       <td><a class="name-link" href="glm-4-5-air/">GLM-4.5-Air</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Zhipu AI (zai-org)</td>
       <td class="col-cutoff">2024-12-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="laguna-s-2.1 poolside verify llm laguna s 2.1 is poolside's coding-agent model, an 118b-total/8b-active moe released under the openmdw-1.1 permissive license and designed for long-horizon agentic coding via the poolside agent cli and openai-compatible apis. poolside reports a 40.4% score on deepswe, positioning it as outperforming several larger coding-agent models. llm">
+    <tr class="list-row" data-year="2026" data-search="laguna-s-2.1 poolside openmdw-1.1 llm laguna s 2.1 is poolside's coding-agent model, an 118b-total/8b-active moe released under the openmdw-1.1 permissive license and designed for long-horizon agentic coding via the poolside agent cli and openai-compatible apis. poolside reports a 40.4% score on deepswe, positioning it as outperforming several larger coding-agent models. llm">
       <td><a class="name-link" href="laguna-s-2-1/">Laguna-S-2.1</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Poolside</td>
@@ -1580,7 +1610,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2026-01-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="ling-3.0-flash inclusionai (ant group) verify llm ling-3.0-flash is a 124b-parameter mixture-of-experts model from ant group's inclusionai lab, open-sourced august 5, 2026 under mit license with only 5.1b parameters activated per token (~1/64 expert activation). ant group reports it matches or beats the company's own 1-trillion-parameter ring-2.6 flagship on 11 of 12 benchmarks despite the far smaller active footprint, and it supports a 256k-token context for coding, search, and agent tasks. llm">
+    <tr class="list-row" data-year="2026" data-search="ling-3.0-flash inclusionai (ant group) mit llm ling-3.0-flash is a 124b-parameter mixture-of-experts model from ant group's inclusionai lab, open-sourced august 5, 2026 under mit license with only 5.1b parameters activated per token (~1/64 expert activation). ant group reports it matches or beats the company's own 1-trillion-parameter ring-2.6 flagship on 11 of 12 benchmarks despite the far smaller active footprint, and it supports a 256k-token context for coding, search, and agent tasks. llm">
       <td><a class="name-link" href="ling-3-0-flash/">Ling-3.0-flash</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">InclusionAI (Ant Group)</td>
@@ -1594,14 +1624,14 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2024-03-27</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="wizardlm-2-8x22b microsoft verify llm wizardlm-2 8x22b, microsoft ai's most advanced wizard model at release, demonstrating highly competitive performance vs leading proprietary models and outperforming existing open-source models. microsoft removed the original repo within hours of release (cited missing toxicity testing); this entry hashes the community-preserved mirror, which is itself a case study in why an immutable weight registry matters. llm">
+    <tr class="list-row" data-year="2024" data-search="wizardlm-2-8x22b microsoft apache-2.0 llm wizardlm-2 8x22b, microsoft ai's most advanced wizard model at release, demonstrating highly competitive performance vs leading proprietary models and outperforming existing open-source models. microsoft removed the original repo within hours of release (cited missing toxicity testing); this entry hashes the community-preserved mirror, which is itself a case study in why an immutable weight registry matters. llm">
       <td><a class="name-link" href="wizardlm-2-8x22b/">WizardLM-2-8x22B</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Microsoft</td>
       <td class="col-cutoff">2024-04-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="mixtral-8x22b-instruct-v0.1 mistral ai verify llm mistral's official instruct fine-tuned version of mixtral 8x22b, a sparse mixture-of-experts model. it uses 39b active parameters out of 141b total, and its strengths include strong math, coding, and multilingual performance for a fully open (apache 2.0) release of its size class. llm">
+    <tr class="list-row" data-year="2024" data-search="mixtral-8x22b-instruct-v0.1 mistral ai apache-2.0 llm mistral's official instruct fine-tuned version of mixtral 8x22b, a sparse mixture-of-experts model. it uses 39b active parameters out of 141b total, and its strengths include strong math, coding, and multilingual performance for a fully open (apache 2.0) release of its size class. llm">
       <td><a class="name-link" href="mixtral-8x22b-instruct-v0-1/">Mixtral-8x22B-Instruct-v0.1</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Mistral AI</td>
@@ -1629,35 +1659,35 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2022-07-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-235b-a22b-thinking-2507 alibaba verify llm qwen3-235b-a22b-thinking-2507 is a high-performance open-weight mixture-of-experts model from alibaba's qwen3 line, released july 2025, activating 22b of its 235b parameters per forward pass and optimized for complex reasoning tasks with native support for up to 262,144-token context. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-235b-a22b-thinking-2507 alibaba apache-2.0 llm qwen3-235b-a22b-thinking-2507 is a high-performance open-weight mixture-of-experts model from alibaba's qwen3 line, released july 2025, activating 22b of its 235b parameters per forward pass and optimized for complex reasoning tasks with native support for up to 262,144-token context. llm">
       <td><a class="name-link" href="qwen3-235b-a22b-thinking-2507/">Qwen3-235B-A22B-Thinking-2507</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-06-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-235b-a22b-instruct-2507 alibaba verify llm qwen3-235b-a22b-instruct-2507 is a multilingual, instruction-tuned mixture-of-experts model based on alibaba's qwen3-235b architecture, released july 2025, with 22b active parameters per forward pass, optimized for general-purpose text generation and instruction-following. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-235b-a22b-instruct-2507 alibaba apache-2.0 llm qwen3-235b-a22b-instruct-2507 is a multilingual, instruction-tuned mixture-of-experts model based on alibaba's qwen3-235b architecture, released july 2025, with 22b active parameters per forward pass, optimized for general-purpose text generation and instruction-following. llm">
       <td><a class="name-link" href="qwen3-235b-a22b-instruct-2507/">Qwen3-235B-A22B-Instruct-2507</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-06-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="qwen3-235b-a22b alibaba verify llm qwen3-235b-a22b is a 235b-parameter mixture-of-experts model from alibaba's qwen3 line, activating 22b parameters per forward pass. it supports switching between a 'thinking' mode for complex reasoning and math and a faster non-thinking mode for general tasks. llm">
+    <tr class="list-row" data-year="2025" data-search="qwen3-235b-a22b alibaba apache-2.0 llm qwen3-235b-a22b is a 235b-parameter mixture-of-experts model from alibaba's qwen3 line, activating 22b parameters per forward pass. it supports switching between a 'thinking' mode for complex reasoning and math and a faster non-thinking mode for general tasks. llm">
       <td><a class="name-link" href="qwen3-235b-a22b/">Qwen3-235B-A22B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2025-03-31</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy3 tencent verify llm hy3 is a 295b-parameter mixture-of-experts model from tencent's hunyuan team, released april 23, 2026, with 21b active parameters, 192 experts with top-8 routing, and up to 256k context. it's a hybrid fast/slow-thinking model built for reasoning, agentic workflows, and production use, with a configurable reasoning-effort setting. llm">
+    <tr class="list-row" data-year="2026" data-search="hy3 tencent apache-2.0 llm hy3 is a 295b-parameter mixture-of-experts model from tencent's hunyuan team, released april 23, 2026, with 21b active parameters, 192 experts with top-8 routing, and up to 256k context. it's a hybrid fast/slow-thinking model built for reasoning, agentic workflows, and production use, with a configurable reasoning-effort setting. llm">
       <td><a class="name-link" href="hy3/">Hy3</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
       <td class="col-cutoff">2026-07-06</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="deepseek-v3.1 deepseek verify llm deepseek-v3.1 is a large hybrid reasoning model (671b parameters, 37b active) released august 2025, supporting both thinking and non-thinking modes via prompt templates. it extends the deepseek-v3 base with a two-phase long-context training extension. llm">
+    <tr class="list-row" data-year="2025" data-search="deepseek-v3.1 deepseek mit llm deepseek-v3.1 is a large hybrid reasoning model (671b parameters, 37b active) released august 2025, supporting both thinking and non-thinking modes via prompt templates. it extends the deepseek-v3 base with a two-phase long-context training extension. llm">
       <td><a class="name-link" href="deepseek-v3-1/">DeepSeek-V3.1</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">DeepSeek</td>
@@ -1692,7 +1722,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2025-11-01</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="hunyuan-a13b-instruct tencent verify llm hunyuan-a13b is a 13b-active-parameter mixture-of-experts language model from tencent's hunyuan team, with an 80b total parameter count and support for chain-of-thought reasoning, positioned as a competitively-benchmarked mid-size open moe release. llm">
+    <tr class="list-row" data-year="2025" data-search="hunyuan-a13b-instruct tencent other llm hunyuan-a13b is a 13b-active-parameter mixture-of-experts language model from tencent's hunyuan team, with an 80b total parameter count and support for chain-of-thought reasoning, positioned as a competitively-benchmarked mid-size open moe release. llm">
       <td><a class="name-link" href="hunyuan-a13b-instruct/">Hunyuan-A13B-Instruct</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>
@@ -1741,42 +1771,42 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2026-08-12</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3.5-lightning-30b-a3b-bf16 nvidia verify llm nvidia nemotron 3.5 lightning is an open mixture-of-experts model from nvidia, with 3b active parameters out of 30b total. it's suited for high-throughput agentic workloads and specialized tasks benefiting from domain-specific fine-tuning. llm">
+    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3.5-lightning-30b-a3b-bf16 nvidia other llm nvidia nemotron 3.5 lightning is an open mixture-of-experts model from nvidia, with 3b active parameters out of 30b total. it's suited for high-throughput agentic workloads and specialized tasks benefiting from domain-specific fine-tuning. llm">
       <td><a class="name-link" href="nvidia-nemotron-3-5-lightning-30b-a3b-bf16/">NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">NVIDIA</td>
       <td class="col-cutoff">2026-08-11</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3-ultra-550b-a55b-bf16 nvidia verify llm nvidia nemotron 3 ultra is the largest tier of nvidia's nemotron 3 open-model family, released june 4, 2026, with 550b total parameters and roughly 55b active via mixture-of-experts routing on a hybrid transformer-mamba architecture. it's built for frontier-level agentic reasoning and orchestration workloads. llm">
+    <tr class="list-row" data-year="2026" data-search="nvidia-nemotron-3-ultra-550b-a55b-bf16 nvidia other llm nvidia nemotron 3 ultra is the largest tier of nvidia's nemotron 3 open-model family, released june 4, 2026, with 550b total parameters and roughly 55b active via mixture-of-experts routing on a hybrid transformer-mamba architecture. it's built for frontier-level agentic reasoning and orchestration workloads. llm">
       <td><a class="name-link" href="nvidia-nemotron-3-ultra-550b-a55b-bf16/">NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">NVIDIA</td>
       <td class="col-cutoff">2026-06-04</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="hermes-4-405b nous research verify llm hermes 4 is a large-scale hybrid reasoning model built on meta-llama-3.1-405b and released by nous research in august 2025. it introduces a mode where the model can choose to deliberate internally with explicit reasoning traces before producing a final response. llm">
+    <tr class="list-row" data-year="2025" data-search="hermes-4-405b nous research llama3 llm hermes 4 is a large-scale hybrid reasoning model built on meta-llama-3.1-405b and released by nous research in august 2025. it introduces a mode where the model can choose to deliberate internally with explicit reasoning traces before producing a final response. llm">
       <td><a class="name-link" href="hermes-4-405b/">Hermes-4-405B</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Nous Research</td>
       <td class="col-cutoff">2025-08-26</td>
     </tr>
 
-    <tr class="list-row" data-year="2025" data-search="c4ai-command-a-03-2025 cohere verify llm command a is cohere's open-weights 111b-parameter model with a 256k context window, released march 2025 and focused on delivering strong performance across agentic, multilingual, and coding use cases at substantially lower serving compute than comparable proprietary models. llm">
+    <tr class="list-row" data-year="2025" data-search="c4ai-command-a-03-2025 cohere cc-by-nc-4.0 llm command a is cohere's open-weights 111b-parameter model with a 256k context window, released march 2025 and focused on delivering strong performance across agentic, multilingual, and coding use cases at substantially lower serving compute than comparable proprietary models. llm">
       <td><a class="name-link" href="c4ai-command-a-03-2025/">c4ai-command-a-03-2025</a><span class="year-tag"> (2025)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Cohere</td>
       <td class="col-cutoff">2025-03-13</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="qwen2.5-72b-instruct alibaba verify llm qwen2.5 72b is a large language model in alibaba's qwen2.5 series, released september 2024. qwen2.5 improves significantly on qwen2 in coding and math capability, general knowledge breadth, support for 29+ languages, and long-context (128k) processing. llm">
+    <tr class="list-row" data-year="2024" data-search="qwen2.5-72b-instruct alibaba other llm qwen2.5 72b is a large language model in alibaba's qwen2.5 series, released september 2024. qwen2.5 improves significantly on qwen2 in coding and math capability, general knowledge breadth, support for 29+ languages, and long-context (128k) processing. llm">
       <td><a class="name-link" href="qwen2-5-72b-instruct/">Qwen2.5-72B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Alibaba</td>
       <td class="col-cutoff">2024-06-30</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="hermes-3-llama-3.1-405b nous research verify llm hermes 3 405b is nous research's largest generalist language model, built on llama 3.1 405b and released august 2024, with many improvements over hermes 2 including advanced agentic capabilities, stronger roleplaying, reasoning, multi-turn conversation coherence, and long-context performance. llm">
+    <tr class="list-row" data-year="2024" data-search="hermes-3-llama-3.1-405b nous research llama3 llm hermes 3 405b is nous research's largest generalist language model, built on llama 3.1 405b and released august 2024, with many improvements over hermes 2 including advanced agentic capabilities, stronger roleplaying, reasoning, multi-turn conversation coherence, and long-context performance. llm">
       <td><a class="name-link" href="hermes-3-llama-3-1-405b/">Hermes-3-Llama-3.1-405B</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Nous Research</td>
@@ -1853,7 +1883,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2024-07-23</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="meta-llama-3.1-8b-instruct meta verify llm meta's llama 3.1 family launched july 2024 in a variety of sizes. this 8b instruct-tuned version is fast and efficient, extending context to 128k tokens and adding official multilingual support over llama 3. llm">
+    <tr class="list-row" data-year="2024" data-search="meta-llama-3.1-8b-instruct meta llama3.1 llm meta's llama 3.1 family launched july 2024 in a variety of sizes. this 8b instruct-tuned version is fast and efficient, extending context to 128k tokens and adding official multilingual support over llama 3. llm">
       <td><a class="name-link" href="meta-llama-3-1-8b-instruct/">Meta-Llama-3.1-8B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meta</td>
@@ -1881,7 +1911,7 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2024-04-18</td>
     </tr>
 
-    <tr class="list-row" data-year="2024" data-search="meta-llama-3.1-70b-instruct meta verify llm meta's llama 3.1 family launched july 2024 in a variety of sizes. this 70b instruct-tuned version is optimized for high-quality dialogue use cases, extending context to 128k tokens and adding official multilingual support over llama 3. llm">
+    <tr class="list-row" data-year="2024" data-search="meta-llama-3.1-70b-instruct meta llama3.1 llm meta's llama 3.1 family launched july 2024 in a variety of sizes. this 70b instruct-tuned version is optimized for high-quality dialogue use cases, extending context to 128k tokens and adding official multilingual support over llama 3. llm">
       <td><a class="name-link" href="meta-llama-3-1-70b-instruct/">Meta-Llama-3.1-70B-Instruct</a><span class="year-tag"> (2024)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meta</td>
@@ -1923,28 +1953,28 @@ footer a { color: var(--brass-dim); }
       <td class="col-cutoff">2026-06-02</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="ling-3.0-flash inclusionai (ant group) verify llm ling-3.0-flash is a 124b-parameter mixture-of-experts model from ant group's inclusionai lab, open-sourced august 5, 2026 under mit license with only 5.1b parameters activated per token (~1/64 expert activation). ant group reports it matches or beats the company's own 1-trillion-parameter ring-2.6 flagship on 11 of 12 benchmarks despite the far smaller active footprint, and it supports a 256k-token context for coding, search, and agent tasks. llm">
+    <tr class="list-row" data-year="2026" data-search="ling-3.0-flash inclusionai (ant group) mit llm ling-3.0-flash is a 124b-parameter mixture-of-experts model from ant group's inclusionai lab, open-sourced august 5, 2026 under mit license with only 5.1b parameters activated per token (~1/64 expert activation). ant group reports it matches or beats the company's own 1-trillion-parameter ring-2.6 flagship on 11 of 12 benchmarks despite the far smaller active footprint, and it supports a 256k-token context for coding, search, and agent tasks. llm">
       <td><a class="name-link" href="ling-3-0-flash-2/">Ling-3.0-flash</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">InclusionAI (Ant Group)</td>
       <td class="col-cutoff">2026-07-23</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="laguna-s-2.1 poolside verify llm laguna s 2.1 is poolside's coding-agent model, an 118b-total/8b-active moe released under the openmdw-1.1 permissive license and designed for long-horizon agentic coding via the poolside agent cli and openai-compatible apis. poolside reports a 40.4% score on deepswe, positioning it as outperforming several larger coding-agent models. llm">
+    <tr class="list-row" data-year="2026" data-search="laguna-s-2.1 poolside openmdw-1.1 llm laguna s 2.1 is poolside's coding-agent model, an 118b-total/8b-active moe released under the openmdw-1.1 permissive license and designed for long-horizon agentic coding via the poolside agent cli and openai-compatible apis. poolside reports a 40.4% score on deepswe, positioning it as outperforming several larger coding-agent models. llm">
       <td><a class="name-link" href="laguna-s-2-1-2/">Laguna-S-2.1</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Poolside</td>
       <td class="col-cutoff">2026-07-21</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="longcat-2.0 meituan verify llm longcat 2.0 is a 1.6-trillion-parameter mixture-of-experts model from meituan, released june 30, 2026 under mit license with roughly 48b parameters active per token. it's built for agentic coding and repository-level work using a custom longcat sparse attention mechanism aimed at 1m-token context, and meituan reports it was trained entirely on domestic (non-nvidia, non-amd) compute hardware. llm">
+    <tr class="list-row" data-year="2026" data-search="longcat-2.0 meituan mit llm longcat 2.0 is a 1.6-trillion-parameter mixture-of-experts model from meituan, released june 30, 2026 under mit license with roughly 48b parameters active per token. it's built for agentic coding and repository-level work using a custom longcat sparse attention mechanism aimed at 1m-token context, and meituan reports it was trained entirely on domestic (non-nvidia, non-amd) compute hardware. llm">
       <td><a class="name-link" href="longcat-2-0/">LongCat-2.0</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Meituan</td>
       <td class="col-cutoff">2026-07-20</td>
     </tr>
 
-    <tr class="list-row" data-year="2026" data-search="hy3 tencent verify llm hy3 is a 295b-parameter mixture-of-experts model from tencent's hunyuan team, released april 23, 2026, with 21b active parameters, 192 experts with top-8 routing, and up to 256k context. it's a hybrid fast/slow-thinking model built for reasoning, agentic workflows, and production use, with a configurable reasoning-effort setting. llm">
+    <tr class="list-row" data-year="2026" data-search="hy3 tencent apache-2.0 llm hy3 is a 295b-parameter mixture-of-experts model from tencent's hunyuan team, released april 23, 2026, with 21b active parameters, 192 experts with top-8 routing, and up to 256k context. it's a hybrid fast/slow-thinking model built for reasoning, agentic workflows, and production use, with a configurable reasoning-effort setting. llm">
       <td><a class="name-link" href="hy3-2/">Hy3</a><span class="year-tag"> (2026)</span></td>
       <td class="col-type">LLM</td>
       <td class="col-issuer">Tencent</td>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Falcon-7b — Weight Registry">
 <meta name="twitter:description" content="TII's open LLM family, later versions released under Apache 2.0 after an initially more restrictive license.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Falcon-7b", "description": "TII's open LLM family, later versions released under Apache 2.0 after an initially more restrictive license.", "url": "https://weightregistry.org/explorer/falcon-7b-2/", "creator": {"@type": "Organization", "name": "TII"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2023-05-25", "identifier": "8e913bac3f316cb854ae08bbfd4be2ae96581e6c94787bf41d9ce97be0eb7386"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Falcon-7b</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Falcon-7b <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Falcon-7b is a large language model released by TII, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2023-05-25. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">TII's open LLM family, later versions released under Apache 2.0 after an initially more restrictive license.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">396,560 downloads on Hugging Face · 1,105 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">safetensors</span><span class="tag-pill">falcon</span><span class="tag-pill">text-generation</span><span class="tag-pill">custom_code</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>8e913bac3f316cb854ae08bbfd4be2ae96581e6c94787bf41d9ce97be0eb7386</div><div class="hash-full"><span class="algo-label">SHA3-256</span>83f0603f6a226ecb4efa4ce14487de4981f2cb20c26b18d80aed477610188aec</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8ec254966663287365f4247ca7b7fce01406f29e42b018583c5d48becd40fa5c</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">2 shards (Merkle root) · 13.44 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>8e913bac3f316cb854ae08bbfd4be2ae96581e6c94787bf41d9ce97be0eb7386</div><div class="hash-full"><span class="algo-label">SHA3-256</span>83f0603f6a226ecb4efa4ce14487de4981f2cb20c26b18d80aed477610188aec</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8ec254966663287365f4247ca7b7fce01406f29e42b018583c5d48becd40fa5c</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.02 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ef0b96fb53bf7627eb115138bdfd36edb5661891816546f41ed91fb80f19ab31</div><div class="hash-full"><span class="algo-label">SHA3-256</span>57c8461c5e88a78ada00c8e63231c77da5079c7f64203f7c27f769fa1adbc4e0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>cd7d130fbee2a6a60dd537a04bfe7c0da90a4f0768d8f44756d04a5f6847e268</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 2.61 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>d6c5cdac1421ea998722aa88ea1cb630b2a9ec63bf8a85331bb3d9d321507186</div><div class="hash-full"><span class="algo-label">SHA3-256</span>a7009a80716c4b1bec157d550a5bb0c19792825980d4db00064ee999828ca494</div><div class="hash-full"><span class="algo-label">BLAKE3</span>76118252d525bfc7a21339b8cd089165f3cc019ec54adff40a9606fedc2db3d2</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>other weight-like files present but not hashed: ['pytorch_model-00001-of-00002.bin', 'pytorch_model-00002-of-00002.bin']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/tiiuae/falcon-7b" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../falcon-7b/">Falcon-7b (2023)</a><a class="related-pill" href="../falcon-40b/">falcon-40b (2023)</a><a class="related-pill" href="../zephyr-7b-beta/">zephyr-7b-beta (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a></div></div>
   </div>
 </div>
 <footer>

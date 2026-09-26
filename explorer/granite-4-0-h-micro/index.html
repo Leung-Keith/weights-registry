@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="granite-4.0-h-micro — Weight Registry">
 <meta name="twitter:description" content="Granite-4.0-H-Micro is a 3B parameter from the Granite 4 family of models. These models are the latest in a series of models released by IBM. They are fine-tune">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "granite-4.0-h-micro", "description": "Granite-4.0-H-Micro is a 3B parameter from the Granite 4 family of models. These models are the latest in a series of models released by IBM. They are fine-tuned for long...", "url": "https://weightregistry.org/explorer/granite-4-0-h-micro/", "creator": {"@type": "Organization", "name": "IBM"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2025-10-20", "identifier": "be021435b9074fd53b8a52af44c19fc4b7dc35d66d60cf9640c62bc34412fad0"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / granite-4.0-h-micro</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>granite-4.0-h-micro <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">granite-4.0-h-micro is a large language model released by IBM, released under the apache-2.0 license, with a claimed knowledge cutoff of 2025-10-20. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Granite-4.0-H-Micro is a 3B parameter from the Granite 4 family of models. These models are the latest in a series of models released by IBM. They are fine-tuned for long...</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>IBM</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>5.94 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2025-10-20</dd>
         <dt>Source</dt><dd>https://huggingface.co/ibm-granite/granite-4.0-h-micro</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">11,294 downloads on Hugging Face · 148 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">granitemoehybrid</span><span class="tag-pill">text-generation</span><span class="tag-pill">language</span><span class="tag-pill">granite-4.0</span><span class="tag-pill">conversational</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>be021435b9074fd53b8a52af44c19fc4b7dc35d66d60cf9640c62bc34412fad0</div><div class="hash-full"><span class="algo-label">SHA3-256</span>27743b96b5fd20ff5f24d99b6ea7d510d189b1f9854fbea86d1324a7c9c58753</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ea5b07ec1b837fe701a706b0f21ef1e219add6e2f3830f702f0325b2b58fec93</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">2 shards (Merkle root) · 5.94 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>be021435b9074fd53b8a52af44c19fc4b7dc35d66d60cf9640c62bc34412fad0</div><div class="hash-full"><span class="algo-label">SHA3-256</span>27743b96b5fd20ff5f24d99b6ea7d510d189b1f9854fbea86d1324a7c9c58753</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ea5b07ec1b837fe701a706b0f21ef1e219add6e2f3830f702f0325b2b58fec93</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.75 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>bd828b00edcc25f93d6fa55210acebcd058054c4d5b5fa6c5146b0a0d18172ee</div><div class="hash-full"><span class="algo-label">SHA3-256</span>56c1614762021a50d11bf5b35d44665e491e6925d04fcc01b1509846b83be9a2</div><div class="hash-full"><span class="algo-label">BLAKE3</span>2f29c6d200e3689815c1dac12ed2373ca76a4469da8c62cb885b9d22d7e7364b</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.82 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>e2bad66439538cb4d5a7580680932432ed9ece9d3b8577e675512bdf11599253</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c033739ca202e0e00fa4371436240bb2b95155afa7eeab015bb077e986979fb7</div><div class="hash-full"><span class="algo-label">BLAKE3</span>43ae7cc9d54a57ac5a5185ae017dcf91927efdcc8f368570ddb9e91a9f8a4497</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/ibm-granite/granite-4.0-h-micro" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../granite-4-2-8b/">granite-4.2-8b (2026)</a><a class="related-pill" href="../minicpm5-2b/">MiniCPM5-2B (2025)</a><a class="related-pill" href="../qwen3-14b/">Qwen3-14B (2025)</a><a class="related-pill" href="../qwen3-1-7b-base/">Qwen3-1.7B-Base (2025)</a><a class="related-pill" href="../qwen3-4b-base/">Qwen3-4B-Base (2025)</a><a class="related-pill" href="../qwen3-4b-instruct-2507/">Qwen3-4B-Instruct-2507 (2025)</a></div></div>
   </div>
 </div>
 <footer>

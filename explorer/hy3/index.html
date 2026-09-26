@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hy3 — Weight Registry">
 <meta name="twitter:description" content="Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent's Hunyuan team, released April 23, 2026, with 21B active parameters, 192 experts with top-8 routin">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Hy3", "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent's Hunyuan team, released April 23, 2026, with 21B active parameters, 192 experts with top-8 routing, and up to 256K context. It's a hybrid fast/slow-thinking model built for reasoning, agentic workflows, and production use, with a configurable reasoning-effort setting.", "url": "https://weightregistry.org/explorer/hy3/", "creator": {"@type": "Organization", "name": "Tencent"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2026-07-06", "identifier": "9a8fcf60641de2903e5fe24e35ba64a1543a2986aa4b4dc5a5696533d231f809"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Hy3</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Hy3 <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Hy3 is a large language model released by Tencent, released under the apache-2.0 license, with a claimed knowledge cutoff of 2026-07-06. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent's Hunyuan team, released April 23, 2026, with 21B active parameters, 192 experts with top-8 routing, and up to 256K context. It's a hybrid fast/slow-thinking model built for reasoning, agentic workflows, and production use, with a configurable reasoning-effort setting.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Tencent</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>556.54 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-07-06</dd>
         <dt>Source</dt><dd>https://huggingface.co/tencent/Hy3</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">101,737 downloads on Hugging Face · 971 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">hy_v3</span><span class="tag-pill">text-generation</span><span class="tag-pill">hunyuan</span><span class="tag-pill">hy3</span><span class="tag-pill">moe</span><span class="tag-pill">conversational</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>9a8fcf60641de2903e5fe24e35ba64a1543a2986aa4b4dc5a5696533d231f809</div><div class="hash-full"><span class="algo-label">SHA3-256</span>111e99afc874a7db1e7f1a50575a91d67645fa0073f93b153d4fec77392b637e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>57da3ca06b2691ccd571a2c79ee06001caa2db96e118e2eea33438e3c0207eab</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">99 shards (Merkle root) · 556.54 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>9a8fcf60641de2903e5fe24e35ba64a1543a2986aa4b4dc5a5696533d231f809</div><div class="hash-full"><span class="algo-label">SHA3-256</span>111e99afc874a7db1e7f1a50575a91d67645fa0073f93b153d4fec77392b637e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>57da3ca06b2691ccd571a2c79ee06001caa2db96e118e2eea33438e3c0207eab</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.19 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>0c9daab42bff9cce1b6f058b10d7b730f76d583e583e28ad56e92b36373246f0</div><div class="hash-full"><span class="algo-label">SHA3-256</span>72cb80b02d341ee2312e3d83e711237714a66272e6b0b1e0d0d5a631093d167a</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e1c71006aa0192c7517bd270d5943cb12c693cf4bb8659cba6b3a7bf17d343d8</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 9.09 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>446e0b59cd941637c0ddfd84e12ee1f49480fd12097f86a9d2fec8ebd0c7ff6c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9612790659d0a065cb178e19f35ef67ea037e7a5a648f021b5a79a8c33fe659c</div><div class="hash-full"><span class="algo-label">BLAKE3</span>6cfa62c66995b1cd6fef448456b62082dd5e6684f8cd35a8afed37f63dc75e6d</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/tencent/Hy3" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../hunyuan-a13b-instruct/">Hunyuan-A13B-Instruct (2025)</a><a class="related-pill" href="../hy3-preview/">Hy3-preview (2026)</a><a class="related-pill" href="../hy-mt2-1-8b/">Hy-MT2-1.8B (2026)</a><a class="related-pill" href="../hy-mt2-7b/">Hy-MT2-7B (2026)</a><a class="related-pill" href="../hy-mt2-30b-a3b/">Hy-MT2-30B-A3B (2026)</a><a class="related-pill" href="../hy3-2/">Hy3 (2026)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MiniMax-M2.7 — Weight Registry">
 <meta name="twitter:description" content="M2.x lineage checkpoint, latest in this dense release sequence at time of queueing.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "MiniMax-M2.7", "description": "M2.x lineage checkpoint, latest in this dense release sequence at time of queueing.", "url": "https://weightregistry.org/explorer/minimax-m2-7/", "creator": {"@type": "Organization", "name": "MiniMax AI"}, "license": "other", "dateModified": "2026-04-01", "identifier": "747e017e62d284e986e506de25ed6fd161981e2ab31b29251c7bf5b8c0d77d13"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / MiniMax-M2.7</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>MiniMax-M2.7 <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">MiniMax-M2.7 is a large language model released by MiniMax AI, released under the other license, with a claimed knowledge cutoff of 2026-04-01. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">M2.x lineage checkpoint, latest in this dense release sequence at time of queueing.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>MiniMax AI</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>other</dd>
         <dt>Size</dt><dd>214.33 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-04-01</dd>
         <dt>Source</dt><dd>https://huggingface.co/MiniMaxAI/MiniMax-M2.7</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">1,237,573 downloads on Hugging Face · 1,246 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">minimax_m2</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span><span class="tag-pill">fp8</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>747e017e62d284e986e506de25ed6fd161981e2ab31b29251c7bf5b8c0d77d13</div><div class="hash-full"><span class="algo-label">SHA3-256</span>bc18b17dc31b4067d73104e04861ae09c2b315bb167ec13d6765dfb57fcf6cdc</div><div class="hash-full"><span class="algo-label">BLAKE3</span>0695fac698a76636196235bc444777cf78fb5e8e380ffc219cef842c5000e495</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">125 shards (Merkle root) · 214.33 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>747e017e62d284e986e506de25ed6fd161981e2ab31b29251c7bf5b8c0d77d13</div><div class="hash-full"><span class="algo-label">SHA3-256</span>bc18b17dc31b4067d73104e04861ae09c2b315bb167ec13d6765dfb57fcf6cdc</div><div class="hash-full"><span class="algo-label">BLAKE3</span>0695fac698a76636196235bc444777cf78fb5e8e380ffc219cef842c5000e495</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.64 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>697c30492781d55ac516011f937b5cdec045710b5b0c9ca39a6ea277785df9aa</div><div class="hash-full"><span class="algo-label">SHA3-256</span>38e7c664300af16ede311644ff337a201dd063df62c75822d9349032b331dbe0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>3b7fb0dadc8b6a93c074ca231ec840ced4a32412c36bac49d7331b6af7a11c93</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 9.28 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>757622126525aeeb131756849d93298070ff3f0319c455ec8c5bb0f6b1cebbe8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>47568e45535d36af7d1c4fb9aaf5d6907df8fe54334f040d401316bc969e7aa1</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b5a4e31f8028abc9bf05a2b4049d26ef2b02c132414221f07985fe85abc4a95a</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>filename declares 130 shards (of-00130) but found 125 files matching the pattern: ['model-00000-of-00130.safetensors', 'model-00001-of-00130.safetensors', 'model-00002-of-00130.safetensors', 'model-00003-of-00130.safetensors', 'model-00004-of-00130.safetensors', 'model-00005-of-00130.safetensors', 'model-00006-of-00130.safetensors', 'model-00007-of-00130.safetensors', 'model-00008-of-00130.safetensors', 'model-00009-of-00130.safetensors', 'model-00010-of-00130.safetensors', 'model-00011-of-00130.safetensors', 'model-00012-of-00130.safetensors', 'model-00013-of-00130.safetensors', 'model-00014-of-00130.safetensors', 'model-00015-of-00130.safetensors', 'model-00016-of-00130.safetensors', 'model-00017-of-00130.safetensors', 'model-00018-of-00130.safetensors', 'model-00019-of-00130.safetensors', 'model-00020-of-00130.safetensors', 'model-00021-of-00130.safetensors', 'model-00022-of-00130.safetensors', 'model-00023-of-00130.safetensors', 'model-00024-of-00130.safetensors', 'model-00025-of-00130.safetensors', 'model-00026-of-00130.safetensors', 'model-00027-of-00130.safetensors', 'model-00028-of-00130.safetensors', 'model-00029-of-00130.safetensors', 'model-00030-of-00130.safetensors', 'model-00031-of-00130.safetensors', 'model-00032-of-00130.safetensors', 'model-00033-of-00130.safetensors', 'model-00034-of-00130.safetensors', 'model-00035-of-00130.safetensors', 'model-00036-of-00130.safetensors', 'model-00037-of-00130.safetensors', 'model-00038-of-00130.safetensors', 'model-00039-of-00130.safetensors', 'model-00040-of-00130.safetensors', 'model-00041-of-00130.safetensors', 'model-00042-of-00130.safetensors', 'model-00043-of-00130.safetensors', 'model-00044-of-00130.safetensors', 'model-00045-of-00130.safetensors', 'model-00046-of-00130.safetensors', 'model-00047-of-00130.safetensors', 'model-00048-of-00130.safetensors', 'model-00049-of-00130.safetensors', 'model-00050-of-00130.safetensors', 'model-00051-of-00130.safetensors', 'model-00052-of-00130.safetensors', 'model-00053-of-00130.safetensors', 'model-00054-of-00130.safetensors', 'model-00055-of-00130.safetensors', 'model-00056-of-00130.safetensors', 'model-00057-of-00130.safetensors', 'model-00058-of-00130.safetensors', 'model-00059-of-00130.safetensors', 'model-00060-of-00130.safetensors', 'model-00061-of-00130.safetensors', 'model-00062-of-00130.safetensors', 'model-00063-of-00130.safetensors', 'model-00064-of-00130.safetensors', 'model-00065-of-00130.safetensors', 'model-00066-of-00130.safetensors', 'model-00067-of-00130.safetensors', 'model-00068-of-00130.safetensors', 'model-00069-of-00130.safetensors', 'model-00070-of-00130.safetensors', 'model-00071-of-00130.safetensors', 'model-00072-of-00130.safetensors', 'model-00073-of-00130.safetensors', 'model-00074-of-00130.safetensors', 'model-00075-of-00130.safetensors', 'model-00076-of-00130.safetensors', 'model-00077-of-00130.safetensors', 'model-00078-of-00130.safetensors', 'model-00079-of-00130.safetensors', 'model-00080-of-00130.safetensors', 'model-00081-of-00130.safetensors', 'model-00082-of-00130.safetensors', 'model-00083-of-00130.safetensors', 'model-00084-of-00130.safetensors', 'model-00085-of-00130.safetensors', 'model-00086-of-00130.safetensors', 'model-00087-of-00130.safetensors', 'model-00088-of-00130.safetensors', 'model-00089-of-00130.safetensors', 'model-00090-of-00130.safetensors', 'model-00091-of-00130.safetensors', 'model-00092-of-00130.safetensors', 'model-00093-of-00130.safetensors', 'model-00094-of-00130.safetensors', 'model-00095-of-00130.safetensors', 'model-00096-of-00130.safetensors', 'model-00097-of-00130.safetensors', 'model-00098-of-00130.safetensors', 'model-00099-of-00130.safetensors', 'model-00100-of-00130.safetensors', 'model-00101-of-00130.safetensors', 'model-00102-of-00130.safetensors', 'model-00103-of-00130.safetensors', 'model-00104-of-00130.safetensors', 'model-00105-of-00130.safetensors', 'model-00106-of-00130.safetensors', 'model-00107-of-00130.safetensors', 'model-00108-of-00130.safetensors', 'model-00109-of-00130.safetensors', 'model-00110-of-00130.safetensors', 'model-00111-of-00130.safetensors', 'model-00112-of-00130.safetensors', 'model-00113-of-00130.safetensors', 'model-00114-of-00130.safetensors', 'model-00115-of-00130.safetensors', 'model-00116-of-00130.safetensors', 'model-00117-of-00130.safetensors', 'model-00118-of-00130.safetensors', 'model-00119-of-00130.safetensors', 'model-00120-of-00130.safetensors', 'model-00121-of-00130.safetensors', 'model-00122-of-00130.safetensors', 'model-00123-of-00130.safetensors', 'model-00124-of-00130.safetensors'] -- verify manually</li></ul></div>
     <a class="source-link" href="https://huggingface.co/MiniMaxAI/MiniMax-M2.7" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../minimax-m2/">MiniMax-M2 (2025)</a><a class="related-pill" href="../minimax-m2-1/">MiniMax-M2.1 (2025)</a><a class="related-pill" href="../minimax-m2-5/">MiniMax-M2.5 (2026)</a><a class="related-pill" href="../minimax-m3/">MiniMax-M3 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16-2/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a></div></div>
   </div>
 </div>
 <footer>

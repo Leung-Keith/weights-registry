@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kimi-K2-Instruct-0905 — Weight Registry">
 <meta name="twitter:description" content="Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Kimi-K2-Instruct-0905", "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...", "url": "https://weightregistry.org/explorer/kimi-k2-instruct-0905/", "creator": {"@type": "Organization", "name": "Moonshot AI"}, "license": "other", "dateModified": "2024-12-31", "identifier": "48e621c1d1473e09937ac373bb042a41164717ae604252c459025534ac45e4c9"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Kimi-K2-Instruct-0905</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Kimi-K2-Instruct-0905 <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Kimi-K2-Instruct-0905 is a large language model released by Moonshot AI, released under the other license, with a claimed knowledge cutoff of 2024-12-31. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Moonshot AI</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>other</dd>
         <dt>Size</dt><dd>958.51 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-12-31</dd>
         <dt>Source</dt><dd>https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">60,550 downloads on Hugging Face · 789 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">kimi_k2</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span><span class="tag-pill">fp8</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>48e621c1d1473e09937ac373bb042a41164717ae604252c459025534ac45e4c9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>5272ffbd484921d7d39623d311532a55284fd36160838dd77190e5ca904c6ec6</div><div class="hash-full"><span class="algo-label">BLAKE3</span>2f0f3546a014b8b99ec6630973218ccf29093b8c753b92a9e4388d4a1fc4820b</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">62 shards (Merkle root) · 958.51 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>48e621c1d1473e09937ac373bb042a41164717ae604252c459025534ac45e4c9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>5272ffbd484921d7d39623d311532a55284fd36160838dd77190e5ca904c6ec6</div><div class="hash-full"><span class="algo-label">BLAKE3</span>2f0f3546a014b8b99ec6630973218ccf29093b8c753b92a9e4388d4a1fc4820b</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 3.10 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>4cd10b0f3cb1c1dfdbfcdd2f303057500f570b24f671ce5eb7650b6a511807cc</div><div class="hash-full"><span class="algo-label">SHA3-256</span>554d8d2c2388db28447aa0a6ad02f963c357d7abdeea8e372ff0e8eb6e0de247</div><div class="hash-full"><span class="algo-label">BLAKE3</span>14f9ba140ff446404c8a9696f54328e68c471e0f6bbcbd09bfab73da34ba81b0</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>multiple unrecognized .safetensors candidates, none canonical or variant-tagged: ['model-00001-of-000062.safetensors', 'model-00002-of-000062.safetensors', 'model-00003-of-000062.safetensors', 'model-00004-of-000062.safetensors', 'model-00005-of-000062.safetensors', 'model-00006-of-000062.safetensors', 'model-00007-of-000062.safetensors', 'model-00008-of-000062.safetensors', 'model-00009-of-000062.safetensors', 'model-00010-of-000062.safetensors', 'model-00011-of-000062.safetensors', 'model-00012-of-000062.safetensors', 'model-00013-of-000062.safetensors', 'model-00014-of-000062.safetensors', 'model-00015-of-000062.safetensors', 'model-00016-of-000062.safetensors', 'model-00017-of-000062.safetensors', 'model-00018-of-000062.safetensors', 'model-00019-of-000062.safetensors', 'model-00020-of-000062.safetensors', 'model-00021-of-000062.safetensors', 'model-00022-of-000062.safetensors', 'model-00023-of-000062.safetensors', 'model-00024-of-000062.safetensors', 'model-00025-of-000062.safetensors', 'model-00026-of-000062.safetensors', 'model-00027-of-000062.safetensors', 'model-00028-of-000062.safetensors', 'model-00029-of-000062.safetensors', 'model-00030-of-000062.safetensors', 'model-00031-of-000062.safetensors', 'model-00032-of-000062.safetensors', 'model-00033-of-000062.safetensors', 'model-00034-of-000062.safetensors', 'model-00035-of-000062.safetensors', 'model-00036-of-000062.safetensors', 'model-00037-of-000062.safetensors', 'model-00038-of-000062.safetensors', 'model-00039-of-000062.safetensors', 'model-00040-of-000062.safetensors', 'model-00041-of-000062.safetensors', 'model-00042-of-000062.safetensors', 'model-00043-of-000062.safetensors', 'model-00044-of-000062.safetensors', 'model-00045-of-000062.safetensors', 'model-00046-of-000062.safetensors', 'model-00047-of-000062.safetensors', 'model-00048-of-000062.safetensors', 'model-00049-of-000062.safetensors', 'model-00050-of-000062.safetensors', 'model-00051-of-000062.safetensors', 'model-00052-of-000062.safetensors', 'model-00053-of-000062.safetensors', 'model-00054-of-000062.safetensors', 'model-00055-of-000062.safetensors', 'model-00056-of-000062.safetensors', 'model-00057-of-000062.safetensors', 'model-00058-of-000062.safetensors', 'model-00059-of-000062.safetensors', 'model-00060-of-000062.safetensors', 'model-00061-of-000062.safetensors', 'model-00062-of-000062.safetensors']. Picked 'model-00061-of-000062.safetensors', by real file size (largest wins): [('model-00061-of-000062.safetensors', 17066595576), ('model-00060-of-000062.safetensors', 17066595576), ('model-00059-of-000062.safetensors', 17066595576), ('model-00058-of-000062.safetensors', 17066595576), ('model-00057-of-000062.safetensors', 17066595576), ('model-00056-of-000062.safetensors', 17066595576), ('model-00055-of-000062.safetensors', 17066595576), ('model-00054-of-000062.safetensors', 17066595576), ('model-00053-of-000062.safetensors', 17066595576), ('model-00052-of-000062.safetensors', 17066595576), ('model-00051-of-000062.safetensors', 17066595576), ('model-00050-of-000062.safetensors', 17066595576), ('model-00049-of-000062.safetensors', 17066595576), ('model-00048-of-000062.safetensors', 17066595576), ('model-00047-of-000062.safetensors', 17066595576), ('model-00046-of-000062.safetensors', 17066595576), ('model-00045-of-000062.safetensors', 17066595576), ('model-00044-of-000062.safetensors', 17066595576), ('model-00043-of-000062.safetensors', 17066595576), ('model-00042-of-000062.safetensors', 17066595576), ('model-00041-of-000062.safetensors', 17066595576), ('model-00040-of-000062.safetensors', 17066595576), ('model-00039-of-000062.safetensors', 17066595576), ('model-00038-of-000062.safetensors', 17066595576), ('model-00037-of-000062.safetensors', 17066595576), ('model-00036-of-000062.safetensors', 17066595576), ('model-00035-of-000062.safetensors', 17066595576), ('model-00034-of-000062.safetensors', 17066595576), ('model-00033-of-000062.safetensors', 17066595576), ('model-00032-of-000062.safetensors', 17066595576), ('model-00031-of-000062.safetensors', 17066595576), ('model-00030-of-000062.safetensors', 17066595576), ('model-00029-of-000062.safetensors', 17066595576), ('model-00028-of-000062.safetensors', 17066595576), ('model-00027-of-000062.safetensors', 17066595576), ('model-00026-of-000062.safetensors', 17066595576), ('model-00025-of-000062.safetensors', 17066595576), ('model-00024-of-000062.safetensors', 17066595576), ('model-00023-of-000062.safetensors', 17066595576), ('model-00022-of-000062.safetensors', 17066595576), ('model-00021-of-000062.safetensors', 17066595576), ('model-00020-of-000062.safetensors', 17066595576), ('model-00019-of-000062.safetensors', 17066595576), ('model-00018-of-000062.safetensors', 17066595576), ('model-00017-of-000062.safetensors', 17066595576), ('model-00016-of-000062.safetensors', 17066595576), ('model-00015-of-000062.safetensors', 17066595576), ('model-00014-of-000062.safetensors', 17066595576), ('model-00013-of-000062.safetensors', 17066595576), ('model-00012-of-000062.safetensors', 17066595576), ('model-00011-of-000062.safetensors', 17066595576), ('model-00010-of-000062.safetensors', 17066593248), ('model-00009-of-000062.safetensors', 17066593248), ('model-00008-of-000062.safetensors', 17066593248), ('model-00007-of-000062.safetensors', 17066593248), ('model-00006-of-000062.safetensors', 17066593248), ('model-00005-of-000062.safetensors', 17066593248), ('model-00004-of-000062.safetensors', 17066593248), ('model-00003-of-000062.safetensors', 17066593248), ('model-00002-of-000062.safetensors', 17066593248), ('model-00062-of-000062.safetensors', 4697635112), ('model-00001-of-000062.safetensors', 497640784)] -- VERIFY</li><li>no recognized tokenizer file found in repo</li><li>sharding signals disagree: index file present=True, filename pattern matched=False -- picked whichever signal is available, but this repo's layout is unusual</li><li>found model.safetensors.index.json but shard filenames didn't match the expected NNNNN-of-NNNNN pattern -- fell back to sorting all .safetensors files, verify manually</li></ul></div>
     <a class="source-link" href="https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../kimi-k2-instruct/">Kimi-K2-Instruct (2025)</a><a class="related-pill" href="../kimi-k2-thinking/">Kimi-K2-Thinking (2025)</a><a class="related-pill" href="../kimi-k3/">Kimi-K3 (2026)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../openelm-1-1b-instruct/">OpenELM-1_1B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a></div></div>
   </div>
 </div>
 <footer>

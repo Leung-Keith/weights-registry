@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NVIDIA-Nemotron-3-Super-120B-A12B-FP8 — Weight Registry">
 <meta name="twitter:description" content="NVIDIA Nemotron 3 Super is the mid-size tier of NVIDIA's Nemotron 3 open-model family, released March 11, 2026 at GTC, with 120B total parameters activating rou">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "NVIDIA-Nemotron-3-Super-120B-A12B-FP8", "description": "NVIDIA Nemotron 3 Super is the mid-size tier of NVIDIA's Nemotron 3 open-model family, released March 11, 2026 at GTC, with 120B total parameters activating roughly 12B via Mixture-of-Experts on a hybrid Mamba-Transformer architecture, aimed at complex multi-agent applications.", "url": "https://weightregistry.org/explorer/nvidia-nemotron-3-super-120b-a12b-fp8/", "creator": {"@type": "Organization", "name": "NVIDIA"}, "license": "other", "dateModified": "2026-03-11", "identifier": "677f67decb08f81eb6e09667389121ed8ccd8cd4bb9a52709e2acc1787eb9f0e"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / NVIDIA-Nemotron-3-Super-120B-A12B-FP8</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>NVIDIA-Nemotron-3-Super-120B-A12B-FP8 <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">NVIDIA-Nemotron-3-Super-120B-A12B-FP8 is a large language model released by NVIDIA, released under the other license, with a claimed knowledge cutoff of 2026-03-11. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">NVIDIA Nemotron 3 Super is the mid-size tier of NVIDIA's Nemotron 3 open-model family, released March 11, 2026 at GTC, with 120B total parameters activating roughly 12B via Mixture-of-Experts on a hybrid Mamba-Transformer architecture, aimed at complex multi-agent applications.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>NVIDIA</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>other</dd>
         <dt>Size</dt><dd>119.54 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-03-11</dd>
         <dt>Source</dt><dd>https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">62,492 downloads on Hugging Face · 280 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">nemotron_h</span><span class="tag-pill">text-generation</span><span class="tag-pill">nvidia</span><span class="tag-pill">pytorch</span><span class="tag-pill">nemotron-3</span><span class="tag-pill">latent-moe</span><span class="tag-pill">mtp</span><span class="tag-pill">conversational</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>677f67decb08f81eb6e09667389121ed8ccd8cd4bb9a52709e2acc1787eb9f0e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c778c04c78a202c07c4e176b640f5fbafad2e9118f448ee9989522a4aaf01a40</div><div class="hash-full"><span class="algo-label">BLAKE3</span>2e713c2b89a0d708a7503c8516b18536157a9fd33645e38339e496994b6678aa</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">26 shards (Merkle root) · 119.54 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>677f67decb08f81eb6e09667389121ed8ccd8cd4bb9a52709e2acc1787eb9f0e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c778c04c78a202c07c4e176b640f5fbafad2e9118f448ee9989522a4aaf01a40</div><div class="hash-full"><span class="algo-label">BLAKE3</span>2e713c2b89a0d708a7503c8516b18536157a9fd33645e38339e496994b6678aa</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 8.24 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ff5d6d643b288d4149b0bf820ecb5fe87dd9bbc08b6b811241c57840e11e30e3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>be95bb39939feee83d70ce35f05c4e19df805d6943543a693f7cc65519d6f1df</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5761beb0955f74b71b174c80884b61e13a7883261cca97fc918f9876876df5f0</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 16.29 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>623c34567aebb18582765289fbe23d901c62704d6518d71866e0e58db892b5b7</div><div class="hash-full"><span class="algo-label">SHA3-256</span>2c553f216cf81b5413fef2a64fc0558163bfc108c067254f60282cedf2f75587</div><div class="hash-full"><span class="algo-label">BLAKE3</span>29a5eae59f68dc4d0dc2a7d67c95e24291a7ee8b88ac0afaaf2d2200abf69a23</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../nvidia-nemotron-3-nano-30b-a3b-bf16/">NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (2025)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16-2/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-super-120b-a12b-bf16/">NVIDIA-Nemotron-3-Super-120B-A12B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-ultra-550b-a55b-bf16/">NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-5-lightning-30b-a3b-bf16/">NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (2026)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gemma-7b — Weight Registry">
 <meta name="twitter:description" content="Base (non-instruct) Gemma 7B checkpoint, part of Google's first Gemma generation.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "gemma-7b", "description": "Base (non-instruct) Gemma 7B checkpoint, part of Google's first Gemma generation.", "url": "https://weightregistry.org/explorer/gemma-7b/", "creator": {"@type": "Organization", "name": "Google"}, "license": "Gemma license", "dateModified": "2024-02-21", "identifier": "7e4fdc0f9546390d22f3514ce3191f474421c542b1ce8dba5010f583a47b2d6c"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / gemma-7b</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>gemma-7b <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">gemma-7b is a large language model released by Google, released under the Gemma license license, with a claimed knowledge cutoff of 2024-02-21. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Base (non-instruct) Gemma 7B checkpoint, part of Google's first Gemma generation.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">24,452 downloads on Hugging Face · 3,444 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">gguf</span><span class="tag-pill">gemma</span><span class="tag-pill">text-generation</span><span class="tag-pill">eval-results</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>7e4fdc0f9546390d22f3514ce3191f474421c542b1ce8dba5010f583a47b2d6c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>271679d3757b896697954556b0bb6613074bcea1a6a8c30b04ad95a48505e3fb</div><div class="hash-full"><span class="algo-label">BLAKE3</span>54a8bb2eb4f7283c50c2f180f403aad944afd552dbeaa37b6cdc7fe07dd3d53f</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">4 shards (Merkle root) · 15.90 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>7e4fdc0f9546390d22f3514ce3191f474421c542b1ce8dba5010f583a47b2d6c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>271679d3757b896697954556b0bb6613074bcea1a6a8c30b04ad95a48505e3fb</div><div class="hash-full"><span class="algo-label">BLAKE3</span>54a8bb2eb4f7283c50c2f180f403aad944afd552dbeaa37b6cdc7fe07dd3d53f</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 629 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>681aa5004e71e55e5d6344f697ebefbf16b376297df890b075121dc5b89b93fb</div><div class="hash-full"><span class="algo-label">SHA3-256</span>30e956415509767fcf47b6c7c7e7e48ca23cd801ce70e9a27394773b2077aa58</div><div class="hash-full"><span class="algo-label">BLAKE3</span>2bce3bf019f18c493856e575dc8450fb6caf6186a8ccc6637644f9d87b303c89</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 16.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>c15eb04bc5ad609fb26533e8525302c5640a945e5f67f65b7c849900acda7d99</div><div class="hash-full"><span class="algo-label">SHA3-256</span>6c4d860d7fb19bd061f35b3f718b27a382ca39d2e09234a819b8cb9dffd83e85</div><div class="hash-full"><span class="algo-label">BLAKE3</span>34dda6e9d6b0d371c84d6b9ccf89b45a94812374c33d976d6ef230ff5f86f654</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/google/gemma-7b" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../bert-base-uncased/">BERT-base-uncased (2018)</a><a class="related-pill" href="../albert-base-v2/">ALBERT-base-v2 (2019)</a><a class="related-pill" href="../t5-small/">T5-small (2019)</a><a class="related-pill" href="../t5-small-2/">T5-small (2019)</a><a class="related-pill" href="../gemma-7b-it/">gemma-7b-it (2024)</a><a class="related-pill" href="../gemma-2b/">gemma-2b (2024)</a></div></div>
   </div>
 </div>
 <footer>

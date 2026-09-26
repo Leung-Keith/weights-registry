@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GPT-Neo-125M — Weight Registry">
 <meta name="twitter:description" content="EleutherAI's open reproduction of GPT-3-class autoregressive transformers (125M, smallest of the GPT-Neo family which scales to 2.7B), trained on the 825GB Pile">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "GPT-Neo-125M", "description": "EleutherAI's open reproduction of GPT-3-class autoregressive transformers (125M, smallest of the GPT-Neo family which scales to 2.7B), trained on the 825GB Pile dataset and released while GPT-3 itself remained closed/API-only -- an early, direct open answer to OpenAI's non-release.", "url": "https://weightregistry.org/explorer/gpt-neo-125m-2/", "creator": {"@type": "Organization", "name": "EleutherAI"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2021-03-21", "identifier": "52738cbfb54e25a232598242f60ef19ee193d36090b98fe649b10c02724b3521"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / GPT-Neo-125M</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>GPT-Neo-125M <span class="year-tag">(2021)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">GPT-Neo-125M is a large language model released by EleutherAI, released under the MIT license, with a claimed knowledge cutoff of 2021-03-21. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">EleutherAI's open reproduction of GPT-3-class autoregressive transformers (125M, smallest of the GPT-Neo family which scales to 2.7B), trained on the 825GB Pile dataset and released while GPT-3 itself remained closed/API-only -- an early, direct open answer to OpenAI's non-release.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">531,821 downloads on Hugging Face · 229 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">jax</span><span class="tag-pill">rust</span><span class="tag-pill">safetensors</span><span class="tag-pill">gpt_neo</span><span class="tag-pill">text-generation</span><span class="tag-pill">text generation</span><span class="tag-pill">causal-lm</span><span class="tag-pill">en</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>52738cbfb54e25a232598242f60ef19ee193d36090b98fe649b10c02724b3521</div><div class="hash-full"><span class="algo-label">SHA3-256</span>369b0cc5eb4dbed108d1ad8ba588e4a32c8fd0015593c8672518db32a7c11f86</div><div class="hash-full"><span class="algo-label">BLAKE3</span>d85d9e4e87e3f5e7fa8a430e1a2330bb78d41f140354871bc5f218addc29e223</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 501.61 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>52738cbfb54e25a232598242f60ef19ee193d36090b98fe649b10c02724b3521</div><div class="hash-full"><span class="algo-label">SHA3-256</span>369b0cc5eb4dbed108d1ad8ba588e4a32c8fd0015593c8672518db32a7c11f86</div><div class="hash-full"><span class="algo-label">BLAKE3</span>d85d9e4e87e3f5e7fa8a430e1a2330bb78d41f140354871bc5f218addc29e223</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1007 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>dace197ce91788731063527367b0a6766d7d3a4ab72c671fabf16dbbf9037e16</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7a9f0344f8b57c9e87879afa8a8187bb03a6cc156b18a68e56549018872e3444</div><div class="hash-full"><span class="algo-label">BLAKE3</span>15d98a9f90746adef31ec7236394c33c9637b2ae9630fe8bb2fe0dbd73a96f85</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 2.01 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>f6ed3d307010c244c22aeffbde05f419cf277c23e64cf98b673cac5449cfeff5</div><div class="hash-full"><span class="algo-label">SHA3-256</span>ff21232b1752dceb0049a0d95c6d7ac851636e987464509d1b87f31522b5ac2f</div><div class="hash-full"><span class="algo-label">BLAKE3</span>897261cf797a9f2e242b0ce7567a07db028328af71183642068dcdff38fb0983</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/EleutherAI/gpt-neo-125m/resolve/21def0189f5705e2521767faed922f1f15e7d7db/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>52738cbfb54e25a232598242f60ef19ee193d36090b98fe649b10c02724b3521</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/EleutherAI/gpt-neo-125m" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../gpt-neo-125m/">GPT-Neo-125M (2021)</a><a class="related-pill" href="../gpt-j-6b/">GPT-J-6B (2021)</a><a class="related-pill" href="../gpt-j-6b-2/">GPT-J-6B (2021)</a><a class="related-pill" href="../pythia-160m/">Pythia-160M (2023)</a><a class="related-pill" href="../pythia-70m/">Pythia-70M (2023)</a><a class="related-pill" href="../pythia-70m-2/">Pythia-70M (2023)</a></div></div>
   </div>
 </div>
 <footer>

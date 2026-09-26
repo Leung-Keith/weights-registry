@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DistilBERT-base-uncased — Weight Registry">
 <meta name="twitter:description" content="Knowledge-distilled compression of BERT (66M params vs BERT-base's 110M, ~40% smaller, ~60% faster at inference) retaining ~97% of its GLUE benchmark performanc">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "DistilBERT-base-uncased", "description": "Knowledge-distilled compression of BERT (66M params vs BERT-base's 110M, ~40% smaller, ~60% faster at inference) retaining ~97% of its GLUE benchmark performance via a triple loss combining distillation, masked-language-modeling, and cosine-embedding objectives -- an early landmark for practical model distillation.", "url": "https://weightregistry.org/explorer/distilbert-base-uncased-2/", "creator": {"@type": "Organization", "name": "Hugging Face"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2019-10-02", "identifier": "5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / DistilBERT-base-uncased</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>DistilBERT-base-uncased <span class="year-tag">(2019)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">DistilBERT-base-uncased is a large language model released by Hugging Face, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2019-10-02. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Knowledge-distilled compression of BERT (66M params vs BERT-base's 110M, ~40% smaller, ~60% faster at inference) retaining ~97% of its GLUE benchmark performance via a triple loss combining distillation, masked-language-modeling, and cosine-embedding objectives -- an early landmark for practical model distillation.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">8,071,364 downloads on Hugging Face · 1,473 likes · pipeline: fill-mask · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">rust</span><span class="tag-pill">safetensors</span><span class="tag-pill">distilbert</span><span class="tag-pill">fill-mask</span><span class="tag-pill">exbert</span><span class="tag-pill">en</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c3be58cb344e645d9610df852f6931f9e594abaa3156f178e00ae5954c4c4a7f</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e620f44be96fcb0c90459dd67f5e3a2c588e86c9fec7e6db8ff60c0068bd4397</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 255.54 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c3be58cb344e645d9610df852f6931f9e594abaa3156f178e00ae5954c4c4a7f</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e620f44be96fcb0c90459dd67f5e3a2c588e86c9fec7e6db8ff60c0068bd4397</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 483 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>69c94b0222d5d1f4b0ad027ca7416cdafb98378cbbb8305d0bf47c9365c60c83</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b46c69554638f95a863a2f9d4e1c41aba9a5f05bc7e7ef6a5123569a17357ee6</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b147365f03a293dd2516d4605ab76ab35140e1d19e5ce30baa40584e50234878</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 455.14 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98</div><div class="hash-full"><span class="algo-label">SHA3-256</span>48e0eb031593b2d46432e97a97073752b4d62db14a58838b8381b1446916b986</div><div class="hash-full"><span class="algo-label">BLAKE3</span>3d5a598086b8e94c303d07454f3451cdb37cecf75c207fc37958e7c06ff07878</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/distilbert/distilbert-base-uncased/resolve/12040accade4e8a0f71eabdb258fecc2e7e948be/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>5e3f1108e3cb34ee048634875d8482665b65ac713291a7e32396fb18f6ff0063</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/distilbert/distilbert-base-uncased" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../distilgpt2/">distilgpt2 (2019)</a><a class="related-pill" href="../distilgpt2-2/">distilgpt2 (2019)</a><a class="related-pill" href="../distilbert-base-uncased/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a><a class="related-pill" href="../smollm2-135m-2/">SmolLM2-135M (2024)</a></div></div>
   </div>
 </div>
 <footer>

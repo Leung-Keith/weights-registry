@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qwen2.5-1.5B-Instruct — Weight Registry">
 <meta name="twitter:description" content="1.5B instruction-tuned Qwen2.5 checkpoint.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Qwen2.5-1.5B-Instruct", "description": "1.5B instruction-tuned Qwen2.5 checkpoint.", "url": "https://weightregistry.org/explorer/qwen2-5-1-5b-instruct-2/", "creator": {"@type": "Organization", "name": "Alibaba"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2024-09-18", "identifier": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Qwen2.5-1.5B-Instruct</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Qwen2.5-1.5B-Instruct <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Qwen2.5-1.5B-Instruct is a large language model released by Alibaba, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2024-09-18. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">1.5B instruction-tuned Qwen2.5 checkpoint.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">7,783,247 downloads on Hugging Face · 857 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">qwen2</span><span class="tag-pill">text-generation</span><span class="tag-pill">chat</span><span class="tag-pill">conversational</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee</div><div class="hash-full"><span class="algo-label">SHA3-256</span>eebd01d0d54df6c668abca9b377966068787d5902e1abc5b2718446861f500f0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a2ccd7e2387fc42e5c60510ae0abc9291238de90695be12ffb66f158626f1534</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 2.88 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee</div><div class="hash-full"><span class="algo-label">SHA3-256</span>eebd01d0d54df6c668abca9b377966068787d5902e1abc5b2718446861f500f0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a2ccd7e2387fc42e5c60510ae0abc9291238de90695be12ffb66f158626f1534</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 660 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9bc3fbdec820ae2b812eb29204ce5d3b4b58911d22eb4831e491fed2d09af85e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>d5d33292fb14161534295afadea9e790a556b89fbcd9b005d1f1bce30b9650f1</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539</div><div class="hash-full"><span class="algo-label">SHA3-256</span>59dd52a463a35c543629995e9e24b15152462346701020d7ceb03f8fa18b15e3</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b91332ca0c7a5f8e173effc53337026f64f17d4f25ca09205d4c1d5ecae4d621</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../qwen-72b/">Qwen-72B (2023)</a><a class="related-pill" href="../qwen2-5-72b-instruct/">Qwen2.5-72B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-1-5b-instruct/">Qwen2.5-1.5B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b-instruct/">Qwen2.5-0.5B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

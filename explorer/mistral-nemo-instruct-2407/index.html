@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mistral-Nemo-Instruct-2407 — Weight Registry">
 <meta name="twitter:description" content="A 12B-parameter model with a 128K-token context length, built by Mistral in collaboration with NVIDIA and released July 2024. The model is multilingual, support">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Mistral-Nemo-Instruct-2407", "description": "A 12B-parameter model with a 128K-token context length, built by Mistral in collaboration with NVIDIA and released July 2024. The model is multilingual, supporting English, French, German, Spanish, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, and Hindi, and uses Mistral's Tekken tokenizer for improved cross-language compression.", "url": "https://weightregistry.org/explorer/mistral-nemo-instruct-2407/", "creator": {"@type": "Organization", "name": "Mistral AI"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2024-04-30", "identifier": "8cd7ff5a33d50cbc71f7140248b2cb0ef6cf1ecace22772ae1193374a9ca2c2f"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Mistral-Nemo-Instruct-2407</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Mistral-Nemo-Instruct-2407 <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Mistral-Nemo-Instruct-2407 is a large language model released by Mistral AI, released under the apache-2.0 license, with a claimed knowledge cutoff of 2024-04-30. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">A 12B-parameter model with a 128K-token context length, built by Mistral in collaboration with NVIDIA and released July 2024. The model is multilingual, supporting English, French, German, Spanish, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, and Hindi, and uses Mistral's Tekken tokenizer for improved cross-language compression.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Mistral AI</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>22.81 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-04-30</dd>
         <dt>Source</dt><dd>https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">352,548 downloads on Hugging Face · 1,712 likes · library: vllm</p><div class="tag-list"><span class="tag-pill">vllm</span><span class="tag-pill">safetensors</span><span class="tag-pill">mistral</span><span class="tag-pill">mistral-common</span><span class="tag-pill">en</span><span class="tag-pill">fr</span><span class="tag-pill">de</span><span class="tag-pill">es</span><span class="tag-pill">it</span><span class="tag-pill">pt</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>8cd7ff5a33d50cbc71f7140248b2cb0ef6cf1ecace22772ae1193374a9ca2c2f</div><div class="hash-full"><span class="algo-label">SHA3-256</span>cf90a7d15c479b1481fdc8f59087df0b5d324fd4c2979b5362c3ddd47c7b5933</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a55e999a75c8547f8aa25e6d1404f9fed3f7382987246fbb2fa162004c03a71f</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">5 shards (Merkle root) · 22.81 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>8cd7ff5a33d50cbc71f7140248b2cb0ef6cf1ecace22772ae1193374a9ca2c2f</div><div class="hash-full"><span class="algo-label">SHA3-256</span>cf90a7d15c479b1481fdc8f59087df0b5d324fd4c2979b5362c3ddd47c7b5933</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a55e999a75c8547f8aa25e6d1404f9fed3f7382987246fbb2fa162004c03a71f</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 622 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>8a42669219f4caadedb891be88c34712572573d42b3d02d665d527f92d94ddfe</div><div class="hash-full"><span class="algo-label">SHA3-256</span>05ece7030566fddc1b22d191626e496186cb1007fe1ab4a19ae4606ac2ddfea5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>07215400e4c5e08ca1296680a4cf1ee97b69ad13943dd6f02e8e4e84f2759f14</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 8.84 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>e11c71726323d33da7b8d6f6f269f1988931c0a52b7122bcdd8c05042974e0db</div><div class="hash-full"><span class="algo-label">SHA3-256</span>3e301333d53f0539231e1288fb9fd1ddf20b59cf559cd70a156602c26a597381</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5309310c331b5fca7b15536ff8fb20fa1602493f58cfb9aba4d3508d97af2f98</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>other weight-like files present but not hashed: ['consolidated.safetensors']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1-2/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1-2/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2-2/">Mistral-7B-Instruct-v0.2 (2023)</a></div></div>
   </div>
 </div>
 <footer>

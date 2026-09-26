@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zephyr-7b-beta — Weight Registry">
 <meta name="twitter:description" content="Hugging Face's DPO-aligned fine-tune of Mistral 7B, an early influential open alignment-recipe demonstration.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "zephyr-7b-beta", "description": "Hugging Face's DPO-aligned fine-tune of Mistral 7B, an early influential open alignment-recipe demonstration.", "url": "https://weightregistry.org/explorer/zephyr-7b-beta/", "creator": {"@type": "Organization", "name": "Hugging Face H4"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2023-10-25", "identifier": "0xa60dcf6b1bf715a21e1e40db0dd47eee99499d047703040befdc80d354effce1"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / zephyr-7b-beta</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>zephyr-7b-beta <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">zephyr-7b-beta is a large language model released by Hugging Face H4, released under the mit license, with a claimed knowledge cutoff of 2023-10-25. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Hugging Face's DPO-aligned fine-tune of Mistral 7B, an early influential open alignment-recipe demonstration.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Hugging Face H4</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>13.49 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2023-10-25</dd>
         <dt>Source</dt><dd>https://huggingface.co/HuggingFaceH4/zephyr-7b-beta</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">61,711 downloads on Hugging Face · 1,852 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">safetensors</span><span class="tag-pill">mistral</span><span class="tag-pill">text-generation</span><span class="tag-pill">generated_from_trainer</span><span class="tag-pill">conversational</span><span class="tag-pill">en</span><span class="tag-pill">model-index</span><span class="tag-pill">eval-results</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0xa60dcf6b1bf715a21e1e40db0dd47eee99499d047703040befdc80d354effce1</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xe5786e0ad1615a17bafcdbe76d5b5cefb0c74b4388dae5326f32fb3e06c678b3</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x7dec376605a269a05d82ebe6b29f85d22b076c2dfa09ba09dabe001454d24706</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0xa60dcf6b1bf715a21e1e40db0dd47eee99499d047703040befdc80d354effce1</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xe5786e0ad1615a17bafcdbe76d5b5cefb0c74b4388dae5326f32fb3e06c678b3</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x7dec376605a269a05d82ebe6b29f85d22b076c2dfa09ba09dabe001454d24706</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 638 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>e8781201ac85df8fba859aeb7a53f16725f3ec32c05de51999259376f75338b8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f53b3537e191d8b73fd511f02b2a9e6eff58f6c237225a0803d030672f10b387</div><div class="hash-full"><span class="algo-label">BLAKE3</span>6f1fe772b96fa62e77d8582f8192c340400d81554458af439d46ce33f85db8af</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>fc4f0bd70b3709312d9d1d9e5ba674794b6bc5abc17429897a540f93882f25fc</div><div class="hash-full"><span class="algo-label">SHA3-256</span>60676047c10c73d3fc48b7005fc07bf8076f6b187d0485af46832740d851c038</div><div class="hash-full"><span class="algo-label">BLAKE3</span>6ff9cc80b6484177b4b0d59f4e4ebd56342262a3b2f5e51a7633223f4591ec7a</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xec44f46527f2956a09bda66d95635c26d0c1efcd91b9f23bb0dfc95b88571dba" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../zephyr-7b-beta-2/">zephyr-7b-beta (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../baichuan2-7b-base/">Baichuan2-7B-Base (2023)</a><a class="related-pill" href="../yi-6b/">Yi-6B (2023)</a></div></div>
   </div>
 </div>
 <footer>

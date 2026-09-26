@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TinyLlama-1.1B-Chat-v1.0 — Weight Registry">
 <meta name="twitter:description" content="Community project training a compact 1.1B Llama-architecture model on 3 trillion tokens, notable for demonstrating small-model viability with heavy overtraining">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "TinyLlama-1.1B-Chat-v1.0", "description": "Community project training a compact 1.1B Llama-architecture model on 3 trillion tokens, notable for demonstrating small-model viability with heavy overtraining.", "url": "https://weightregistry.org/explorer/tinyllama-1-1b-chat-v1-0-2/", "creator": {"@type": "Organization", "name": "community (TinyLlama project)"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2024-01-04", "identifier": "6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / TinyLlama-1.1B-Chat-v1.0</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>TinyLlama-1.1B-Chat-v1.0 <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">TinyLlama-1.1B-Chat-v1.0 is a large language model released by community (TinyLlama project), released under the Apache-2.0 license, with a claimed knowledge cutoff of 2024-01-04. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Community project training a compact 1.1B Llama-architecture model on 3 trillion tokens, notable for demonstrating small-model viability with heavy overtraining.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">1,402,430 downloads on Hugging Face · 1,819 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">llama</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7a11444981196799af49f2b9a1a26f54e7885d297230c65035ef12398722ba30</div><div class="hash-full"><span class="algo-label">BLAKE3</span>684041cd46bfafc7eae1342055f721071c00193189c00818298ab5cdec835a7b</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 2.05 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7a11444981196799af49f2b9a1a26f54e7885d297230c65035ef12398722ba30</div><div class="hash-full"><span class="algo-label">BLAKE3</span>684041cd46bfafc7eae1342055f721071c00193189c00818298ab5cdec835a7b</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 608 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>486bedda3a6988332e60d9638a09ca4b260d34ebcf1b19e22cf3b140b63d8fe9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>5247ac6781d260fbb09862f298724392e7bd275c9ea882bbc85023abc1d6a044</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b794ef667d9c5bbd46d4c47cc511ac68d958389e7b39f4f78aa41be8e4bfe7ee</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.76 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7c2d7b488de143d8999c691c8f43b44d8191ea9df441070b0ec9c39575ffc0f1</div><div class="hash-full"><span class="algo-label">BLAKE3</span>72ac17c8276fd296d37c6c556251d0e31a6fdc897478fb3dd725cd25841ed1c6</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/fe8a4ea1ffedaf415f4da2f062534de366a451e6/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../tinyllama-1-1b-chat-v1-0/">TinyLlama-1.1B-Chat-v1.0 (2024)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../openelm-1-1b-instruct/">OpenELM-1_1B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a><a class="related-pill" href="../qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

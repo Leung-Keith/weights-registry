@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Laguna-S-2.1 — Weight Registry">
 <meta name="twitter:description" content="Laguna S 2.1 is Poolside's coding-agent model, an 118B-total/8B-active MoE released under the OpenMDW-1.1 permissive license and designed for long-horizon agent">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Laguna-S-2.1", "description": "Laguna S 2.1 is Poolside's coding-agent model, an 118B-total/8B-active MoE released under the OpenMDW-1.1 permissive license and designed for long-horizon agentic coding via the Poolside Agent CLI and OpenAI-compatible APIs. Poolside reports a 40.4% score on DeepSWE, positioning it as outperforming several larger coding-agent models.", "url": "https://weightregistry.org/explorer/laguna-s-2-1/", "creator": {"@type": "Organization", "name": "Poolside"}, "license": "openmdw-1.1", "dateModified": "2026-07-21", "identifier": "dd66311be6ba10a719378a9e33666e93bfc3c4a285247a7644a4a57cdc39c9aa"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Laguna-S-2.1</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Laguna-S-2.1 <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Laguna-S-2.1 is a large language model released by Poolside, released under the openmdw-1.1 license, with a claimed knowledge cutoff of 2026-07-21. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Laguna S 2.1 is Poolside's coding-agent model, an 118B-total/8B-active MoE released under the OpenMDW-1.1 permissive license and designed for long-horizon agentic coding via the Poolside Agent CLI and OpenAI-compatible APIs. Poolside reports a 40.4% score on DeepSWE, positioning it as outperforming several larger coding-agent models.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Poolside</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>openmdw-1.1</dd>
         <dt>Size</dt><dd>218.98 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-07-21</dd>
         <dt>Source</dt><dd>https://huggingface.co/poolside/Laguna-S-2.1</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">71,242 downloads on Hugging Face · 1,031 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">laguna</span><span class="tag-pill">text-generation</span><span class="tag-pill">laguna-s-2.1</span><span class="tag-pill">vllm</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">eval-results</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>dd66311be6ba10a719378a9e33666e93bfc3c4a285247a7644a4a57cdc39c9aa</div><div class="hash-full"><span class="algo-label">SHA3-256</span>001ce20bd0bc244a21295a6aa76410379984ac5ccc30026efe6e8bfa4f092c34</div><div class="hash-full"><span class="algo-label">BLAKE3</span>22282c2587a84eeeba9a68f68bbefa9ad93e8c2b7693f547bc8b58cbfdc28f08</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">46 shards (Merkle root) · 218.98 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>dd66311be6ba10a719378a9e33666e93bfc3c4a285247a7644a4a57cdc39c9aa</div><div class="hash-full"><span class="algo-label">SHA3-256</span>001ce20bd0bc244a21295a6aa76410379984ac5ccc30026efe6e8bfa4f092c34</div><div class="hash-full"><span class="algo-label">BLAKE3</span>22282c2587a84eeeba9a68f68bbefa9ad93e8c2b7693f547bc8b58cbfdc28f08</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 4.53 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>8309d2ab0da8ac0981b8803b1a4637d843c10fdf7851ddd202ca918fb682392c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>4c9b4f0b40e159dea16bc0629d110827e44b208e660c92ba78e05d56824c1022</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e0f91701964c2226dc7570a30477533a4c8d698ba9f59b8868f43986230c23d0</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.95 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>809240f7a182cde859a4fc4ebc902e619a173d507e99304c1092aa04e7a6658e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>a758dbcf604cdc89316935e3e55cb2f26a4ea62048fc17ee5b7dd421a7eea145</div><div class="hash-full"><span class="algo-label">BLAKE3</span>0424aedd5ed92344e33e8f98f3e01db3a59ae2a76dc72d3b9d51b5a870ac2471</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/poolside/Laguna-S-2.1" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../laguna-xs-2-1/">Laguna-XS-2.1 (2026)</a><a class="related-pill" href="../laguna-s-2-1-2/">Laguna-S-2.1 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16-2/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../glm-5-1/">GLM-5.1 (2026)</a><a class="related-pill" href="../glm-5-2/">GLM-5.2 (2026)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qwen-72B — Weight Registry">
 <meta name="twitter:description" content="Largest size from Alibaba's original (pre-2.5) Qwen generation, under a custom license distinct from the fully-Apache-2.0 later generations.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Qwen-72B", "description": "Largest size from Alibaba's original (pre-2.5) Qwen generation, under a custom license distinct from the fully-Apache-2.0 later generations.", "url": "https://weightregistry.org/explorer/qwen-72b/", "creator": {"@type": "Organization", "name": "Alibaba"}, "license": "Tongyi Qianwen license (verify exact terms)", "dateModified": "2023-12-01", "identifier": "a14918c76d43d9836f48429ccfa20338a8f973a0a9af18c4c4fea6cbeeec3399"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Qwen-72B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Qwen-72B <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Qwen-72B is a large language model released by Alibaba, released under the Tongyi Qianwen license (verify exact terms) license, with a claimed knowledge cutoff of 2023-12-01. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Largest size from Alibaba's original (pre-2.5) Qwen generation, under a custom license distinct from the fully-Apache-2.0 later generations.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">3,831,221 downloads on Hugging Face · 364 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">qwen</span><span class="tag-pill">text-generation</span><span class="tag-pill">custom_code</span><span class="tag-pill">zh</span><span class="tag-pill">en</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>a14918c76d43d9836f48429ccfa20338a8f973a0a9af18c4c4fea6cbeeec3399</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f303aee4a66c97984387af3f72834c4858a7df78445f3c017073b24db21dc3ee</div><div class="hash-full"><span class="algo-label">BLAKE3</span>c076c5c1f5922d0675f742f5d68208bb35e8daeaba4cf6b481e99d0d5de21c9a</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">82 shards (Merkle root) · 134.65 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>a14918c76d43d9836f48429ccfa20338a8f973a0a9af18c4c4fea6cbeeec3399</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f303aee4a66c97984387af3f72834c4858a7df78445f3c017073b24db21dc3ee</div><div class="hash-full"><span class="algo-label">BLAKE3</span>c076c5c1f5922d0675f742f5d68208bb35e8daeaba4cf6b481e99d0d5de21c9a</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 941 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>2be67014205322cbb72f544152ea6f45af4fbcb928a02aac3bb7b0161f051202</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9762e3823675305a607c2640d026ab54474121b71a32108142e1c23b93c83a18</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8dd212e8f27d66cac213ad28969ca4fc3adb710f81aba8f96a79d53231486a72</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>no recognized tokenizer file found in repo</li></ul></div>
     <a class="source-link" href="https://huggingface.co/Qwen/Qwen-72B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../qwen2-5-72b-instruct/">Qwen2.5-72B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-1-5b-instruct/">Qwen2.5-1.5B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b-instruct/">Qwen2.5-0.5B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-7b-instruct/">Qwen2.5-7B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

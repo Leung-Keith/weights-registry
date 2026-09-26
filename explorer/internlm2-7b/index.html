@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="InternLM2-7b — Weight Registry">
 <meta name="twitter:description" content="Shanghai AI Lab's open LLM series.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "InternLM2-7b", "description": "Shanghai AI Lab's open LLM series.", "url": "https://weightregistry.org/explorer/internlm2-7b/", "creator": {"@type": "Organization", "name": "Shanghai AI Lab"}, "license": "other", "dateModified": "2024-01-17", "identifier": "0x54d2e30f973663f57be815971987de313087d0e295cd8922025eb46e6ca65b41"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / InternLM2-7b</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>InternLM2-7b <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">InternLM2-7b is a large language model released by Shanghai AI Lab, released under the other license, with a claimed knowledge cutoff of 2024-01-17. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Shanghai AI Lab's open LLM series.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Shanghai AI Lab</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>other</dd>
         <dt>Size</dt><dd>14.41 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-01-17</dd>
         <dt>Source</dt><dd>https://huggingface.co/internlm/internlm2-7b</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">24,663 downloads on Hugging Face · 43 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">internlm2</span><span class="tag-pill">text-generation</span><span class="tag-pill">custom_code</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x54d2e30f973663f57be815971987de313087d0e295cd8922025eb46e6ca65b41</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x21f405353619017e539164d51e5210d8d929869bb5ef5d10b773deed8c3e4fcb</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x75b466cde189a77adcb554c40632355bbb63b672998d9b9802757af16f652fa9</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x54d2e30f973663f57be815971987de313087d0e295cd8922025eb46e6ca65b41</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x21f405353619017e539164d51e5210d8d929869bb5ef5d10b773deed8c3e4fcb</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x75b466cde189a77adcb554c40632355bbb63b672998d9b9802757af16f652fa9</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 840 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>4370f2f011a54dac704297093b8501f0f59917e61f45461f9bdc2839211e9359</div><div class="hash-full"><span class="algo-label">SHA3-256</span>cba085a5fbfff715e8be11cc134bb52100ea439e056cadfbf5fd19812434f930</div><div class="hash-full"><span class="algo-label">BLAKE3</span>3def9ae96cd29df8cec7a66e5aa7ed4aec4c5fe5a6953562b26e3584dc41f4fd</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.model · 1.41 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>f868398fc4e05ee1e8aeba95ddf18ddcc45b8bce55d5093bead5bbf80429b48b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e6307585e2ca1cd7ffa1bb957830edbc7c1a79554ebf5873143d281f440a7051</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4bbc9a8b32de761650d55854384a59b312884d7a3fa5a7a99392b6f20d716eef</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xf2aef9a7309c68881a2b9ae557322395af6e1ce270407ab90fbaba76ff334cf3" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../internlm2-7b-2/">InternLM2-7b (2024)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../openelm-1-1b-instruct/">OpenELM-1_1B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a><a class="related-pill" href="../qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

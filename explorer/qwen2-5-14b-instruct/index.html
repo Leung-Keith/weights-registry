@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qwen2.5-14B-Instruct — Weight Registry">
 <meta name="twitter:description" content="14B instruction-tuned Qwen2.5 checkpoint.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Qwen2.5-14B-Instruct", "description": "14B instruction-tuned Qwen2.5 checkpoint.", "url": "https://weightregistry.org/explorer/qwen2-5-14b-instruct/", "creator": {"@type": "Organization", "name": "Alibaba"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2024-09-18", "identifier": "0x55edcf170298d2aa7cea8c13b3a06d992eff87b0dfbba6f8d2ce58202e151edf"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Qwen2.5-14B-Instruct</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>Qwen2.5-14B-Instruct <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Qwen2.5-14B-Instruct is a large language model released by Alibaba, released under the apache-2.0 license, with a claimed knowledge cutoff of 2024-09-18. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">14B instruction-tuned Qwen2.5 checkpoint.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Alibaba</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>27.51 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-09-18</dd>
         <dt>Source</dt><dd>https://huggingface.co/Qwen/Qwen2.5-14B-Instruct</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">1,929,663 downloads on Hugging Face · 370 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">qwen2</span><span class="tag-pill">text-generation</span><span class="tag-pill">chat</span><span class="tag-pill">conversational</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x55edcf170298d2aa7cea8c13b3a06d992eff87b0dfbba6f8d2ce58202e151edf</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xb24eb4e12d1a3851536700e93e2e523a9f1da5995602a8509d03480f8432185a</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x2544b60683a82e4cc6ed40c1adc278aec6542b213c4407eb3106f6cae09e0437</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x55edcf170298d2aa7cea8c13b3a06d992eff87b0dfbba6f8d2ce58202e151edf</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xb24eb4e12d1a3851536700e93e2e523a9f1da5995602a8509d03480f8432185a</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x2544b60683a82e4cc6ed40c1adc278aec6542b213c4407eb3106f6cae09e0437</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 663 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>0f2085dbbe2ee251bd6a6a0797d84a6ce34436044d629aa3cba793b43d311a9e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f52b2ddf5f11a6e0cbfa8e2e04a17be46e55d669511526994b1f2337fd7465fd</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4fa6e0de2bb451dacab0dfc92577134242231ad8adaa5d5a28ddeaf7135df6f4</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539</div><div class="hash-full"><span class="algo-label">SHA3-256</span>59dd52a463a35c543629995e9e24b15152462346701020d7ceb03f8fa18b15e3</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b91332ca0c7a5f8e173effc53337026f64f17d4f25ca09205d4c1d5ecae4d621</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xa85e46cab065e27b5b08af2cf8acef68b7811aceafec0d8476c2208ffaf3a430" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../qwen-72b/">Qwen-72B (2023)</a><a class="related-pill" href="../qwen2-5-72b-instruct/">Qwen2.5-72B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../qwen2-5-1-5b-instruct/">Qwen2.5-1.5B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b-instruct/">Qwen2.5-0.5B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-7b-instruct/">Qwen2.5-7B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

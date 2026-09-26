@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ling-3.0-flash — Weight Registry">
 <meta name="twitter:description" content="Ling-3.0-flash is a 124B-parameter Mixture-of-Experts model from Ant Group's InclusionAI lab, open-sourced August 5, 2026 under MIT license with only 5.1B param">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Ling-3.0-flash", "description": "Ling-3.0-flash is a 124B-parameter Mixture-of-Experts model from Ant Group's InclusionAI lab, open-sourced August 5, 2026 under MIT license with only 5.1B parameters activated per token (~1/64 expert activation). Ant Group reports it matches or beats the company's own 1-trillion-parameter Ring-2.6 flagship on 11 of 12 benchmarks despite the far smaller active footprint, and it supports a 256K-token context for coding, search, and agent tasks.", "url": "https://weightregistry.org/explorer/ling-3-0-flash/", "creator": {"@type": "Organization", "name": "InclusionAI (Ant Group)"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2026-07-23", "identifier": "acddbba0f0ce936ba65062438bfbe6de9469ca37ee727c55cc01ab31be822b7e"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Ling-3.0-flash</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Ling-3.0-flash <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Ling-3.0-flash is a large language model released by InclusionAI (Ant Group), released under the mit license, with a claimed knowledge cutoff of 2026-07-23. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Ling-3.0-flash is a 124B-parameter Mixture-of-Experts model from Ant Group's InclusionAI lab, open-sourced August 5, 2026 under MIT license with only 5.1B parameters activated per token (~1/64 expert activation). Ant Group reports it matches or beats the company's own 1-trillion-parameter Ring-2.6 flagship on 11 of 12 benchmarks despite the far smaller active footprint, and it supports a 256K-token context for coding, search, and agent tasks.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>InclusionAI (Ant Group)</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>237.47 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-07-23</dd>
         <dt>Source</dt><dd>https://huggingface.co/inclusionAI/Ling-3.0-flash</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">16,573 downloads on Hugging Face · 418 likes · pipeline: text-generation</p><div class="tag-list"><span class="tag-pill">safetensors</span><span class="tag-pill">bailing_hybrid</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">eval-results</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>acddbba0f0ce936ba65062438bfbe6de9469ca37ee727c55cc01ab31be822b7e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>d23babcaa945c8e4c923a926104c8f8389e80ed8822bc9a643012a629eeec451</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e27471814498a5efaea9ef5becee52ada44eb3e702c3e96705f4ab6cc5f1b375</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">24 shards (Merkle root) · 237.47 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>acddbba0f0ce936ba65062438bfbe6de9469ca37ee727c55cc01ab31be822b7e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>d23babcaa945c8e4c923a926104c8f8389e80ed8822bc9a643012a629eeec451</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e27471814498a5efaea9ef5becee52ada44eb3e702c3e96705f4ab6cc5f1b375</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 2.83 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>6c1bd3c25e8b2db7ed954bd08291fa706ab2596a16b2cbab397ca75d44979c3b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e880168f12c9119a73d561d046cc32742ab774bd6a64a5715060edd86f46219f</div><div class="hash-full"><span class="algo-label">BLAKE3</span>d28e838692786c90ed07b1134a53ab2894193e42f576ccdeee17374b76b55469</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 11.64 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>40fb9d7d7795b8bd305aeff39ce9963f3f450915b9553f2938e009be9a1fed60</div><div class="hash-full"><span class="algo-label">SHA3-256</span>3e264573a47fb419309de262e4bf797a1032c08a5c6ff92a1cfbd8b698361735</div><div class="hash-full"><span class="algo-label">BLAKE3</span>37fae3f127228c89e0ff9db55d1ee1d2f39fe81540f786e2fbb4eddfe327a7e8</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/inclusionAI/Ling-3.0-flash" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../ling-3-0-flash-2/">Ling-3.0-flash (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16-2/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../glm-5-1/">GLM-5.1 (2026)</a><a class="related-pill" href="../glm-5-2/">GLM-5.2 (2026)</a><a class="related-pill" href="../glm-5-3/">GLM-5.3 (2026)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DBRX-Instruct — Weight Registry">
 <meta name="twitter:description" content="Databricks' fine-grained mixture-of-experts model, 132B total parameters with 36B active per token across 16 experts (4 active). Databricks' own HF org now has ">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "DBRX-Instruct", "description": "Databricks' fine-grained mixture-of-experts model, 132B total parameters with 36B active per token across 16 experts (4 active). Databricks' own HF org now has zero hosted repos -- this entry uses the community-preserved alpindale mirror, another case where an immutable registry matters.", "url": "https://weightregistry.org/explorer/dbrx-instruct/", "creator": {"@type": "Organization", "name": "Databricks"}, "license": "Databricks Open Model License", "dateModified": "2024-03-27", "identifier": "9da719cc668fa9251065e007b3a0777959a3c5a015b0e9c614c581c85924d417"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / DBRX-Instruct</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>DBRX-Instruct <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">DBRX-Instruct is a large language model released by Databricks, released under the Databricks Open Model License license, with a claimed knowledge cutoff of 2024-03-27. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Databricks' fine-grained mixture-of-experts model, 132B total parameters with 36B active per token across 16 experts (4 active). Databricks' own HF org now has zero hosted repos -- this entry uses the community-preserved alpindale mirror, another case where an immutable registry matters.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">1,752 downloads on Hugging Face · 23 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">dbrx</span><span class="tag-pill">text-generation</span><span class="tag-pill">custom_code</span><span class="tag-pill">text-generation-inference</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>9da719cc668fa9251065e007b3a0777959a3c5a015b0e9c614c581c85924d417</div><div class="hash-full"><span class="algo-label">SHA3-256</span>3da598d10bd1219865fb4ee687040544a5e6a8558bda7ea74a0ed83c7655de08</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4cd3b12283a5c85aacb06b328a72eca41cf0b7083291505ad38c0b4a978155dc</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">61 shards (Merkle root) · 245.12 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>9da719cc668fa9251065e007b3a0777959a3c5a015b0e9c614c581c85924d417</div><div class="hash-full"><span class="algo-label">SHA3-256</span>3da598d10bd1219865fb4ee687040544a5e6a8558bda7ea74a0ed83c7655de08</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4cd3b12283a5c85aacb06b328a72eca41cf0b7083291505ad38c0b4a978155dc</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 849 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>22ac9ec844ce98afd46f5d8a23fed9b7c68b5c615ebe7b174b92f5c0e1de45d8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e9b55a021a89b1d0086f9019fc55839b776646d921aab80e6addd45f3067645e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>36434a7db15949bfde5892365e6ebf27752325464e24a79babc07d978814a76e</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>no recognized tokenizer file found in repo</li></ul></div>
     <a class="source-link" href="https://huggingface.co/alpindale/dbrx-instruct" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../openelm-1-1b-instruct/">OpenELM-1_1B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a><a class="related-pill" href="../qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-1-5b-instruct/">Qwen2.5-1.5B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="T5-small — Weight Registry">
 <meta name="twitter:description" content="Casts every NLP task -- translation, summarization, classification, question-answering -- as text-to-text generation via one encoder-decoder architecture. The '">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "T5-small", "description": "Casts every NLP task -- translation, summarization, classification, question-answering -- as text-to-text generation via one encoder-decoder architecture. The 'small' checkpoint is 60M parameters, the smallest of five sizes released up to 11B, all sharing the same C4 (Colossal Clean Crawled Corpus) pretraining recipe.", "url": "https://weightregistry.org/explorer/t5-small/", "creator": {"@type": "Organization", "name": "Google"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2019-10-23", "identifier": "0xf34ef2155cc6eb3cbcf6b316278359908b3b196c6dfad3435c27d06ff0701c0d"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / T5-small</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>T5-small <span class="year-tag">(2019)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">T5-small is a large language model released by Google, released under the apache-2.0 license, with a claimed knowledge cutoff of 2019-10-23. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Casts every NLP task -- translation, summarization, classification, question-answering -- as text-to-text generation via one encoder-decoder architecture. The 'small' checkpoint is 60M parameters, the smallest of five sizes released up to 11B, all sharing the same C4 (Colossal Clean Crawled Corpus) pretraining recipe.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Google</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>—</dd>
         <dt>Knowledge cutoff</dt><dd>2019-10-23</dd>
         <dt>Source</dt><dd>https://huggingface.co/google-t5/t5-small</dd>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">24,227,473 downloads on Hugging Face · 639 likes · pipeline: translation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">rust</span><span class="tag-pill">onnx</span><span class="tag-pill">safetensors</span><span class="tag-pill">t5</span><span class="tag-pill">text2text-generation</span><span class="tag-pill">summarization</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0xf34ef2155cc6eb3cbcf6b316278359908b3b196c6dfad3435c27d06ff0701c0d</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x7ee49a0a58ceb94b8e5ab1d684f7f150d47054a822fb9d0d1e09a15f5325b2b7</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x6283daad15d10d68e021fa7fd202006983da5df2303554a86518b200e5d933d7</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0xf34ef2155cc6eb3cbcf6b316278359908b3b196c6dfad3435c27d06ff0701c0d</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0x7ee49a0a58ceb94b8e5ab1d684f7f150d47054a822fb9d0d1e09a15f5325b2b7</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x6283daad15d10d68e021fa7fd202006983da5df2303554a86518b200e5d933d7</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 230.83 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>bd944e5f1b3ad9b70dd9d00010a517059e19265671076b8b0a4a58d9491842bc</div><div class="hash-full"><span class="algo-label">SHA3-256</span>762f6d214a507e28398d76a6c51699a152fb4914df157cc9939464ccd385bcb1</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8ec9044cd73290ad0b6a29d5459845c36c078ef928bb27cf222ddc9497354867</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.18 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>530e25060e3a8d5f7b0fcf53bfea9f3601165161f3b1914676e98d97cf07bcf1</div><div class="hash-full"><span class="algo-label">SHA3-256</span>595d34e46ace9c4e829b8631f01d27c29f0b968f1f9dd00b9f0c4777c8318d3c</div><div class="hash-full"><span class="algo-label">BLAKE3</span>48b11a2887c203f2ae2b0bd67fe633820a67d1536d72675a1569973ef0cac7e3</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.32 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>d2acde0d8d71dd30a711834b07781b9c89feaac33fd332f60507699282740066</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f59741b250e9b839620d2a976a2dd1f64b2d458c4375fd792baf4900effdd30b</div><div class="hash-full"><span class="algo-label">BLAKE3</span>9ce04442387ff177fd52c14e1bd1901ba563d71e956ca2cffd39eeb3ef4bb820</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/google-t5/t5-small/resolve/df1b051c49625cf57a3d0d8d3863ed4d13564fe4/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>bd944e5f1b3ad9b70dd9d00010a517059e19265671076b8b0a4a58d9491842bc</code></p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xac0df2f12d928974f001187e73de19b7082e6790ee51074da7cfcc6d6b43459a" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../bert-base-uncased/">BERT-base-uncased (2018)</a><a class="related-pill" href="../albert-base-v2/">ALBERT-base-v2 (2019)</a><a class="related-pill" href="../t5-small-2/">T5-small (2019)</a><a class="related-pill" href="../gemma-7b/">gemma-7b (2024)</a><a class="related-pill" href="../gemma-7b-it/">gemma-7b-it (2024)</a><a class="related-pill" href="../gemma-2b/">gemma-2b (2024)</a></div></div>
   </div>
 </div>
 <footer>

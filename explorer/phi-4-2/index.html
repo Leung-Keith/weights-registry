@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="phi-4 — Weight Registry">
 <meta name="twitter:description" content="Later Phi generation, continuing the small-model-via-data-quality approach.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "phi-4", "description": "Later Phi generation, continuing the small-model-via-data-quality approach.", "url": "https://weightregistry.org/explorer/phi-4-2/", "creator": {"@type": "Organization", "name": "Microsoft"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2024-12-12", "identifier": "9d64b0de83947ec580e7892155b5a31c99d897aab173f6254d71196e5add8381"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / phi-4</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>phi-4 <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">phi-4 is a large language model released by Microsoft, released under the MIT license, with a claimed knowledge cutoff of 2024-12-12. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Later Phi generation, continuing the small-model-via-data-quality approach.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">607,294 downloads on Hugging Face · 2,312 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">phi3</span><span class="tag-pill">text-generation</span><span class="tag-pill">phi</span><span class="tag-pill">nlp</span><span class="tag-pill">math</span><span class="tag-pill">code</span><span class="tag-pill">chat</span><span class="tag-pill">conversational</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>9d64b0de83947ec580e7892155b5a31c99d897aab173f6254d71196e5add8381</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b9cdf992c4b6b355e4335ccf63779a17e2ba9cf76d4a16c5a330d70c20bc6f10</div><div class="hash-full"><span class="algo-label">BLAKE3</span>56f8ac1cc9d686643e1e4c9b55c90bdb798db0ea345b67e97cccb0d4b30c86a6</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">6 shards (Merkle root) · 27.31 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>9d64b0de83947ec580e7892155b5a31c99d897aab173f6254d71196e5add8381</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b9cdf992c4b6b355e4335ccf63779a17e2ba9cf76d4a16c5a330d70c20bc6f10</div><div class="hash-full"><span class="algo-label">BLAKE3</span>56f8ac1cc9d686643e1e4c9b55c90bdb798db0ea345b67e97cccb0d4b30c86a6</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 802 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>07eedad2c48798b6e3728e4a1b75e0e092019a375ba725a40e40c78d13664045</div><div class="hash-full"><span class="algo-label">SHA3-256</span>1788d848582ab4853f92527da72ed60e2a42b5bf03a3a3b27cf94650ace1b152</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a4148945291ba9a9b7d93b1f74ffb908202952c6af0f9e0f18b5d6ef30f34e85</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 4.06 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>9f38d05d9d25756bb2f181ab5a0cebcd59e638df10336fc7ed1010f7296d0298</div><div class="hash-full"><span class="algo-label">SHA3-256</span>383f0b104ef2124554be04c40b1ef2c87edb98e1b8f79ee57ae919457cd0a9b4</div><div class="hash-full"><span class="algo-label">BLAKE3</span>fb009a0797f93cf667bc9e2932ae0c99707ad519794c8a9a3896b4bf151f7dc9</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/microsoft/phi-4" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../phi-1-5/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-1-5-2/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-2-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-3-mini-4k-instruct/">Phi-3-mini-4k-instruct (2024)</a><a class="related-pill" href="../phi-3-mini-128k-instruct/">Phi-3-mini-128k-instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

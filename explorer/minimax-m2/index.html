@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MiniMax-M2 — Weight Registry">
 <meta name="twitter:description" content="MiniMax AI's M2 generation open LLM.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "MiniMax-M2", "description": "MiniMax AI's M2 generation open LLM.", "url": "https://weightregistry.org/explorer/minimax-m2/", "creator": {"@type": "Organization", "name": "MiniMax AI"}, "license": "other", "dateModified": "2025-10-01", "identifier": "ecf66902cc60df67680142b2c07c162fc160308ad387ca3d01c69af75977be86"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / MiniMax-M2</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>MiniMax-M2 <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">MiniMax-M2 is a large language model released by MiniMax AI, released under the other license, with a claimed knowledge cutoff of 2025-10-01. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">MiniMax AI's M2 generation open LLM.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>MiniMax AI</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>other</dd>
         <dt>Size</dt><dd>214.33 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2025-10-01</dd>
         <dt>Source</dt><dd>https://huggingface.co/MiniMaxAI/MiniMax-M2</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">279,543 downloads on Hugging Face · 1,503 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">minimax_m2</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span><span class="tag-pill">fp8</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>ecf66902cc60df67680142b2c07c162fc160308ad387ca3d01c69af75977be86</div><div class="hash-full"><span class="algo-label">SHA3-256</span>864401130042ef3432302406f6770805a4283874abd9b242d7ac3e549dd730b8</div><div class="hash-full"><span class="algo-label">BLAKE3</span>97539bceb3b8fef0a21ae2597a91521ebff01b1aa7d49fe027408954d5bfe03f</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">130 shards (Merkle root) · 214.33 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ecf66902cc60df67680142b2c07c162fc160308ad387ca3d01c69af75977be86</div><div class="hash-full"><span class="algo-label">SHA3-256</span>864401130042ef3432302406f6770805a4283874abd9b242d7ac3e549dd730b8</div><div class="hash-full"><span class="algo-label">BLAKE3</span>97539bceb3b8fef0a21ae2597a91521ebff01b1aa7d49fe027408954d5bfe03f</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 2.01 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>03d0b726553f72ee799f30f52f77b9292b873714abda76ee7e2683953373db87</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0434befc37e72b3f6088d5342336928f5b09721b477373ba6d1a888d2550b55d</div><div class="hash-full"><span class="algo-label">BLAKE3</span>f1ed0803e2584f6aca0e5dc5daee445411a6b3904e6c66a779c6a4625b0e63f7</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 9.28 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>757622126525aeeb131756849d93298070ff3f0319c455ec8c5bb0f6b1cebbe8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>47568e45535d36af7d1c4fb9aaf5d6907df8fe54334f040d401316bc969e7aa1</div><div class="hash-full"><span class="algo-label">BLAKE3</span>b5a4e31f8028abc9bf05a2b4049d26ef2b02c132414221f07985fe85abc4a95a</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/MiniMaxAI/MiniMax-M2" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../minimax-m2-1/">MiniMax-M2.1 (2025)</a><a class="related-pill" href="../minimax-m2-5/">MiniMax-M2.5 (2026)</a><a class="related-pill" href="../minimax-m2-7/">MiniMax-M2.7 (2026)</a><a class="related-pill" href="../minimax-m3/">MiniMax-M3 (2026)</a><a class="related-pill" href="../minicpm5-2b/">MiniCPM5-2B (2025)</a><a class="related-pill" href="../qwen3-14b/">Qwen3-14B (2025)</a></div></div>
   </div>
 </div>
 <footer>

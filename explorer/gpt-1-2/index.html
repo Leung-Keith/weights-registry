@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GPT-1 — Weight Registry">
 <meta name="twitter:description" content="OpenAI's original generative pretrained transformer, first in the GPT line, released relatively openly compared to its successor's staged rollout.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "GPT-1", "description": "OpenAI's original generative pretrained transformer, first in the GPT line, released relatively openly compared to its successor's staged rollout.", "url": "https://weightregistry.org/explorer/gpt-1-2/", "creator": {"@type": "Organization", "name": "OpenAI"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2018-06-11", "identifier": "25c82cdf1844d2d93e9120b3b628fc6c2b4fcc7801a1297f58465ba67d45deb3"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / GPT-1</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>GPT-1 <span class="year-tag">(2018)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">GPT-1 is a large language model released by OpenAI, released under the MIT license, with a claimed knowledge cutoff of 2018-06-11. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">OpenAI's original generative pretrained transformer, first in the GPT line, released relatively openly compared to its successor's staged rollout.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">228,542 downloads on Hugging Face · 315 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">rust</span><span class="tag-pill">safetensors</span><span class="tag-pill">openai-gpt</span><span class="tag-pill">text-generation</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>25c82cdf1844d2d93e9120b3b628fc6c2b4fcc7801a1297f58465ba67d45deb3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>530c5037aa02e502a632ceb2e0de2e6a0d903d37105dedd7c28015d46de9d6b5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>639487d7df3d13a9ed0720ee2fdfa8b69bbea580e97d797fe1b2e192015c4c1a</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 456.56 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>25c82cdf1844d2d93e9120b3b628fc6c2b4fcc7801a1297f58465ba67d45deb3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>530c5037aa02e502a632ceb2e0de2e6a0d903d37105dedd7c28015d46de9d6b5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>639487d7df3d13a9ed0720ee2fdfa8b69bbea580e97d797fe1b2e192015c4c1a</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 656 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>0499825b2f56e282ebc36725df61754abe58a3cd117ef99b571570d27e62ff36</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7aef6e840e95eaef1350b4f87f4db5347648bddd9a2325f52bf8a996af5ef622</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ff3419fb540ff5ee17818a77a116495c8c6bbdc15917c1e5415287083420d660</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.21 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>ad8b2a00566d1cce8f64b3bb73243c716ddb130ef09ae073cecf217c84cc42d3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>aa93e40953fb960b751ed7aeddf775217f285e93a0692a044356a91d8c63fa3e</div><div class="hash-full"><span class="algo-label">BLAKE3</span>77dcf8b9a6d469146b27419709af5fc943bb9eceb2879cde6f098afb46c21833</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/openai-community/openai-gpt/resolve/1e0d4f3028acbffb47fe933cea64619c5ec1a002/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>25c82cdf1844d2d93e9120b3b628fc6c2b4fcc7801a1297f58465ba67d45deb3</code></p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>other weight-like files present but not hashed: ['pytorch_model.bin']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/openai-community/openai-gpt" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../gpt-1/">GPT-1 (2018)</a><a class="related-pill" href="../gpt-2-124m-small/">GPT-2 (124M, small) (2019)</a><a class="related-pill" href="../gpt2-large/">gpt2-large (2019)</a><a class="related-pill" href="../gpt-oss-20b/">GPT-OSS-20b (2025)</a><a class="related-pill" href="../gpt-oss-20b-2/">GPT-OSS-20b (2025)</a><a class="related-pill" href="../gpt-oss-120b/">gpt-oss-120b (2025)</a></div></div>
   </div>
 </div>
 <footer>

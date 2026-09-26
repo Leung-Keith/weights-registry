@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RoBERTa-base — Weight Registry">
 <meta name="twitter:description" content="Re-tuned BERT pretraining recipe -- 10x more training data (160GB vs BERT's 16GB), larger batches, longer training, dropped the next-sentence-prediction objecti">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "RoBERTa-base", "description": "Re-tuned BERT pretraining recipe -- 10x more training data (160GB vs BERT's 16GB), larger batches, longer training, dropped the next-sentence-prediction objective, dynamic masking -- at the same 125M parameter count, demonstrating BERT had been substantially undertrained and pushing GLUE/SQuAD state-of-the-art at release.", "url": "https://weightregistry.org/explorer/roberta-base-2/", "creator": {"@type": "Organization", "name": "Meta"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2019-07-26", "identifier": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / RoBERTa-base</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>RoBERTa-base <span class="year-tag">(2019)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">RoBERTa-base is a large language model released by Meta, released under the MIT license, with a claimed knowledge cutoff of 2019-07-26. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Re-tuned BERT pretraining recipe -- 10x more training data (160GB vs BERT's 16GB), larger batches, longer training, dropped the next-sentence-prediction objective, dynamic masking -- at the same 125M parameter count, demonstrating BERT had been substantially undertrained and pushing GLUE/SQuAD state-of-the-art at release.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">8,183,402 downloads on Hugging Face · 666 likes · pipeline: fill-mask · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">rust</span><span class="tag-pill">safetensors</span><span class="tag-pill">roberta</span><span class="tag-pill">fill-mask</span><span class="tag-pill">exbert</span><span class="tag-pill">en</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81</div><div class="hash-full"><span class="algo-label">SHA3-256</span>20383ef540d32207825f8eaf197a04f79ef84412f605d567f84f44805e3b5935</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a6d9c33ed669ea4e72516b1e1b55efe990ac537a02d1ec88748052b89418d087</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 475.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81</div><div class="hash-full"><span class="algo-label">SHA3-256</span>20383ef540d32207825f8eaf197a04f79ef84412f605d567f84f44805e3b5935</div><div class="hash-full"><span class="algo-label">BLAKE3</span>a6d9c33ed669ea4e72516b1e1b55efe990ac537a02d1ec88748052b89418d087</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 481 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>2036a6c2403c862e2458d8bb455e9171f5270e211f521a7326c6a83efcd138c5</div><div class="hash-full"><span class="algo-label">BLAKE3</span>3e6f582c574a43752aeb966d8e376c9bdbdcd0cd0d34e3e947c4abad72c56d53</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.29 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0c697da2703e8ea995954b4a85cff8cbe531d8b9429cf74df59db238cb0f96ff</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4c2a3681edff22cad38aaaf3fcce153102d1e5146d55a39f0ac6632b8faf554e</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/FacebookAI/roberta-base/resolve/e2da8e2f811d1448a5b465c236feacd80ffbac7b/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/FacebookAI/roberta-base" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../roberta-base/">RoBERTa-base (2019)</a><a class="related-pill" href="../bart-base/">BART-base (2019)</a><a class="related-pill" href="../bart-base-2/">BART-base (2019)</a><a class="related-pill" href="../opt-125m/">opt-125m (2022)</a><a class="related-pill" href="../opt-1-3b/">OPT-1.3b (2022)</a><a class="related-pill" href="../opt-1-3b-2/">OPT-1.3b (2022)</a></div></div>
   </div>
 </div>
 <footer>

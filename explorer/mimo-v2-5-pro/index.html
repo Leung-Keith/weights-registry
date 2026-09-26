@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MiMo-V2.5-Pro — Weight Registry">
 <meta name="twitter:description" content="MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, w">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "MiMo-V2.5-Pro", "description": "MiMo-V2.5-Pro is Xiaomi\u2019s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....", "url": "https://weightregistry.org/explorer/mimo-v2-5-pro/", "creator": {"@type": "Organization", "name": "Xiaomi"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2026-04-22", "identifier": "a36ff96456dcfe306589b11aeda9becb9cbe1889843dd57b75fed4a759e3286c"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / MiMo-V2.5-Pro</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>MiMo-V2.5-Pro <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">MiMo-V2.5-Pro is a large language model released by Xiaomi, released under the mit license, with a claimed knowledge cutoff of 2026-04-22. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Xiaomi</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>962.42 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2026-04-22</dd>
         <dt>Source</dt><dd>https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">22,401 downloads on Hugging Face · 758 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">mimo_v2</span><span class="tag-pill">text-generation</span><span class="tag-pill">agent</span><span class="tag-pill">long-context</span><span class="tag-pill">code</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">en</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>a36ff96456dcfe306589b11aeda9becb9cbe1889843dd57b75fed4a759e3286c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f7340e2df5f6a7dd9a44c238ac427c1acde959201a825b498fad54eddbe09e14</div><div class="hash-full"><span class="algo-label">BLAKE3</span>82d5f288c5006dbd20a4dcbbb882d683d3061f27f8a017ce31dfa0fb5f0318d6</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">34 shards (Merkle root) · 962.42 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>a36ff96456dcfe306589b11aeda9becb9cbe1889843dd57b75fed4a759e3286c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f7340e2df5f6a7dd9a44c238ac427c1acde959201a825b498fad54eddbe09e14</div><div class="hash-full"><span class="algo-label">BLAKE3</span>82d5f288c5006dbd20a4dcbbb882d683d3061f27f8a017ce31dfa0fb5f0318d6</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 5.22 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>7e11c6cd358a841d5ac016fc80c030cad14d418ee125e9bde1eb6d0757b635d6</div><div class="hash-full"><span class="algo-label">SHA3-256</span>72e7fe1b8a07983657a0fa8a83b0185c75d8406f0cf7efdb1969753236341f1d</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ebc8e940f7ca7e34ce19ec5395cc0a87b5672ab1b740be28bafdf1f5b92fd96b</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 11.62 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>cdd40b08814d626d2ab1eb36c7ca66521a96bce4d478cf1375a4d45fe03e1cf9</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c66640b5486e96dfcb593cc4f60e93bf6e03416a5d92035cc9aa07e4262e7cc7</div><div class="hash-full"><span class="algo-label">BLAKE3</span>228a25fe7ec37d426946359c579c6240b8e1a41d1b23948228d3f10bf0955f8c</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>multiple unrecognized .safetensors candidates, none canonical or variant-tagged: ['model_mtp.safetensors', 'model_pp0_ep0_shard0.safetensors', 'model_pp0_ep0_shard1.safetensors', 'model_pp0_ep10_shard0.safetensors', 'model_pp0_ep11_shard0.safetensors', 'model_pp0_ep12_shard0.safetensors', 'model_pp0_ep13_shard0.safetensors', 'model_pp0_ep14_shard0.safetensors', 'model_pp0_ep15_shard0.safetensors', 'model_pp0_ep16_shard0.safetensors', 'model_pp0_ep17_shard0.safetensors', 'model_pp0_ep18_shard0.safetensors', 'model_pp0_ep19_shard0.safetensors', 'model_pp0_ep1_shard0.safetensors', 'model_pp0_ep20_shard0.safetensors', 'model_pp0_ep21_shard0.safetensors', 'model_pp0_ep22_shard0.safetensors', 'model_pp0_ep23_shard0.safetensors', 'model_pp0_ep24_shard0.safetensors', 'model_pp0_ep25_shard0.safetensors', 'model_pp0_ep26_shard0.safetensors', 'model_pp0_ep27_shard0.safetensors', 'model_pp0_ep28_shard0.safetensors', 'model_pp0_ep29_shard0.safetensors', 'model_pp0_ep2_shard0.safetensors', 'model_pp0_ep30_shard0.safetensors', 'model_pp0_ep31_shard0.safetensors', 'model_pp0_ep3_shard0.safetensors', 'model_pp0_ep4_shard0.safetensors', 'model_pp0_ep5_shard0.safetensors', 'model_pp0_ep6_shard0.safetensors', 'model_pp0_ep7_shard0.safetensors', 'model_pp0_ep8_shard0.safetensors', 'model_pp0_ep9_shard0.safetensors']. Picked 'model_pp0_ep0_shard0.safetensors', by real file size (largest wins): [('model_pp0_ep0_shard0.safetensors', 34554911640), ('model_pp0_ep9_shard0.safetensors', 31264218696), ('model_pp0_ep31_shard0.safetensors', 31264218696), ('model_pp0_ep30_shard0.safetensors', 31264218696), ('model_pp0_ep29_shard0.safetensors', 31264218696), ('model_pp0_ep28_shard0.safetensors', 31264218696), ('model_pp0_ep27_shard0.safetensors', 31264218696), ('model_pp0_ep26_shard0.safetensors', 31264218696), ('model_pp0_ep25_shard0.safetensors', 31264218696), ('model_pp0_ep24_shard0.safetensors', 31264218696), ('model_pp0_ep23_shard0.safetensors', 31264218696), ('model_pp0_ep22_shard0.safetensors', 31264218696), ('model_pp0_ep21_shard0.safetensors', 31264218696), ('model_pp0_ep20_shard0.safetensors', 31264218696), ('model_pp0_ep19_shard0.safetensors', 31264218696), ('model_pp0_ep18_shard0.safetensors', 31264218696), ('model_pp0_ep17_shard0.safetensors', 31264218696), ('model_pp0_ep16_shard0.safetensors', 31264218696), ('model_pp0_ep15_shard0.safetensors', 31264218696), ('model_pp0_ep14_shard0.safetensors', 31264218696), ('model_pp0_ep13_shard0.safetensors', 31264218696), ('model_pp0_ep12_shard0.safetensors', 31264218696), ('model_pp0_ep11_shard0.safetensors', 31264218696), ('model_pp0_ep10_shard0.safetensors', 31264218696), ('model_pp0_ep8_shard0.safetensors', 31264217040), ('model_pp0_ep7_shard0.safetensors', 31264213728), ('model_pp0_ep6_shard0.safetensors', 31264213728), ('model_pp0_ep5_shard0.safetensors', 31264213728), ('model_pp0_ep4_shard0.safetensors', 31264213728), ('model_pp0_ep3_shard0.safetensors', 31264213728), ('model_pp0_ep2_shard0.safetensors', 31264213728), ('model_pp0_ep1_shard0.safetensors', 31264213728), ('model_pp0_ep0_shard1.safetensors', 27180576088), ('model_mtp.safetensors', 2463641280)] -- VERIFY</li><li>sharding signals disagree: index file present=True, filename pattern matched=False -- picked whichever signal is available, but this repo's layout is unusual</li><li>found model.safetensors.index.json but shard filenames didn't match the expected NNNNN-of-NNNNN pattern -- fell back to sorting all .safetensors files, verify manually</li></ul></div>
     <a class="source-link" href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../nvidia-nemotron-3-nano-4b-bf16-2/">NVIDIA-Nemotron-3-Nano-4B-BF16 (2026)</a><a class="related-pill" href="../glm-5-1/">GLM-5.1 (2026)</a><a class="related-pill" href="../glm-5-2/">GLM-5.2 (2026)</a><a class="related-pill" href="../glm-5-3/">GLM-5.3 (2026)</a><a class="related-pill" href="../minimax-m2-5/">MiniMax-M2.5 (2026)</a></div></div>
   </div>
 </div>
 <footer>

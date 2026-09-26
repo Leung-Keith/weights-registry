@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Phi-3-mini-128k-instruct — Weight Registry">
 <meta name="twitter:description" content="Phi-3 mini variant with an extended 128k-token context window.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Phi-3-mini-128k-instruct", "description": "Phi-3 mini variant with an extended 128k-token context window.", "url": "https://weightregistry.org/explorer/phi-3-mini-128k-instruct/", "creator": {"@type": "Organization", "name": "Microsoft"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2024-04-23", "identifier": "0x58e2274870fe2297ea49896cab722cee62ae76d926ad620f3796c9ab487e1c43"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Phi-3-mini-128k-instruct</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>Phi-3-mini-128k-instruct <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Phi-3-mini-128k-instruct is a large language model released by Microsoft, released under the mit license, with a claimed knowledge cutoff of 2024-04-23. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Phi-3 mini variant with an extended 128k-token context window.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Microsoft</dd>
-        <dt>License</dt><dd>—</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>7.12 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-04-23</dd>
         <dt>Source</dt><dd>https://huggingface.co/microsoft/Phi-3-mini-128k-instruct</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">141,334 downloads on Hugging Face · 1,705 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">phi3</span><span class="tag-pill">text-generation</span><span class="tag-pill">nlp</span><span class="tag-pill">code</span><span class="tag-pill">conversational</span><span class="tag-pill">custom_code</span><span class="tag-pill">en</span><span class="tag-pill">eval-results</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x58e2274870fe2297ea49896cab722cee62ae76d926ad620f3796c9ab487e1c43</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xe5941581cd4613520d23bb5cdcf810271c4b8d2c8ff289167b492fbdfb68dd5c</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x13eeac6b64c4858910b661cb0118a58d3afc98af599137a26b9c53381c4a2914</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x58e2274870fe2297ea49896cab722cee62ae76d926ad620f3796c9ab487e1c43</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xe5941581cd4613520d23bb5cdcf810271c4b8d2c8ff289167b492fbdfb68dd5c</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0x13eeac6b64c4858910b661cb0118a58d3afc98af599137a26b9c53381c4a2914</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 3.40 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>af70441b867458d18788c564ea69894adddaa4de47ab6534391604fc4893f03b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e87843fe8577a95bdb92fdbbe823e40bb3fac1780a98479426d087bdb09f430a</div><div class="hash-full"><span class="algo-label">BLAKE3</span>eb93c76a0196efbdc681778e3d75d91448e8510ee576e7c69651b3445d8c08cb</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.85 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>072ab882d6c7192a42f78790945d16c064691321a73251a4b18f6a380f0fbe39</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b4767f14a9d11450a3b82b75f1a27e7765fe4a73af08c1882d2a19f1988c71da</div><div class="hash-full"><span class="algo-label">BLAKE3</span>25a149787a922e398e3c194c5b61875d9fe1186740e1f23a2a8d25a91b6761f8</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0x9ff76ab8772d7fbcdd5ba5cd98bb5eeba4938f69f66568e1fe75a3f76e2f5e8d" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../phi-1-5/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-1-5-2/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-2-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-3-mini-4k-instruct/">Phi-3-mini-4k-instruct (2024)</a><a class="related-pill" href="../phi-3-mini-128k-instruct-2/">Phi-3-mini-128k-instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

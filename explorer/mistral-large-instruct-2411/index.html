@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mistral-Large-Instruct-2411 — Weight Registry">
 <meta name="twitter:description" content="Mistral AI's 123B dense flagship model, extending Mistral-Large-Instruct-2407 with improved long-context handling, function calling, and system-prompt support -">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Mistral-Large-Instruct-2411", "description": "Mistral AI's 123B dense flagship model, extending Mistral-Large-Instruct-2407 with improved long-context handling, function calling, and system-prompt support -- Mistral's largest dense (non-MoE) release.", "url": "https://weightregistry.org/explorer/mistral-large-instruct-2411/", "creator": {"@type": "Organization", "name": "Mistral AI"}, "license": "Mistral Research License (non-commercial)", "dateModified": "2024-11-18", "identifier": "5b0bda88ee2d768d7939a27ceb7e1780e7393bce856fd1f42348a2c4ab854fc3"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Mistral-Large-Instruct-2411</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Mistral-Large-Instruct-2411 <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Mistral-Large-Instruct-2411 is a large language model released by Mistral AI, released under the Mistral Research License (non-commercial) license, with a claimed knowledge cutoff of 2024-11-18. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Mistral AI's 123B dense flagship model, extending Mistral-Large-Instruct-2407 with improved long-context handling, function calling, and system-prompt support -- Mistral's largest dense (non-MoE) release.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">7,207 downloads on Hugging Face · 266 likes · library: vllm</p><div class="tag-list"><span class="tag-pill">vllm</span><span class="tag-pill">safetensors</span><span class="tag-pill">mistral</span><span class="tag-pill">mistral-common</span><span class="tag-pill">en</span><span class="tag-pill">fr</span><span class="tag-pill">de</span><span class="tag-pill">es</span><span class="tag-pill">it</span><span class="tag-pill">pt</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>5b0bda88ee2d768d7939a27ceb7e1780e7393bce856fd1f42348a2c4ab854fc3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>03a21956b2830ad35afbed93f080b7a989e44c3ae9d5a98b75bd56e19c035548</div><div class="hash-full"><span class="algo-label">BLAKE3</span>820b245b068c83e96f2c784a8fd8f32c50e2b2fd776d7986faf58f9fdf53afce</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">51 shards (Merkle root) · 228.38 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>5b0bda88ee2d768d7939a27ceb7e1780e7393bce856fd1f42348a2c4ab854fc3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>03a21956b2830ad35afbed93f080b7a989e44c3ae9d5a98b75bd56e19c035548</div><div class="hash-full"><span class="algo-label">BLAKE3</span>820b245b068c83e96f2c784a8fd8f32c50e2b2fd776d7986faf58f9fdf53afce</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 588 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>2c379704c86ffd8273b1aa9beae0ce20c4c36f47a0c86708efb5aa46c0ac7b74</div><div class="hash-full"><span class="algo-label">SHA3-256</span>1fe176f6e08a26485a042a193dec77ab383e524780b1185c25bb618d04f86db6</div><div class="hash-full"><span class="algo-label">BLAKE3</span>bf250661850fcd0f3075dc198f70200a9dfac71895f24a9b39cff2e153a6610a</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 3.50 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>2482d54bc351bc5f9ccc899ffd51b8d6cbe0fc1987e8a81a2d7c3670c0b666fc</div><div class="hash-full"><span class="algo-label">SHA3-256</span>336f93983c5d959f271aa67d0156cf0c38feeb3aeaa8e0fc316fd6a63e8bafba</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ac19507d3d595999803b25159cfa1a38f5eb4793d15a8d6637fee71f097bfe9e</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>MULTIPLE SHARD SETS found (likely different precisions/formats): chose prefix 'model' (51 shards), did NOT hash other shard set(s): {'consolidated': ['consolidated-00001-of-00051.safetensors', 'consolidated-00002-of-00051.safetensors', 'consolidated-00003-of-00051.safetensors', 'consolidated-00004-of-00051.safetensors', 'consolidated-00005-of-00051.safetensors', 'consolidated-00006-of-00051.safetensors', 'consolidated-00007-of-00051.safetensors', 'consolidated-00008-of-00051.safetensors', 'consolidated-00009-of-00051.safetensors', 'consolidated-00010-of-00051.safetensors', 'consolidated-00011-of-00051.safetensors', 'consolidated-00012-of-00051.safetensors', 'consolidated-00013-of-00051.safetensors', 'consolidated-00014-of-00051.safetensors', 'consolidated-00015-of-00051.safetensors', 'consolidated-00016-of-00051.safetensors', 'consolidated-00017-of-00051.safetensors', 'consolidated-00018-of-00051.safetensors', 'consolidated-00019-of-00051.safetensors', 'consolidated-00020-of-00051.safetensors', 'consolidated-00021-of-00051.safetensors', 'consolidated-00022-of-00051.safetensors', 'consolidated-00023-of-00051.safetensors', 'consolidated-00024-of-00051.safetensors', 'consolidated-00025-of-00051.safetensors', 'consolidated-00026-of-00051.safetensors', 'consolidated-00027-of-00051.safetensors', 'consolidated-00028-of-00051.safetensors', 'consolidated-00029-of-00051.safetensors', 'consolidated-00030-of-00051.safetensors', 'consolidated-00031-of-00051.safetensors', 'consolidated-00032-of-00051.safetensors', 'consolidated-00033-of-00051.safetensors', 'consolidated-00034-of-00051.safetensors', 'consolidated-00035-of-00051.safetensors', 'consolidated-00036-of-00051.safetensors', 'consolidated-00037-of-00051.safetensors', 'consolidated-00038-of-00051.safetensors', 'consolidated-00039-of-00051.safetensors', 'consolidated-00040-of-00051.safetensors', 'consolidated-00041-of-00051.safetensors', 'consolidated-00042-of-00051.safetensors', 'consolidated-00043-of-00051.safetensors', 'consolidated-00044-of-00051.safetensors', 'consolidated-00045-of-00051.safetensors', 'consolidated-00046-of-00051.safetensors', 'consolidated-00047-of-00051.safetensors', 'consolidated-00048-of-00051.safetensors', 'consolidated-00049-of-00051.safetensors', 'consolidated-00050-of-00051.safetensors', 'consolidated-00051-of-00051.safetensors']} -- VERIFY the chosen precision is the intended default</li><li>other weight-like files present but not hashed: ['consolidated-00001-of-00051.safetensors', 'consolidated-00002-of-00051.safetensors', 'consolidated-00003-of-00051.safetensors', 'consolidated-00004-of-00051.safetensors', 'consolidated-00005-of-00051.safetensors', 'consolidated-00006-of-00051.safetensors', 'consolidated-00007-of-00051.safetensors', 'consolidated-00008-of-00051.safetensors', 'consolidated-00009-of-00051.safetensors', 'consolidated-00010-of-00051.safetensors', 'consolidated-00011-of-00051.safetensors', 'consolidated-00012-of-00051.safetensors', 'consolidated-00013-of-00051.safetensors', 'consolidated-00014-of-00051.safetensors', 'consolidated-00015-of-00051.safetensors', 'consolidated-00016-of-00051.safetensors', 'consolidated-00017-of-00051.safetensors', 'consolidated-00018-of-00051.safetensors', 'consolidated-00019-of-00051.safetensors', 'consolidated-00020-of-00051.safetensors', 'consolidated-00021-of-00051.safetensors', 'consolidated-00022-of-00051.safetensors', 'consolidated-00023-of-00051.safetensors', 'consolidated-00024-of-00051.safetensors', 'consolidated-00025-of-00051.safetensors', 'consolidated-00026-of-00051.safetensors', 'consolidated-00027-of-00051.safetensors', 'consolidated-00028-of-00051.safetensors', 'consolidated-00029-of-00051.safetensors', 'consolidated-00030-of-00051.safetensors', 'consolidated-00031-of-00051.safetensors', 'consolidated-00032-of-00051.safetensors', 'consolidated-00033-of-00051.safetensors', 'consolidated-00034-of-00051.safetensors', 'consolidated-00035-of-00051.safetensors', 'consolidated-00036-of-00051.safetensors', 'consolidated-00037-of-00051.safetensors', 'consolidated-00038-of-00051.safetensors', 'consolidated-00039-of-00051.safetensors', 'consolidated-00040-of-00051.safetensors', 'consolidated-00041-of-00051.safetensors', 'consolidated-00042-of-00051.safetensors', 'consolidated-00043-of-00051.safetensors', 'consolidated-00044-of-00051.safetensors', 'consolidated-00045-of-00051.safetensors', 'consolidated-00046-of-00051.safetensors', 'consolidated-00047-of-00051.safetensors', 'consolidated-00048-of-00051.safetensors', 'consolidated-00049-of-00051.safetensors', 'consolidated-00050-of-00051.safetensors', 'consolidated-00051-of-00051.safetensors']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/mistralai/Mistral-Large-Instruct-2411" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-v0-1-2/">Mistral-7B-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1-2/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2-2/">Mistral-7B-Instruct-v0.2 (2023)</a></div></div>
   </div>
 </div>
 <footer>

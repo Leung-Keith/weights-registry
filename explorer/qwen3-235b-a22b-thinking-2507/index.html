@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qwen3-235B-A22B-Thinking-2507 — Weight Registry">
 <meta name="twitter:description" content="Qwen3-235B-A22B-Thinking-2507 is a high-performance open-weight Mixture-of-Experts model from Alibaba's Qwen3 line, released July 2025, activating 22B of its 23">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Qwen3-235B-A22B-Thinking-2507", "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance open-weight Mixture-of-Experts model from Alibaba's Qwen3 line, released July 2025, activating 22B of its 235B parameters per forward pass and optimized for complex reasoning tasks with native support for up to 262,144-token context.", "url": "https://weightregistry.org/explorer/qwen3-235b-a22b-thinking-2507/", "creator": {"@type": "Organization", "name": "Alibaba"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2025-06-30", "identifier": "83a78406ebbd4053d67f9f7f67f6528f5eb669a2508d6ef2fcb2ef99c8ffb65c"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Qwen3-235B-A22B-Thinking-2507</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Qwen3-235B-A22B-Thinking-2507 <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Qwen3-235B-A22B-Thinking-2507 is a large language model released by Alibaba, released under the apache-2.0 license, with a claimed knowledge cutoff of 2025-06-30. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Qwen3-235B-A22B-Thinking-2507 is a high-performance open-weight Mixture-of-Experts model from Alibaba's Qwen3 line, released July 2025, activating 22B of its 235B parameters per forward pass and optimized for complex reasoning tasks with native support for up to 262,144-token context.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Alibaba</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>437.90 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2025-06-30</dd>
         <dt>Source</dt><dd>https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">15,638 downloads on Hugging Face · 410 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">qwen3_moe</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>83a78406ebbd4053d67f9f7f67f6528f5eb669a2508d6ef2fcb2ef99c8ffb65c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9d3c1600e84af443659f40cbcea9855be26274d59f6c319d577b78332aa86739</div><div class="hash-full"><span class="algo-label">BLAKE3</span>872e8f6c893988131c73c600962bf74e530b1bac3cb93cd7f4470c13c51ea275</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">118 shards (Merkle root) · 437.90 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>83a78406ebbd4053d67f9f7f67f6528f5eb669a2508d6ef2fcb2ef99c8ffb65c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9d3c1600e84af443659f40cbcea9855be26274d59f6c319d577b78332aa86739</div><div class="hash-full"><span class="algo-label">BLAKE3</span>872e8f6c893988131c73c600962bf74e530b1bac3cb93cd7f4470c13c51ea275</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 964 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>ad59a339665ee1c68cbff06ac72c9e59f5183ebfaf3698c98737e003a870e9e2</div><div class="hash-full"><span class="algo-label">SHA3-256</span>1619940dd47c051a53b1a997afbf21b47971f214fdc6208c994f574bf4f27043</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e7afab107c73f891b0e0de7c9a1d07b6ad2265055e22eefb379c33f17d69b862</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 6.71 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>19564a48c4f71a2a1b937cce34c737a1e662b171c5f5d7edf641a15cd896f07d</div><div class="hash-full"><span class="algo-label">SHA3-256</span>70973ae99c5f79e916cbdf154df223c8d557cab98a771823c10e4783deba2950</div><div class="hash-full"><span class="algo-label">BLAKE3</span>e4bf149b34e0372424d0cd7afba11bbda682d8a3bb29b95a02a7c97e89dc63a2</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../qwen-72b/">Qwen-72B (2023)</a><a class="related-pill" href="../qwen2-5-72b-instruct/">Qwen2.5-72B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b/">Qwen2.5-0.5B (2024)</a><a class="related-pill" href="../qwen2-5-14b-instruct/">Qwen2.5-14B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-1-5b-instruct/">Qwen2.5-1.5B-Instruct (2024)</a><a class="related-pill" href="../qwen2-5-0-5b-instruct/">Qwen2.5-0.5B-Instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

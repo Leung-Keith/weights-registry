@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SmolLM2-135M-Instruct — Weight Registry">
 <meta name="twitter:description" content="Instruction-tuned variant of Hugging Face's SmolLM2 135M.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "SmolLM2-135M-Instruct", "description": "Instruction-tuned variant of Hugging Face's SmolLM2 135M.", "url": "https://weightregistry.org/explorer/smollm2-135m-instruct-2/", "creator": {"@type": "Organization", "name": "Hugging Face"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2024-10-31", "identifier": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / SmolLM2-135M-Instruct</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>SmolLM2-135M-Instruct <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">SmolLM2-135M-Instruct is a large language model released by Hugging Face, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2024-10-31. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Instruction-tuned variant of Hugging Face's SmolLM2 135M.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">1,744,155 downloads on Hugging Face · 427 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">tensorboard</span><span class="tag-pill">onnx</span><span class="tag-pill">safetensors</span><span class="tag-pill">llama</span><span class="tag-pill">text-generation</span><span class="tag-pill">transformers.js</span><span class="tag-pill">conversational</span><span class="tag-pill">en</span><span class="tag-pill">text-generation-inference</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>1507a0f3a99991ba425d8366bc0ad81e78f6b1732a339824f7efabba98320f0b</div><div class="hash-full"><span class="algo-label">BLAKE3</span>12d2cd8a877ef2cdcf785b3d4d1f373e0419074cc884aeaff06fc059686a5ba5</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 256.60 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>1507a0f3a99991ba425d8366bc0ad81e78f6b1732a339824f7efabba98320f0b</div><div class="hash-full"><span class="algo-label">BLAKE3</span>12d2cd8a877ef2cdcf785b3d4d1f373e0419074cc884aeaff06fc059686a5ba5</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 861 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a</div><div class="hash-full"><span class="algo-label">SHA3-256</span>6bbe8797ef2b8a876c9cae32750ea1120ae9a5fadbe5950fea4767c4e8e622f7</div><div class="hash-full"><span class="algo-label">BLAKE3</span>07f42ed1202de0577a16f3e3218e07c1e8faec319d0d9e9d3cbdc2f5bb5c5989</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 2.01 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c</div><div class="hash-full"><span class="algo-label">SHA3-256</span>e3971e9d09515bd6b991a0d294a34854247bb5e6e33a0ae23327def395dae987</div><div class="hash-full"><span class="algo-label">BLAKE3</span>944d1262d516abd56a8156dd3058a73a1bf3dc19419527592d854d162f288073</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c</code></p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>other weight-like files present but not hashed: ['training_args.bin']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../distilgpt2/">distilgpt2 (2019)</a><a class="related-pill" href="../distilgpt2-2/">distilgpt2 (2019)</a><a class="related-pill" href="../distilbert-base-uncased/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../distilbert-base-uncased-2/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a></div></div>
   </div>
 </div>
 <footer>

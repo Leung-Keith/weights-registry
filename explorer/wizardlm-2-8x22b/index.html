@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WizardLM-2-8x22B — Weight Registry">
 <meta name="twitter:description" content="WizardLM-2 8x22B, Microsoft AI's most advanced Wizard model at release, demonstrating highly competitive performance vs leading proprietary models and outperfor">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "WizardLM-2-8x22B", "description": "WizardLM-2 8x22B, Microsoft AI's most advanced Wizard model at release, demonstrating highly competitive performance vs leading proprietary models and outperforming existing open-source models. Microsoft removed the original repo within hours of release (cited missing toxicity testing); this entry hashes the community-preserved mirror, which is itself a case study in why an immutable weight registry matters.", "url": "https://weightregistry.org/explorer/wizardlm-2-8x22b/", "creator": {"@type": "Organization", "name": "Microsoft"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2024-04-30", "identifier": "344a906810b26288393aff266dde161d176fc6c4fb70f4ba4582d18cab71cfbf"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / WizardLM-2-8x22B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>WizardLM-2-8x22B <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">WizardLM-2-8x22B is a large language model released by Microsoft, released under the apache-2.0 license, with a claimed knowledge cutoff of 2024-04-30. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">WizardLM-2 8x22B, Microsoft AI's most advanced Wizard model at release, demonstrating highly competitive performance vs leading proprietary models and outperforming existing open-source models. Microsoft removed the original repo within hours of release (cited missing toxicity testing); this entry hashes the community-preserved mirror, which is itself a case study in why an immutable weight registry matters.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Microsoft</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>apache-2.0</dd>
         <dt>Size</dt><dd>261.93 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-04-30</dd>
         <dt>Source</dt><dd>https://huggingface.co/alpindale/WizardLM-2-8x22B</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">10,645 downloads on Hugging Face · 416 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">mixtral</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">model-index</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>344a906810b26288393aff266dde161d176fc6c4fb70f4ba4582d18cab71cfbf</div><div class="hash-full"><span class="algo-label">SHA3-256</span>727f63352c14416be22381c839b9abcc19e77937ed15d043debf8f3e3fb0e9ff</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8d405156f3823cb7ccb34cdff17d1cf1856c65278e5341ad25bb3e9682c1d1d8</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">59 shards (Merkle root) · 261.93 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>344a906810b26288393aff266dde161d176fc6c4fb70f4ba4582d18cab71cfbf</div><div class="hash-full"><span class="algo-label">SHA3-256</span>727f63352c14416be22381c839b9abcc19e77937ed15d043debf8f3e3fb0e9ff</div><div class="hash-full"><span class="algo-label">BLAKE3</span>8d405156f3823cb7ccb34cdff17d1cf1856c65278e5341ad25bb3e9682c1d1d8</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 768 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>8241c0f3bea01add64c800919cf3b179ec5efbd709afe17986f952c64821d1e5</div><div class="hash-full"><span class="algo-label">SHA3-256</span>86227856c6a309066adbca793570fe8d6a3c46d8ce6027926508ca103e2d1d64</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4a51a5cd6d3578821ae763ff9bf16b91431f78b2948b118e4dfdfc18f2174670</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.model · 481.88 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7821ee4866c5d0bed0c000c85e3fed39ca684266b3f5a4ba370c235151790aa3</div><div class="hash-full"><span class="algo-label">BLAKE3</span>7d06176d89e0c491987309df1c4293e286addeeb40047e0dd26466ff8f0d12f6</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/alpindale/WizardLM-2-8x22B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../phi-1-5/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-1-5-2/">Phi-1.5 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-2-2/">phi-2 (2023)</a><a class="related-pill" href="../phi-3-mini-4k-instruct/">Phi-3-mini-4k-instruct (2024)</a><a class="related-pill" href="../phi-3-mini-128k-instruct/">Phi-3-mini-128k-instruct (2024)</a></div></div>
   </div>
 </div>
 <footer>

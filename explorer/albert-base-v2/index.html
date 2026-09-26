@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ALBERT-base-v2 — Weight Registry">
 <meta name="twitter:description" content="Parameter-reduced BERT variant (12M params vs BERT-base's 110M) using factorized embedding parameterization and cross-layer weight sharing to cut parameter coun">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "ALBERT-base-v2", "description": "Parameter-reduced BERT variant (12M params vs BERT-base's 110M) using factorized embedding parameterization and cross-layer weight sharing to cut parameter count while retaining BERT-level performance; v2 improves on the original ALBERT paper's checkpoints via longer training and no dropout.", "url": "https://weightregistry.org/explorer/albert-base-v2/", "creator": {"@type": "Organization", "name": "Google"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2019-09-26", "identifier": "d24c30ec641e40087eed68adf958afe2dab0432790ec3ffa88b31ce773ae33eb"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / ALBERT-base-v2</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>ALBERT-base-v2 <span class="year-tag">(2019)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">ALBERT-base-v2 is a large language model released by Google, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2019-09-26. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Parameter-reduced BERT variant (12M params vs BERT-base's 110M) using factorized embedding parameterization and cross-layer weight sharing to cut parameter count while retaining BERT-level performance; v2 improves on the original ALBERT paper's checkpoints via longer training and no dropout.</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">1,053,072 downloads on Hugging Face · 150 likes · pipeline: fill-mask · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">rust</span><span class="tag-pill">safetensors</span><span class="tag-pill">albert</span><span class="tag-pill">fill-mask</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>d24c30ec641e40087eed68adf958afe2dab0432790ec3ffa88b31ce773ae33eb</div><div class="hash-full"><span class="algo-label">SHA3-256</span>84f24d89f960f0c2d7e7c7693db3ab524a883f91024754e3a3be11966b492035</div><div class="hash-full"><span class="algo-label">BLAKE3</span>972c010b61cce471a163bbe817421554e49fa15294771259de40cd591b8fdd92</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 45.18 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>d24c30ec641e40087eed68adf958afe2dab0432790ec3ffa88b31ce773ae33eb</div><div class="hash-full"><span class="algo-label">SHA3-256</span>84f24d89f960f0c2d7e7c7693db3ab524a883f91024754e3a3be11966b492035</div><div class="hash-full"><span class="algo-label">BLAKE3</span>972c010b61cce471a163bbe817421554e49fa15294771259de40cd591b8fdd92</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 684 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>f5b7ef285a15ebbc7043b23284e60ac6f6de8d0a6051e282dfdf81da9351dc03</div><div class="hash-full"><span class="algo-label">SHA3-256</span>c8ab6c6d63d8ef5d1a91dc696e957dcf993597e9bb81cac578c5eabd151a14a4</div><div class="hash-full"><span class="algo-label">BLAKE3</span>52b83dbba222c61fbcce2621c50aa064c8aad97218094af3cdc14f1c9a196742</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.25 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>6e2aa3d5ca4c6841bc36a5028179cb4d63c129931fa18fce38fdb38cec4d2ac3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>cbad27f9161df74f0564fab22cf47565e2646b518723942eec8cb73d194be050</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ae18655224267d74d5576d766a880c53480028c5ddfcae96a2d0d5cafaea7ee0</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/albert/albert-base-v2/resolve/8e2f239c5f8a2c0f253781ca60135db913e5c80c/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>d24c30ec641e40087eed68adf958afe2dab0432790ec3ffa88b31ce773ae33eb</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/albert/albert-base-v2" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../bert-base-uncased/">BERT-base-uncased (2018)</a><a class="related-pill" href="../t5-small/">T5-small (2019)</a><a class="related-pill" href="../t5-small-2/">T5-small (2019)</a><a class="related-pill" href="../gemma-7b/">gemma-7b (2024)</a><a class="related-pill" href="../gemma-7b-it/">gemma-7b-it (2024)</a><a class="related-pill" href="../gemma-2b/">gemma-2b (2024)</a></div></div>
   </div>
 </div>
 <footer>

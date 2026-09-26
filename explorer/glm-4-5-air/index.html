@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GLM-4.5-Air — Weight Registry">
 <meta name="twitter:description" content="GLM-4.5-Air is the lightweight variant of Zhipu AI's GLM-4.5 flagship family, released July 2025, also purpose-built for agent-centric applications. Like GLM-4.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "GLM-4.5-Air", "description": "GLM-4.5-Air is the lightweight variant of Zhipu AI's GLM-4.5 flagship family, released July 2025, also purpose-built for agent-centric applications. Like GLM-4.5, it uses a Mixture-of-Experts architecture but with a more compact active-parameter footprint for cheaper serving.", "url": "https://weightregistry.org/explorer/glm-4-5-air/", "creator": {"@type": "Organization", "name": "Zhipu AI (zai-org)"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2024-12-31", "identifier": "b9da8319d6ee917c63b0d70c3103e7f3ba10eafb5ad6129f543a2f59e34c43c1"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / GLM-4.5-Air</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>GLM-4.5-Air <span class="year-tag">(2024)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">GLM-4.5-Air is a large language model released by Zhipu AI (zai-org), released under the mit license, with a claimed knowledge cutoff of 2024-12-31. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">GLM-4.5-Air is the lightweight variant of Zhipu AI's GLM-4.5 flagship family, released July 2025, also purpose-built for agent-centric applications. Like GLM-4.5, it uses a Mixture-of-Experts architecture but with a more compact active-parameter footprint for cheaper serving.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>Zhipu AI (zai-org)</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>205.77 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2024-12-31</dd>
         <dt>Source</dt><dd>https://huggingface.co/zai-org/GLM-4.5-Air</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">146,248 downloads on Hugging Face · 640 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">glm4_moe</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">en</span><span class="tag-pill">zh</span><span class="tag-pill">eval-results</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>b9da8319d6ee917c63b0d70c3103e7f3ba10eafb5ad6129f543a2f59e34c43c1</div><div class="hash-full"><span class="algo-label">SHA3-256</span>ebe63c9f54b567f7e7d363b26ccc4d034e48c54be7c071ac5635bf5342d663aa</div><div class="hash-full"><span class="algo-label">BLAKE3</span>39ba7ee6c8d7686a8c9aa549a815170019f1713d28b36d3bcb019415b05c4bb3</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">47 shards (Merkle root) · 205.77 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>b9da8319d6ee917c63b0d70c3103e7f3ba10eafb5ad6129f543a2f59e34c43c1</div><div class="hash-full"><span class="algo-label">SHA3-256</span>ebe63c9f54b567f7e7d363b26ccc4d034e48c54be7c071ac5635bf5342d663aa</div><div class="hash-full"><span class="algo-label">BLAKE3</span>39ba7ee6c8d7686a8c9aa549a815170019f1713d28b36d3bcb019415b05c4bb3</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1008 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>e59f21d7be4b4b917d80bb3a2d1211356d29cf3aeff93372523daf7d0ffb839d</div><div class="hash-full"><span class="algo-label">SHA3-256</span>f1083ff9f9b5b80b601872d11b17bf7cf58f04e7a96185a54749bcef9546df9a</div><div class="hash-full"><span class="algo-label">BLAKE3</span>76c4f7decb6a0a5d4997df639cf071f71cbe939ac1f4405a4747da9d61a857ef</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 19.05 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>9340665016419c825c4bdabbcc9acc43b7ca2c68ce142724afa829abb1be5efd</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0030773d3a3b84cfee397f98b289a7ebaa20e8b6d3707719f596c77f8031b317</div><div class="hash-full"><span class="algo-label">BLAKE3</span>ce097ff5c5a465244c42eab34b0c09e298c17bebaab2fd6bef354d5bd501a683</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/zai-org/GLM-4.5-Air" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../glm-4-5/">GLM-4.5 (2025)</a><a class="related-pill" href="../glm-4-6/">GLM-4.6 (2025)</a><a class="related-pill" href="../glm-4-7-flash/">GLM-4.7-Flash (2025)</a><a class="related-pill" href="../glm-4-7/">GLM-4.7 (2025)</a><a class="related-pill" href="../glm-4-7-2/">GLM-4.7 (2025)</a><a class="related-pill" href="../glm-4-7-flash-2/">GLM-4.7-Flash (2025)</a></div></div>
   </div>
 </div>
 <footer>

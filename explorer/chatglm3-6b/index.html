@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ChatGLM3-6b — Weight Registry">
 <meta name="twitter:description" content="Tsinghua/Zhipu's early open bilingual (Chinese/English) LLM series.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "ChatGLM3-6b", "description": "Tsinghua/Zhipu's early open bilingual (Chinese/English) LLM series.", "url": "https://weightregistry.org/explorer/chatglm3-6b/", "creator": {"@type": "Organization", "name": "Tsinghua/Zhipu"}, "dateModified": "2023-10-27", "identifier": "0x7ab82760329e700f4c7345b13d83fa459779b888582b434590c44b38694f3cd3"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / ChatGLM3-6b</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
     <h2>ChatGLM3-6b <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">ChatGLM3-6b is a large language model released by Tsinghua/Zhipu with a claimed knowledge cutoff of 2023-10-27. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Tsinghua/Zhipu's early open bilingual (Chinese/English) LLM series.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         <dt>Attester</dt><dd>0x6a94784135e413A474E6fA28d1A36C5d180B70c9</dd>
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">69,649 downloads on Hugging Face · 1,167 likes · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">safetensors</span><span class="tag-pill">chatglm</span><span class="tag-pill">glm</span><span class="tag-pill">thudm</span><span class="tag-pill">custom_code</span><span class="tag-pill">zh</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x7ab82760329e700f4c7345b13d83fa459779b888582b434590c44b38694f3cd3</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xab86bbd1643e928586b6c23bc5ad6b36664e2d53dca65ef7d4c3ec51e440f6a4</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0xd084761861db7694dfe5e70a05fce06cdce41ba5ccea521c4cf3d9cf557c3c8d</div>
+      <div class="combined-note">Combined commitment: a Merkle root over the weights, config, and tokenizer hashes together (not a raw weights-only hash) -- see this project's v2 on-chain schema.</div><div class="hash-full"><span class="algo-label">Combined SHA-256</span>0x7ab82760329e700f4c7345b13d83fa459779b888582b434590c44b38694f3cd3</div><div class="hash-full"><span class="algo-label">Combined SHA3-256</span>0xab86bbd1643e928586b6c23bc5ad6b36664e2d53dca65ef7d4c3ec51e440f6a4</div><div class="hash-full"><span class="algo-label">Combined BLAKE3</span>0xd084761861db7694dfe5e70a05fce06cdce41ba5ccea521c4cf3d9cf557c3c8d</div><h4 class="sub-heading">Per-file breakdown</h4><p class="dim-note">Computed locally prior to attestation; the combined hash above is the canonical on-chain commitment.</p><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.29 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>415b51f6043ef388860b093fad9c52f4898c426af733871f45e2e0c8b6e1d61e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>08447f70084f04770d797c4065b6bf9cbfa0b3708200241c3ef80c5b44b5d5ea</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5f1e1e8d9732dad4fe229c2c8758751190051230a500464750e7ed160dcab8d1</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.model · 994.50 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>e7dc4c393423b76e4373e5157ddc34803a0189ba96b21ddbb40269d31468a6f2</div><div class="hash-full"><span class="algo-label">SHA3-256</span>8e9b79fd9e1c961e1c344ab62de575ed206f73e18a9867c399fcf52e43f1bf20</div><div class="hash-full"><span class="algo-label">BLAKE3</span>5213b40cc7db82218ec95dc90fef5fcb9016b2f487c87bd5c6e63ad59ec579f7</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xc3f2314661755e6f685eb294ed2f328eedca0463c44121b503ce6fe6861c865c" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../chatglm3-6b-2/">ChatGLM3-6b (2023)</a><a class="related-pill" href="../zephyr-7b-beta/">zephyr-7b-beta (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../baichuan2-7b-base/">Baichuan2-7B-Base (2023)</a></div></div>
   </div>
 </div>
 <footer>

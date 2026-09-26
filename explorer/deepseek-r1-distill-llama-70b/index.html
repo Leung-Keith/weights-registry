@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DeepSeek-R1-Distill-Llama-70B — Weight Registry">
 <meta name="twitter:description" content="DeepSeek R1 Distill Llama 70B is a distilled large language model based on Llama-3.3-70B-Instruct, using outputs from DeepSeek R1 to transfer R1's reasoning beh">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "DeepSeek-R1-Distill-Llama-70B", "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on Llama-3.3-70B-Instruct, using outputs from DeepSeek R1 to transfer R1's reasoning behavior into a smaller, cheaper-to-serve dense checkpoint via advanced distillation techniques.", "url": "https://weightregistry.org/explorer/deepseek-r1-distill-llama-70b/", "creator": {"@type": "Organization", "name": "DeepSeek"}, "license": "https://opensource.org/licenses/MIT", "dateModified": "2025-01-20", "identifier": "94c26771e7d012df3916486dc70961de2c8f9115987a8ba762d0e42802f452b8"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / DeepSeek-R1-Distill-Llama-70B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>DeepSeek-R1-Distill-Llama-70B <span class="year-tag">(2025)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">DeepSeek-R1-Distill-Llama-70B is a large language model released by DeepSeek, released under the mit license, with a claimed knowledge cutoff of 2025-01-20. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">DeepSeek R1 Distill Llama 70B is a distilled large language model based on Llama-3.3-70B-Instruct, using outputs from DeepSeek R1 to transfer R1's reasoning behavior into a smaller, cheaper-to-serve dense checkpoint via advanced distillation techniques.</div>
@@ -224,7 +259,7 @@ footer a { color: var(--brass-dim); }
       <dl class="detail-meta-grid">
         <dt>Type</dt><dd>LLM</dd>
         <dt>Issuer</dt><dd>DeepSeek</dd>
-        <dt>License</dt><dd>verify</dd>
+        <dt>License</dt><dd>mit</dd>
         <dt>Size</dt><dd>131.42 GB</dd>
         <dt>Knowledge cutoff</dt><dd>2025-01-20</dd>
         <dt>Source</dt><dd>https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B</dd>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">75,351 downloads on Hugging Face · 808 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">safetensors</span><span class="tag-pill">llama</span><span class="tag-pill">text-generation</span><span class="tag-pill">conversational</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>94c26771e7d012df3916486dc70961de2c8f9115987a8ba762d0e42802f452b8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>224dcf2a2c8b434a39465782042b636e326f8809da94444ba570d4116c16187c</div><div class="hash-full"><span class="algo-label">BLAKE3</span>730c7a0bc5762ba6e59d38fe36aa4fc01c38c75106bb06c3f959f03726b1af59</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">17 shards (Merkle root) · 131.42 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>94c26771e7d012df3916486dc70961de2c8f9115987a8ba762d0e42802f452b8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>224dcf2a2c8b434a39465782042b636e326f8809da94444ba570d4116c16187c</div><div class="hash-full"><span class="algo-label">BLAKE3</span>730c7a0bc5762ba6e59d38fe36aa4fc01c38c75106bb06c3f959f03726b1af59</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 879 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>95ef9768e4741543dbfaf0c274f101855883ff338b235c99eca2b6a4f4abee12</div><div class="hash-full"><span class="algo-label">SHA3-256</span>375b32f30d44a2bb1c64db7e0dad8ceeb0c21850b94cec706394158ae3194f7a</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4684285dad94b5c210c786d0d8837e99a45ec1d44d8d4f4b1a3631daf9094eef</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 8.66 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>b9c9eb63a8e03059914880f918cd28a880dec8b6e15e4461e1ff677e3743dbb8</div><div class="hash-full"><span class="algo-label">SHA3-256</span>b35ba10cf61bdf434079920fdedb727bc0e3663b7e180063de96c542c61dee52</div><div class="hash-full"><span class="algo-label">BLAKE3</span>c61f943c9f3266a60a7e00e815591061f17564f297dd84433a101fb43eb15608</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     
     <a class="source-link" href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../deepseek-v3/">DeepSeek-V3 (2024)</a><a class="related-pill" href="../deepseek-r1/">DeepSeek-R1 (2025)</a><a class="related-pill" href="../deepseek-r1-distill-qwen-1-5b/">DeepSeek-R1-Distill-Qwen-1.5B (2025)</a><a class="related-pill" href="../deepseek-r1-distill-qwen-1-5b-2/">DeepSeek-R1-Distill-Qwen-1.5B (2025)</a><a class="related-pill" href="../deepseek-r1-2/">DeepSeek-R1 (2025)</a><a class="related-pill" href="../deepseek-r1-distill-qwen-32b/">DeepSeek-R1-Distill-Qwen-32B (2025)</a></div></div>
   </div>
 </div>
 <footer>

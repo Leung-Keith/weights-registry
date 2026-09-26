@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yi-34B — Weight Registry">
 <meta name="twitter:description" content="Larger Yi size (34B), 01.AI's open LLM series.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Yi-34B", "description": "Larger Yi size (34B), 01.AI's open LLM series.", "url": "https://weightregistry.org/explorer/yi-34b/", "creator": {"@type": "Organization", "name": "01.AI"}, "license": "Yi license", "dateModified": "2023-11-05", "identifier": "1fa77e3bb3da0c765510d435b2a253bcf85352406ef492fc691b3755f1a3f9a3"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / Yi-34B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>Yi-34B <span class="year-tag">(2023)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">Yi-34B is a large language model released by 01.AI, released under the Yi license license, with a claimed knowledge cutoff of 2023-11-05. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Larger Yi size (34B), 01.AI's open LLM series.</div>
@@ -232,12 +267,15 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">11,019 downloads on Hugging Face · 1,302 likes · pipeline: text-generation · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">safetensors</span><span class="tag-pill">llama</span><span class="tag-pill">text-generation</span><span class="tag-pill">eval-results</span><span class="tag-pill">text-generation-inference</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>1fa77e3bb3da0c765510d435b2a253bcf85352406ef492fc691b3755f1a3f9a3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>998ade4f7bf22e527fa97a0bb50a250d8c002d4fe46e2d42f5997a51440d78be</div><div class="hash-full"><span class="algo-label">BLAKE3</span>d7e491cbf05b8b2bdf90c7f7fdd9a1303abdfd0bb88c398e52da380f9a4b6676</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">7 shards (Merkle root) · 64.05 GB</div><div class="hash-full"><span class="algo-label">SHA-256</span>1fa77e3bb3da0c765510d435b2a253bcf85352406ef492fc691b3755f1a3f9a3</div><div class="hash-full"><span class="algo-label">SHA3-256</span>998ade4f7bf22e527fa97a0bb50a250d8c002d4fe46e2d42f5997a51440d78be</div><div class="hash-full"><span class="algo-label">BLAKE3</span>d7e491cbf05b8b2bdf90c7f7fdd9a1303abdfd0bb88c398e52da380f9a4b6676</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 605 B</div><div class="hash-full"><span class="algo-label">SHA-256</span>30cffdbbce0077bb474b491695c81fb5085470015a05808d352591501008f489</div><div class="hash-full"><span class="algo-label">SHA3-256</span>7c725d523587c973ed945dc949aa16e183eb5e0d4673049e11bb62d42b44c941</div><div class="hash-full"><span class="algo-label">BLAKE3</span>06e3055e92ca52338e714299eabd4ef9b06367dbd7654600b56e71da8c79f229</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 3.40 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>18da9ff3421e5c878bd223ce42316058c0bdf688c114aa57e469ed5b91b4c3bc</div><div class="hash-full"><span class="algo-label">SHA3-256</span>9ccf0285f636d05ade20b2a5d3f0d6e415396f47049af9a788b9076e72a9a0c0</div><div class="hash-full"><span class="algo-label">BLAKE3</span>412fcf46fdd7502e2b800adeaf2550afffc47d69c1966b8592e6de7dc3629d3d</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>other weight-like files present but not hashed: ['pytorch_model-00001-of-00007.bin', 'pytorch_model-00002-of-00007.bin', 'pytorch_model-00003-of-00007.bin', 'pytorch_model-00004-of-00007.bin', 'pytorch_model-00005-of-00007.bin', 'pytorch_model-00006-of-00007.bin', 'pytorch_model-00007-of-00007.bin']</li></ul></div>
     <a class="source-link" href="https://huggingface.co/01-ai/Yi-34B" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../yi-6b/">Yi-6B (2023)</a><a class="related-pill" href="../yi-6b-2/">Yi-6B (2023)</a><a class="related-pill" href="../zephyr-7b-beta/">zephyr-7b-beta (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a></div></div>
   </div>
 </div>
 <footer>

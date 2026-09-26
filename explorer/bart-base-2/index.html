@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BART-base — Weight Registry">
 <meta name="twitter:description" content="Denoising sequence-to-sequence pretraining: corrupts text via token masking, deletion, infilling, sentence permutation, and document rotation, then reconstructs">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "BART-base", "description": "Denoising sequence-to-sequence pretraining: corrupts text via token masking, deletion, infilling, sentence permutation, and document rotation, then reconstructs the original -- combining BERT's bidirectional encoder with GPT's autoregressive decoder. Particularly influential for abstractive summarization (CNN/DailyMail, XSum).", "url": "https://weightregistry.org/explorer/bart-base-2/", "creator": {"@type": "Organization", "name": "Meta"}, "license": "https://www.apache.org/licenses/LICENSE-2.0", "dateModified": "2019-10-29", "identifier": "1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,36 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
 .source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
 .source-link:hover { text-decoration: underline; }
+.breadcrumb { font-size: 0.8rem; color: var(--text-faint); margin-bottom: 10px; }
+.breadcrumb a { color: var(--text-dim); text-decoration: none; }
+.breadcrumb a:hover { color: var(--brass); }
+.overview-text { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; margin-bottom: 4px; }
+.dim { color: var(--text-faint); }
+.sub-heading { margin-top: 20px !important; }
+.dim-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.file-hash-block { margin-bottom: 16px; }
+.file-hash-block h5 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim);
+  margin: 0 0 6px; font-weight: 500;
+}
+.file-meta { font-size: 0.78rem; color: var(--text-faint); margin-bottom: 6px; }
+.verify-code {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-main);
+  background: rgba(0,0,0,0.35); border: 1px solid var(--border); border-radius: 6px;
+  padding: 12px 14px; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+}
+.detail-desc code, .overview-text code, p code { font-family: 'IBM Plex Mono', monospace; font-size: 0.88em; color: var(--brass-dim); }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag-pill {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 3px 10px;
+}
+.related-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.related-pill {
+  font-size: 0.85rem; color: var(--text-main); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px;
+}
+.related-pill:hover { border-color: var(--brass-dim); color: var(--brass); }
 
 footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
 footer a { color: var(--brass-dim); }
@@ -211,10 +242,14 @@ footer a { color: var(--brass-dim); }
   </div>
 </div>
 <div class="detail-wrap">
+  <div class="breadcrumb"><a href="../">Explorer</a> / BART-base</div>
   <a class="back-link" href="../">← Back to Explorer</a>
   <div class="detail-panel">
     <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
     <h2>BART-base <span class="year-tag">(2019)</span></h2>
+    <div class="detail-section">
+      <p class="overview-text">BART-base is a large language model released by Meta, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2019-10-29. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
+    </div>
     <div class="detail-section">
       <h4>Description</h4>
       <div class="detail-desc">Denoising sequence-to-sequence pretraining: corrupts text via token masking, deletion, infilling, sentence permutation, and document rotation, then reconstructs the original -- combining BERT's bidirectional encoder with GPT's autoregressive decoder. Particularly influential for abstractive summarization (CNN/DailyMail, XSum).</div>
@@ -232,12 +267,16 @@ footer a { color: var(--brass-dim); }
         
       </dl>
     </div>
+    <div class="detail-section"><h4>Hugging Face stats</h4><p class="dim">281,426 downloads on Hugging Face · 206 likes · pipeline: feature-extraction · library: transformers</p><div class="tag-list"><span class="tag-pill">transformers</span><span class="tag-pill">pytorch</span><span class="tag-pill">tf</span><span class="tag-pill">jax</span><span class="tag-pill">safetensors</span><span class="tag-pill">bart</span><span class="tag-pill">feature-extraction</span><span class="tag-pill">en</span><span class="tag-pill">endpoints_compatible</span></div></div>
     <div class="detail-section">
       <h4>Weight Hashes</h4>
-      <div class="hash-full"><span class="algo-label">SHA-256</span>1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>a1229bae77c387378163e43f2db3264d146ddc38873578fa5d3c51e428cd0bca</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4d0a90ca1c2381a36626383079a1d9c0e7b2a2dc15c1a15fe8453febf9d67f9e</div>
+      <div class="file-hash-block"><h5>Weights file</h5><div class="file-meta">model.safetensors · 531.87 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b</div><div class="hash-full"><span class="algo-label">SHA3-256</span>a1229bae77c387378163e43f2db3264d146ddc38873578fa5d3c51e428cd0bca</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4d0a90ca1c2381a36626383079a1d9c0e7b2a2dc15c1a15fe8453febf9d67f9e</div></div><div class="file-hash-block"><h5>Config file</h5><div class="file-meta">config.json · 1.68 KB</div><div class="hash-full"><span class="algo-label">SHA-256</span>c4022c931216afcb778991477332e5312aca8be478027ee3a8bf34b7004c44e2</div><div class="hash-full"><span class="algo-label">SHA3-256</span>58be51b3e6ff07134bffb9c1f6e3bf3a662ff7ea6eb1d61c72c389cc02edccf9</div><div class="hash-full"><span class="algo-label">BLAKE3</span>93b841e2c428196a48d10996aae1858997ca57e1eea971c8796b3a74b0474405</div></div><div class="file-hash-block"><h5>Tokenizer file</h5><div class="file-meta">tokenizer.json · 1.29 MB</div><div class="hash-full"><span class="algo-label">SHA-256</span>847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e</div><div class="hash-full"><span class="algo-label">SHA3-256</span>0c697da2703e8ea995954b4a85cff8cbe531d8b9429cf74df59db238cb0f96ff</div><div class="hash-full"><span class="algo-label">BLAKE3</span>4c2a3681edff22cad38aaaf3fcce153102d1e5146d55a39f0ac6632b8faf554e</div></div>
     </div>
+    <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/facebook/bart-base/resolve/aadd2ab0ae0c8268c7c9693540e9904811f36177/model.safetensors&quot;
+sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>1bd3ac8e5b3ac71c77cf18fbcd8b113e0bfceced94c5cfbbb9a2b4bb4781190b</code></p></div>
     
     <a class="source-link" href="https://huggingface.co/facebook/bart-base" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../roberta-base/">RoBERTa-base (2019)</a><a class="related-pill" href="../roberta-base-2/">RoBERTa-base (2019)</a><a class="related-pill" href="../bart-base/">BART-base (2019)</a><a class="related-pill" href="../opt-125m/">opt-125m (2022)</a><a class="related-pill" href="../opt-1-3b/">OPT-1.3b (2022)</a><a class="related-pill" href="../opt-1-3b-2/">OPT-1.3b (2022)</a></div></div>
   </div>
 </div>
 <footer>
