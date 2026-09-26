@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to Verify an AI Model's Weights Haven't Been Tampered With">
 <meta name="twitter:description" content="A step-by-step guide to independently verifying that a downloaded AI model checkpoint matches what its publisher actually released.">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Verify an AI Model's Weights Haven't Been Tampered With", "description": "A step-by-step guide to independently verifying that a downloaded AI model checkpoint matches what its publisher actually released.", "datePublished": "2026-09-26", "url": "https://weightregistry.org/news/how-to-verify-ai-model-weights/", "author": {"@type": "Organization", "name": "Weight Registry"}, "publisher": {"@type": "Organization", "name": "Weight Registry"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to Verify an AI Model's Weights Haven't Been Tampered With", "description": "A step-by-step guide to independently verifying that a downloaded AI model checkpoint matches what its publisher actually released.", "datePublished": "2025-12-09", "url": "https://weightregistry.org/news/how-to-verify-ai-model-weights/", "author": {"@type": "Organization", "name": "Weight Registry"}, "publisher": {"@type": "Organization", "name": "Weight Registry"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What if the hash doesn't match?", "acceptedAnswer": {"@type": "Answer", "text": "It means your file's bytes differ from the reference in some way -- a corrupted download, a different quantization or format, or (worst case) a maliciously modified file. It's a signal to investigate, not automatically proof of tampering."}}, {"@type": "Question", "name": "Does a matching hash prove the model is safe?", "acceptedAnswer": {"@type": "Answer", "text": "No. It proves integrity (you have the exact bytes that were hashed), not safety, accuracy, or the absence of issues that were present in the original release itself."}}, {"@type": "Question", "name": "Can a legitimate update cause a hash mismatch?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Publishers sometimes re-upload a model with real fixes or a new revision. A mismatch against an old hash just means the file changed -- check whether a new official revision exists before assuming something is wrong."}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
@@ -103,7 +103,7 @@ footer a { color: var(--text-dim); }
   <article class="post">
     <span class="post-tag">Guide</span>
     <h1>How to Verify an AI Model's Weights Haven't Been Tampered With</h1>
-    <div class="post-meta">2026-09-26</div>
+    <div class="post-meta">2025-12-09</div>
     
 <p>Verifying a model checkpoint is straightforward once you have two things: the file itself, and a hash you trust wasn't produced (or edited) by whoever might have tampered with the file.</p>
 
