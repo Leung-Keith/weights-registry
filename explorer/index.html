@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Weight Registry — Explorer</title>
 <meta name="description" content="Browse cryptographically hashed and timestamped open-source AI model weights, on-chain and pending.">
+<link rel="canonical" href="https://weightregistry.org/explorer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Weight Registry — Explorer">
+<meta property="og:description" content="Browse cryptographically hashed and timestamped open-source AI model weights, on-chain and pending.">
+<meta property="og:url" content="https://weightregistry.org/explorer/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Weight Registry — Explorer">
+<meta name="twitter:description" content="Browse cryptographically hashed and timestamped open-source AI model weights, on-chain and pending.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -61,6 +69,14 @@ a { color: var(--brass); }
   white-space: nowrap;
 }
 .brand a { text-decoration: none; }
+.nav-links { display: flex; gap: 20px; align-items: center; }
+.nav-links a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.nav-links a:hover { color: var(--brass); }
 .search-wrap { flex: 1; min-width: 220px; max-width: 420px; position: relative; }
 .search-wrap input {
   width: 100%;
@@ -202,7 +218,11 @@ footer a { color: var(--brass-dim); }
 
 <div class="top-header">
   <div class="header-inner">
-    <div class="brand"><h1>WEIGHT REGISTRY</h1></div>
+    <div class="brand"><a href="https://weightregistry.org/"><h1>WEIGHT REGISTRY</h1></a></div>
+    <div class="nav-links">
+      <a href="https://weightregistry.org/">Home</a>
+      <a href="https://weightregistry.org/about/">About</a>
+    </div>
     <div class="search-wrap">
       <input type="text" id="searchInput" placeholder="Search by name, issuer, license, description…">
     </div>

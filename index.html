@@ -4,7 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Weight Registry — A Permanent, Tamper-Evident Record of Open-Source AI Models</title>
-<meta name="description" content="A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights.">
+<meta name="description" content="A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights — permanent proof that a specific model existed, unmodified, at a specific time.">
+<link rel="canonical" href="https://weightregistry.org/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Weight Registry — A Permanent, Tamper-Evident Record of Open-Source AI Models">
+<meta property="og:description" content="A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights.">
+<meta property="og:url" content="https://weightregistry.org/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Weight Registry — A Permanent, Tamper-Evident Record of Open-Source AI Models">
+<meta name="twitter:description" content="A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Weight Registry",
+  "url": "https://weightregistry.org/",
+  "description": "A permissionless, blockchain-anchored registry that cryptographically hashes and timestamps open-source AI model weights."
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
 <style>
@@ -32,6 +49,23 @@ body {
 }
 a { color: var(--brass); }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+/* Top nav */
+.top-nav {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+}
+.top-nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.top-nav .brand {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.15rem;
+  color: var(--brass);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.top-nav .nav-links { display: flex; gap: 22px; }
+.top-nav .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.9rem; }
+.top-nav .nav-links a:hover { color: var(--brass); }
 
 /* Hero */
 .hero {
@@ -229,6 +263,17 @@ footer a { color: var(--text-dim); }
 </style>
 </head>
 <body>
+
+<nav class="top-nav">
+  <div class="wrap">
+    <a class="brand" href="/">WEIGHT REGISTRY</a>
+    <div class="nav-links">
+      <a href="about/">About</a>
+      <a href="explorer/" target="_blank" rel="noopener">Explorer</a>
+      <a href="mailto:contact@weightregistry.org">Contact</a>
+    </div>
+  </div>
+</nav>
 
 <div class="hero">
   <div class="wrap">
