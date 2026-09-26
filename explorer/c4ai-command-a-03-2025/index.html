@@ -167,13 +167,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .empty-state { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
 
 /* Detail page */
-.detail-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+.detail-wrap { max-width: 760px; margin: 0 auto; padding: 44px 24px 100px; }
 .back-link { display: inline-block; margin-bottom: 24px; color: var(--brass-dim); text-decoration: none; font-size: 0.85rem; }
 .back-link:hover { color: var(--brass); }
-.detail-panel { background: var(--bg-panel); border: 1px solid var(--border-bright); border-radius: 10px; padding: 28px; }
 .status-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; margin-bottom: 16px; display: flex; align-items: center; }
-.detail-panel h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 1.6rem; }
-.detail-section { margin: 24px 0; }
+.detail-wrap h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 2rem; }
+.detail-section { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.detail-section:last-child { border-bottom: none; }
 .detail-section h4 {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
@@ -244,9 +244,9 @@ footer a { color: var(--brass-dim); }
 <div class="detail-wrap">
   <div class="breadcrumb"><a href="../">Explorer</a> / c4ai-command-a-03-2025</div>
   <a class="back-link" href="../">← Back to Explorer</a>
-  <div class="detail-panel">
-    <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Shortlisted</span></div>
-    <h2>c4ai-command-a-03-2025 <span class="year-tag">(2025)</span></h2>
+  <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Shortlisted</span></div>
+  <h2>c4ai-command-a-03-2025 <span class="year-tag">(2025)</span></h2>
+  <article>
     <div class="detail-section">
       <p class="overview-text">c4ai-command-a-03-2025 is a large language model released by Cohere, released under the cc-by-nc-4.0 license, with a claimed knowledge cutoff of 2025-03-13. Its weights, configuration, and tokenizer files are shortlisted for hashing and on-chain attestation by Weight Registry.</p>
     </div>
@@ -274,9 +274,9 @@ footer a { color: var(--brass-dim); }
     </div>
     
     
-    <a class="source-link" href="https://huggingface.co/CohereForAI/c4ai-command-a-03-2025" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><a class="source-link" href="https://huggingface.co/CohereForAI/c4ai-command-a-03-2025" target="_blank" rel="noopener">View source →</a></div>
     <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../c4ai-command-r-plus/">c4ai-command-r-plus (2024)</a><a class="related-pill" href="../minicpm5-2b/">MiniCPM5-2B (2025)</a><a class="related-pill" href="../qwen3-14b/">Qwen3-14B (2025)</a><a class="related-pill" href="../qwen3-1-7b-base/">Qwen3-1.7B-Base (2025)</a><a class="related-pill" href="../qwen3-4b-base/">Qwen3-4B-Base (2025)</a><a class="related-pill" href="../qwen3-4b-instruct-2507/">Qwen3-4B-Instruct-2507 (2025)</a></div></div>
-  </div>
+  </article>
 </div>
 <footer>
   Weight Registry — hashes verifiable independently, no trust required

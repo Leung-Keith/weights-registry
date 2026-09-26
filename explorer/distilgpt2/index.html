@@ -167,13 +167,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .empty-state { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
 
 /* Detail page */
-.detail-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+.detail-wrap { max-width: 760px; margin: 0 auto; padding: 44px 24px 100px; }
 .back-link { display: inline-block; margin-bottom: 24px; color: var(--brass-dim); text-decoration: none; font-size: 0.85rem; }
 .back-link:hover { color: var(--brass); }
-.detail-panel { background: var(--bg-panel); border: 1px solid var(--border-bright); border-radius: 10px; padding: 28px; }
 .status-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; margin-bottom: 16px; display: flex; align-items: center; }
-.detail-panel h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 1.6rem; }
-.detail-section { margin: 24px 0; }
+.detail-wrap h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 2rem; }
+.detail-section { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.detail-section:last-child { border-bottom: none; }
 .detail-section h4 {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
@@ -244,9 +244,9 @@ footer a { color: var(--brass-dim); }
 <div class="detail-wrap">
   <div class="breadcrumb"><a href="../">Explorer</a> / distilgpt2</div>
   <a class="back-link" href="../">← Back to Explorer</a>
-  <div class="detail-panel">
-    <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
-    <h2>distilgpt2 <span class="year-tag">(2019)</span></h2>
+  <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
+  <h2>distilgpt2 <span class="year-tag">(2019)</span></h2>
+  <article>
     <div class="detail-section">
       <p class="overview-text">distilgpt2 is a large language model released by Hugging Face, released under the apache-2.0 license, with a claimed knowledge cutoff of 2019-08-01. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
     </div>
@@ -275,9 +275,9 @@ footer a { color: var(--brass-dim); }
     <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/distilbert/distilgpt2/resolve/2290a62682d06624634c1f46a6ad5be0f47f38aa/model.safetensors&quot;
 sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b</code></p></div>
     
-    <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0x553096fbd3ca836f4bd549292941931ac939192c2b8f000488d2fdf0bddf9284" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><a class="source-link" href="https://sepolia.easscan.org/attestation/view/0x553096fbd3ca836f4bd549292941931ac939192c2b8f000488d2fdf0bddf9284" target="_blank" rel="noopener">View on EAS Sepolia →</a></div>
     <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../distilgpt2-2/">distilgpt2 (2019)</a><a class="related-pill" href="../distilbert-base-uncased/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../distilbert-base-uncased-2/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../smollm2-135m-instruct/">SmolLM2-135M-Instruct (2024)</a><a class="related-pill" href="../smollm2-135m/">SmolLM2-135M (2024)</a><a class="related-pill" href="../smollm2-135m-2/">SmolLM2-135M (2024)</a></div></div>
-  </div>
+  </article>
 </div>
 <footer>
   Weight Registry — hashes verifiable independently, no trust required

@@ -167,13 +167,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .empty-state { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
 
 /* Detail page */
-.detail-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+.detail-wrap { max-width: 760px; margin: 0 auto; padding: 44px 24px 100px; }
 .back-link { display: inline-block; margin-bottom: 24px; color: var(--brass-dim); text-decoration: none; font-size: 0.85rem; }
 .back-link:hover { color: var(--brass); }
-.detail-panel { background: var(--bg-panel); border: 1px solid var(--border-bright); border-radius: 10px; padding: 28px; }
 .status-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; margin-bottom: 16px; display: flex; align-items: center; }
-.detail-panel h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 1.6rem; }
-.detail-section { margin: 24px 0; }
+.detail-wrap h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 2rem; }
+.detail-section { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.detail-section:last-child { border-bottom: none; }
 .detail-section h4 {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
@@ -244,9 +244,9 @@ footer a { color: var(--brass-dim); }
 <div class="detail-wrap">
   <div class="breadcrumb"><a href="../">Explorer</a> / XLNet-base-cased</div>
   <a class="back-link" href="../">← Back to Explorer</a>
-  <div class="detail-panel">
-    <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
-    <h2>XLNet-base-cased <span class="year-tag">(2019)</span></h2>
+  <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
+  <h2>XLNet-base-cased <span class="year-tag">(2019)</span></h2>
+  <article>
     <div class="detail-section">
       <p class="overview-text">XLNet-base-cased is a large language model released by Google/CMU, released under the mit license, with a claimed knowledge cutoff of 2019-06-19. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
     </div>
@@ -275,9 +275,9 @@ footer a { color: var(--brass-dim); }
     <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;pytorch_model.bin&quot; &quot;https://huggingface.co/xlnet/xlnet-base-cased/resolve/ceaa69c7bc5e512b5007106a7ccbb7daf24b2c79/pytorch_model.bin&quot;
 sha256sum &quot;pytorch_model.bin&quot;</pre><p class="dim">Expected SHA-256: <code>b13dc2d3664a385b92d087229d5410d9e3020ede976e7ff4c62c9c85cd969a42</code></p></div>
     
-    <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xd61ad8aa3711d60b10046f6e422999ddcd319e6f07c4684ccca8ed2624ef4b9d" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xd61ad8aa3711d60b10046f6e422999ddcd319e6f07c4684ccca8ed2624ef4b9d" target="_blank" rel="noopener">View on EAS Sepolia →</a></div>
     <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../xlnet-base-cased-2/">XLNet-base-cased (2019)</a><a class="related-pill" href="../distilgpt2/">distilgpt2 (2019)</a><a class="related-pill" href="../bart-base/">BART-base (2019)</a><a class="related-pill" href="../roberta-base/">RoBERTa-base (2019)</a><a class="related-pill" href="../distilbert-base-uncased/">DistilBERT-base-uncased (2019)</a><a class="related-pill" href="../t5-small/">T5-small (2019)</a></div></div>
-  </div>
+  </article>
 </div>
 <footer>
   Weight Registry — hashes verifiable independently, no trust required

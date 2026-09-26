@@ -167,13 +167,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .empty-state { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
 
 /* Detail page */
-.detail-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+.detail-wrap { max-width: 760px; margin: 0 auto; padding: 44px 24px 100px; }
 .back-link { display: inline-block; margin-bottom: 24px; color: var(--brass-dim); text-decoration: none; font-size: 0.85rem; }
 .back-link:hover { color: var(--brass); }
-.detail-panel { background: var(--bg-panel); border: 1px solid var(--border-bright); border-radius: 10px; padding: 28px; }
 .status-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; margin-bottom: 16px; display: flex; align-items: center; }
-.detail-panel h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 1.6rem; }
-.detail-section { margin: 24px 0; }
+.detail-wrap h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 2rem; }
+.detail-section { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.detail-section:last-child { border-bottom: none; }
 .detail-section h4 {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
@@ -244,9 +244,9 @@ footer a { color: var(--brass-dim); }
 <div class="detail-wrap">
   <div class="breadcrumb"><a href="../">Explorer</a> / StableLM-3B</div>
   <a class="back-link" href="../">← Back to Explorer</a>
-  <div class="detail-panel">
-    <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
-    <h2>StableLM-3B <span class="year-tag">(2023)</span></h2>
+  <div class="status-line"><span class="status-dot onchain"></span><span class="status-label">On-Chain</span></div>
+  <h2>StableLM-3B <span class="year-tag">(2023)</span></h2>
+  <article>
     <div class="detail-section">
       <p class="overview-text">StableLM-3B is a large language model released by Stability AI, released under the cc-by-sa-4.0 license, with a claimed knowledge cutoff of 2023-09-29. Its weights, configuration, and tokenizer files have been cryptographically hashed and permanently attested on Ethereum (Sepolia) by Weight Registry.</p>
     </div>
@@ -275,9 +275,9 @@ footer a { color: var(--brass-dim); }
     <div class="detail-section"><h4>Verify it yourself</h4><pre class="verify-code">curl -L -o &quot;model.safetensors&quot; &quot;https://huggingface.co/stabilityai/stablelm-3b-4e1t/resolve/fa4a6a92fca83c3b4223a3c9bf792887090ebfba/model.safetensors&quot;
 sha256sum &quot;model.safetensors&quot;</pre><p class="dim">Expected SHA-256: <code>d85766d055f6709ad4434eb82b4bda91da55f23baa1f73a25b66159d746a0e9c</code></p></div>
     
-    <a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xebafa9963abee157dcb90a98b9b9b18f9e201ff834fdfa8b3b730e335eb311aa" target="_blank" rel="noopener">View on EAS Sepolia →</a>
+    <div class="detail-section"><a class="source-link" href="https://sepolia.easscan.org/attestation/view/0xebafa9963abee157dcb90a98b9b9b18f9e201ff834fdfa8b3b730e335eb311aa" target="_blank" rel="noopener">View on EAS Sepolia →</a></div>
     <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../stablelm-3b-2/">StableLM-3B (2023)</a><a class="related-pill" href="../zephyr-7b-beta/">zephyr-7b-beta (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-1/">Mistral-7B-Instruct-v0.1 (2023)</a><a class="related-pill" href="../mistral-7b-instruct-v0-2/">Mistral-7B-Instruct-v0.2 (2023)</a><a class="related-pill" href="../phi-2/">phi-2 (2023)</a><a class="related-pill" href="../baichuan2-7b-base/">Baichuan2-7B-Base (2023)</a></div></div>
-  </div>
+  </article>
 </div>
 <footer>
   Weight Registry — hashes verifiable independently, no trust required

@@ -167,13 +167,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
 .empty-state { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
 
 /* Detail page */
-.detail-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+.detail-wrap { max-width: 760px; margin: 0 auto; padding: 44px 24px 100px; }
 .back-link { display: inline-block; margin-bottom: 24px; color: var(--brass-dim); text-decoration: none; font-size: 0.85rem; }
 .back-link:hover { color: var(--brass); }
-.detail-panel { background: var(--bg-panel); border: 1px solid var(--border-bright); border-radius: 10px; padding: 28px; }
 .status-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; margin-bottom: 16px; display: flex; align-items: center; }
-.detail-panel h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 1.6rem; }
-.detail-section { margin: 24px 0; }
+.detail-wrap h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 2rem; }
+.detail-section { padding: 26px 0; border-bottom: 1px solid var(--border); }
+.detail-section:last-child { border-bottom: none; }
 .detail-section h4 {
   font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
@@ -244,9 +244,9 @@ footer a { color: var(--brass-dim); }
 <div class="detail-wrap">
   <div class="breadcrumb"><a href="../">Explorer</a> / gpt-oss-120b</div>
   <a class="back-link" href="../">← Back to Explorer</a>
-  <div class="detail-panel">
-    <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
-    <h2>gpt-oss-120b <span class="year-tag">(2025)</span></h2>
+  <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
+  <h2>gpt-oss-120b <span class="year-tag">(2025)</span></h2>
+  <article>
     <div class="detail-section">
       <p class="overview-text">gpt-oss-120b is a large language model released by OpenAI, released under the Apache-2.0 license, with a claimed knowledge cutoff of 2025-08-05. Its weights, configuration, and tokenizer files have been cryptographically hashed and are queued for on-chain attestation by Weight Registry.</p>
     </div>
@@ -274,9 +274,9 @@ footer a { color: var(--brass-dim); }
     </div>
     <div class="detail-section"><h4>Verify it yourself</h4><p>Download the file(s) from the source below, then hash them locally (<code>sha256sum &lt;file&gt;</code> on Linux/macOS, <code>certutil -hashfile &lt;file&gt; SHA256</code> on Windows) and compare the output against the hash(es) shown above.</p></div>
     <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>filename declares 14 shards (of-00014) but found 15 files matching the pattern: ['model-00000-of-00014.safetensors', 'model-00001-of-00014.safetensors', 'model-00002-of-00014.safetensors', 'model-00003-of-00014.safetensors', 'model-00004-of-00014.safetensors', 'model-00005-of-00014.safetensors', 'model-00006-of-00014.safetensors', 'model-00007-of-00014.safetensors', 'model-00008-of-00014.safetensors', 'model-00009-of-00014.safetensors', 'model-00010-of-00014.safetensors', 'model-00011-of-00014.safetensors', 'model-00012-of-00014.safetensors', 'model-00013-of-00014.safetensors', 'model-00014-of-00014.safetensors'] -- verify manually</li></ul></div>
-    <a class="source-link" href="https://huggingface.co/openai/gpt-oss-120b" target="_blank" rel="noopener">View source →</a>
+    <div class="detail-section"><a class="source-link" href="https://huggingface.co/openai/gpt-oss-120b" target="_blank" rel="noopener">View source →</a></div>
     <div class="detail-section"><h4>Related models</h4><div class="related-list"><a class="related-pill" href="../gpt-1/">GPT-1 (2018)</a><a class="related-pill" href="../gpt-1-2/">GPT-1 (2018)</a><a class="related-pill" href="../gpt-2-124m-small/">GPT-2 (124M, small) (2019)</a><a class="related-pill" href="../gpt2-large/">gpt2-large (2019)</a><a class="related-pill" href="../gpt-oss-20b/">GPT-OSS-20b (2025)</a><a class="related-pill" href="../gpt-oss-20b-2/">GPT-OSS-20b (2025)</a></div></div>
-  </div>
+  </article>
 </div>
 <footer>
   Weight Registry — hashes verifiable independently, no trust required
