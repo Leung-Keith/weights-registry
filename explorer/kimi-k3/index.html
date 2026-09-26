@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kimi-K3 — Weight Registry</title>
+<meta name="description" content="Next generation after the Kimi-K2 lineage already in this registry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-deep: #05070a;
+  --bg-panel: #0b0f14;
+  --bg-card: #0d1218;
+  --bg-card-hover: #10161d;
+  --brass: #00e0ff;
+  --brass-dim: #0a8fa8;
+  --text-main: #d7e2e8;
+  --text-dim: #7c8a94;
+  --text-faint: #4a5560;
+  --border: #1c2830;
+  --border-bright: #2a3a44;
+  --amber: #ffb02e;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg-deep);
+  color: var(--text-main);
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+a { color: var(--brass); }
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(5,7,10,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 24px;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.brand { display: flex; align-items: baseline; gap: 14px; }
+.brand h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.4rem;
+  color: var(--brass);
+  margin: 0;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.brand a { text-decoration: none; }
+.search-wrap { flex: 1; min-width: 220px; max-width: 420px; position: relative; }
+.search-wrap input {
+  width: 100%;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px 10px 36px;
+  color: var(--text-main);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-wrap input:focus { border-color: var(--brass-dim); }
+.search-wrap::before {
+  content: "⌕";
+  position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+  color: var(--text-dim); font-size: 1rem; pointer-events: none;
+}
+.hero { max-width: 1200px; margin: 0 auto; padding: 36px 24px 8px; }
+.hero p { color: var(--text-dim); max-width: 620px; font-size: 0.92rem; margin: 0; }
+.chip-bar { max-width: 1200px; margin: 20px auto 0; padding: 0 24px; display: flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  background: var(--bg-panel);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.chip:hover { border-color: var(--border-bright); color: var(--text-main); }
+.chip.active { background: rgba(0,224,255,0.12); border-color: var(--brass-dim); color: var(--brass); }
+.timeline-wrap { max-width: 1200px; margin: 24px auto 0; padding: 0 24px; }
+.timeline-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.timeline-title {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.timeline-clear { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--amber); cursor: pointer; }
+.timeline-clear:hover { text-decoration: underline; }
+.timeline-bar {
+  position: relative; display: flex; align-items: center; gap: 0;
+  padding: 18px 16px 10px; background: var(--bg-panel); border: 1px solid var(--border);
+  border-radius: 6px; overflow-x: auto;
+}
+.timeline-bar::before {
+  content: ""; position: absolute; left: 16px; right: 16px; top: 23px; height: 1px;
+  background: var(--border-bright);
+}
+.timeline-year {
+  flex: 1; min-width: 30px; display: flex; flex-direction: column; align-items: center;
+  background: none; border: none; cursor: pointer; padding: 0; position: relative; z-index: 1;
+}
+.timeline-year.empty { cursor: default; opacity: 0.3; }
+.timeline-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--brass-dim);
+  border: 2px solid var(--bg-panel); transition: background 0.15s, transform 0.15s;
+}
+.timeline-year.empty .timeline-dot { width: 4px; height: 4px; background: var(--text-faint); }
+.timeline-year:not(.empty):hover .timeline-dot { background: var(--brass); transform: scale(1.3); }
+.timeline-year.active .timeline-dot { background: var(--brass); transform: scale(1.5); }
+.timeline-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; color: var(--text-faint); margin-top: 6px; }
+.timeline-year.active .timeline-label { color: var(--brass); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 100px; }
+.result-count { color: var(--text-faint); font-size: 0.78rem; font-family: 'IBM Plex Mono', monospace; margin-bottom: 16px; }
+
+/* Column list */
+.list-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.list-table thead th {
+  text-align: left;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-bright);
+  white-space: nowrap;
+}
+.list-row td { padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.list-row { transition: background 0.15s; }
+.list-row:hover { background: var(--bg-card-hover); }
+.list-row.hidden { display: none; }
+.list-row .name-link { color: var(--text-main); font-weight: 500; text-decoration: none; }
+.list-row .name-link:hover { color: var(--brass); }
+.list-row .year-tag { color: var(--text-faint); font-weight: 400; font-size: 0.85em; margin-left: 4px; }
+.status-dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  margin-right: 7px; vertical-align: middle;
+  background: var(--text-faint);
+}
+.status-dot.onchain { background: var(--brass); }
+.status-dot.pending { background: var(--amber); }
+.status-dot.failed { background: #ff6b6b; }
+.status-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--text-dim); white-space: nowrap; }
+.col-type, .col-issuer, .col-cutoff { color: var(--text-dim); font-size: 0.82rem; white-space: nowrap; }
+.empty-state { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
+
+/* Detail page */
+.detail-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 100px; }
+.back-link { display: inline-block; margin-bottom: 24px; color: var(--brass-dim); text-decoration: none; font-size: 0.85rem; }
+.back-link:hover { color: var(--brass); }
+.detail-panel { background: var(--bg-panel); border: 1px solid var(--border-bright); border-radius: 10px; padding: 28px; }
+.status-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; margin-bottom: 16px; display: flex; align-items: center; }
+.detail-panel h2 { font-family: 'Chakra Petch', sans-serif; color: var(--brass); margin: 0 0 4px; font-size: 1.6rem; }
+.detail-section { margin: 24px 0; }
+.detail-section h4 {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px;
+}
+.detail-desc { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; }
+.detail-meta-grid { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 0.88rem; }
+.detail-meta-grid dt { color: var(--text-faint); }
+.detail-meta-grid dd { margin: 0; color: var(--text-main); word-break: break-word; }
+.hash-full {
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 4px;
+  padding: 10px 12px; word-break: break-all; margin-bottom: 8px; color: var(--text-main);
+}
+.hash-full .algo-label { color: var(--brass-dim); display: block; font-size: 0.68rem; margin-bottom: 3px; }
+.combined-note { font-size: 0.8rem; color: var(--text-faint); font-style: italic; margin-bottom: 10px; }
+.anomaly-list { font-size: 0.85rem; color: var(--amber); padding-left: 20px; }
+.anomaly-list li { margin-bottom: 6px; }
+.fail-note { font-size: 0.85rem; color: #ff9b9b; font-family: monospace; }
+.shortlist-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; }
+.source-link { display: inline-block; margin-top: 6px; color: var(--brass); text-decoration: none; font-weight: 500; }
+.source-link:hover { text-decoration: underline; }
+
+footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.8rem; }
+footer a { color: var(--brass-dim); }
+</style>
+</head>
+<body>
+<div class="top-header">
+  <div class="header-inner">
+    <div class="brand"><a href="../"><h1>WEIGHT REGISTRY</h1></a></div>
+  </div>
+</div>
+<div class="detail-wrap">
+  <a class="back-link" href="../">← Back to Explorer</a>
+  <div class="detail-panel">
+    <div class="status-line"><span class="status-dot pending"></span><span class="status-label">Pending</span></div>
+    <h2>Kimi-K3 <span class="year-tag">(2026)</span></h2>
+    <div class="detail-section">
+      <h4>Description</h4>
+      <div class="detail-desc">Next generation after the Kimi-K2 lineage already in this registry.</div>
+    </div>
+    <div class="detail-section">
+      <h4>Metadata</h4>
+      <dl class="detail-meta-grid">
+        <dt>Type</dt><dd>LLM</dd>
+        <dt>Issuer</dt><dd>Moonshot AI</dd>
+        <dt>License</dt><dd>verify (custom, HF lists 'other')</dd>
+        <dt>Size</dt><dd>1.42 TB</dd>
+        <dt>Knowledge cutoff</dt><dd>2026-06-13</dd>
+        <dt>Source</dt><dd>https://huggingface.co/moonshotai/Kimi-K3</dd>
+        <dt>Revision</dt><dd>f831ab66814297da540d832a5235f8e904f29d06</dd>
+        
+      </dl>
+    </div>
+    <div class="detail-section">
+      <h4>Weight Hashes</h4>
+      <div class="hash-full"><span class="algo-label">SHA-256</span>d3b5f87456322f3b76f75eff22d97304140040ce360532259af92641b461e675</div><div class="hash-full"><span class="algo-label">SHA3-256</span>3b055bdef70c39586873f2dfa4d1329a111c937cce3990c642a03f8308c9ca09</div><div class="hash-full"><span class="algo-label">BLAKE3</span>7317b580811f03619b19cbce77e66a752f6b6de80e62667dc4f3448b7b4ade1a</div>
+    </div>
+    <div class="detail-section"><h4>Anomalies Flagged</h4><ul class="anomaly-list"><li>multiple unrecognized .safetensors candidates, none canonical or variant-tagged: ['model-00001-of-000096.safetensors', 'model-00002-of-000096.safetensors', 'model-00003-of-000096.safetensors', 'model-00004-of-000096.safetensors', 'model-00005-of-000096.safetensors', 'model-00006-of-000096.safetensors', 'model-00007-of-000096.safetensors', 'model-00008-of-000096.safetensors', 'model-00009-of-000096.safetensors', 'model-00010-of-000096.safetensors', 'model-00011-of-000096.safetensors', 'model-00012-of-000096.safetensors', 'model-00013-of-000096.safetensors', 'model-00014-of-000096.safetensors', 'model-00015-of-000096.safetensors', 'model-00016-of-000096.safetensors', 'model-00017-of-000096.safetensors', 'model-00018-of-000096.safetensors', 'model-00019-of-000096.safetensors', 'model-00020-of-000096.safetensors', 'model-00021-of-000096.safetensors', 'model-00022-of-000096.safetensors', 'model-00023-of-000096.safetensors', 'model-00024-of-000096.safetensors', 'model-00025-of-000096.safetensors', 'model-00026-of-000096.safetensors', 'model-00027-of-000096.safetensors', 'model-00028-of-000096.safetensors', 'model-00029-of-000096.safetensors', 'model-00030-of-000096.safetensors', 'model-00031-of-000096.safetensors', 'model-00032-of-000096.safetensors', 'model-00033-of-000096.safetensors', 'model-00034-of-000096.safetensors', 'model-00035-of-000096.safetensors', 'model-00036-of-000096.safetensors', 'model-00037-of-000096.safetensors', 'model-00038-of-000096.safetensors', 'model-00039-of-000096.safetensors', 'model-00040-of-000096.safetensors', 'model-00041-of-000096.safetensors', 'model-00042-of-000096.safetensors', 'model-00043-of-000096.safetensors', 'model-00044-of-000096.safetensors', 'model-00045-of-000096.safetensors', 'model-00046-of-000096.safetensors', 'model-00047-of-000096.safetensors', 'model-00048-of-000096.safetensors', 'model-00049-of-000096.safetensors', 'model-00050-of-000096.safetensors', 'model-00051-of-000096.safetensors', 'model-00052-of-000096.safetensors', 'model-00053-of-000096.safetensors', 'model-00054-of-000096.safetensors', 'model-00055-of-000096.safetensors', 'model-00056-of-000096.safetensors', 'model-00057-of-000096.safetensors', 'model-00058-of-000096.safetensors', 'model-00059-of-000096.safetensors', 'model-00060-of-000096.safetensors', 'model-00061-of-000096.safetensors', 'model-00062-of-000096.safetensors', 'model-00063-of-000096.safetensors', 'model-00064-of-000096.safetensors', 'model-00065-of-000096.safetensors', 'model-00066-of-000096.safetensors', 'model-00067-of-000096.safetensors', 'model-00068-of-000096.safetensors', 'model-00069-of-000096.safetensors', 'model-00070-of-000096.safetensors', 'model-00071-of-000096.safetensors', 'model-00072-of-000096.safetensors', 'model-00073-of-000096.safetensors', 'model-00074-of-000096.safetensors', 'model-00075-of-000096.safetensors', 'model-00076-of-000096.safetensors', 'model-00077-of-000096.safetensors', 'model-00078-of-000096.safetensors', 'model-00079-of-000096.safetensors', 'model-00080-of-000096.safetensors', 'model-00081-of-000096.safetensors', 'model-00082-of-000096.safetensors', 'model-00083-of-000096.safetensors', 'model-00084-of-000096.safetensors', 'model-00085-of-000096.safetensors', 'model-00086-of-000096.safetensors', 'model-00087-of-000096.safetensors', 'model-00088-of-000096.safetensors', 'model-00089-of-000096.safetensors', 'model-00090-of-000096.safetensors', 'model-00091-of-000096.safetensors', 'model-00092-of-000096.safetensors', 'model-00093-of-000096.safetensors', 'model-00094-of-000096.safetensors', 'model-00095-of-000096.safetensors', 'model-00096-of-000096.safetensors']. Picked 'model-00091-of-000096.safetensors', by real file size (largest wins): [('model-00091-of-000096.safetensors', 16990916912), ('model-00090-of-000096.safetensors', 16990916912), ('model-00089-of-000096.safetensors', 16990916912), ('model-00087-of-000096.safetensors', 16990916912), ('model-00086-of-000096.safetensors', 16990916912), ('model-00085-of-000096.safetensors', 16990916912), ('model-00083-of-000096.safetensors', 16990916912), ('model-00082-of-000096.safetensors', 16990916912), ('model-00081-of-000096.safetensors', 16990916912), ('model-00079-of-000096.safetensors', 16990916912), ('model-00078-of-000096.safetensors', 16990916912), ('model-00077-of-000096.safetensors', 16990916912), ('model-00075-of-000096.safetensors', 16990916912), ('model-00074-of-000096.safetensors', 16990916912), ('model-00073-of-000096.safetensors', 16990916912), ('model-00071-of-000096.safetensors', 16990916912), ('model-00070-of-000096.safetensors', 16990916912), ('model-00069-of-000096.safetensors', 16990916912), ('model-00067-of-000096.safetensors', 16990916912), ('model-00066-of-000096.safetensors', 16990916912), ('model-00065-of-000096.safetensors', 16990916912), ('model-00063-of-000096.safetensors', 16990916912), ('model-00062-of-000096.safetensors', 16990916912), ('model-00061-of-000096.safetensors', 16990916912), ('model-00059-of-000096.safetensors', 16990916912), ('model-00058-of-000096.safetensors', 16990916912), ('model-00057-of-000096.safetensors', 16990916912), ('model-00055-of-000096.safetensors', 16990916912), ('model-00054-of-000096.safetensors', 16990916912), ('model-00053-of-000096.safetensors', 16990916912), ('model-00051-of-000096.safetensors', 16990916912), ('model-00050-of-000096.safetensors', 16990916912), ('model-00049-of-000096.safetensors', 16990916912), ('model-00047-of-000096.safetensors', 16990916912), ('model-00046-of-000096.safetensors', 16990916912), ('model-00045-of-000096.safetensors', 16990916912), ('model-00043-of-000096.safetensors', 16990916912), ('model-00042-of-000096.safetensors', 16990916912), ('model-00041-of-000096.safetensors', 16990916912), ('model-00039-of-000096.safetensors', 16990916912), ('model-00038-of-000096.safetensors', 16990916912), ('model-00037-of-000096.safetensors', 16990916912), ('model-00035-of-000096.safetensors', 16990916912), ('model-00034-of-000096.safetensors', 16990916912), ('model-00033-of-000096.safetensors', 16990916912), ('model-00031-of-000096.safetensors', 16990916912), ('model-00030-of-000096.safetensors', 16990916912), ('model-00029-of-000096.safetensors', 16990916912), ('model-00027-of-000096.safetensors', 16990916912), ('model-00026-of-000096.safetensors', 16990916912), ('model-00025-of-000096.safetensors', 16990916912), ('model-00023-of-000096.safetensors', 16990916912), ('model-00022-of-000096.safetensors', 16990916912), ('model-00021-of-000096.safetensors', 16990916912), ('model-00019-of-000096.safetensors', 16990916912), ('model-00018-of-000096.safetensors', 16990916912), ('model-00017-of-000096.safetensors', 16990916912), ('model-00015-of-000096.safetensors', 16990916912), ('model-00014-of-000096.safetensors', 16990916912), ('model-00013-of-000096.safetensors', 16990916912), ('model-00011-of-000096.safetensors', 16990916912), ('model-00010-of-000096.safetensors', 16990911504), ('model-00009-of-000096.safetensors', 16990911504), ('model-00007-of-000096.safetensors', 16990911504), ('model-00006-of-000096.safetensors', 16990911504), ('model-00005-of-000096.safetensors', 16990911504), ('model-00003-of-000096.safetensors', 16990911504), ('model-00002-of-000096.safetensors', 16990911504), ('model-00093-of-000096.safetensors', 16567507176), ('model-00092-of-000096.safetensors', 16567507176), ('model-00088-of-000096.safetensors', 16567507176), ('model-00084-of-000096.safetensors', 16567507176), ('model-00080-of-000096.safetensors', 16567507176), ('model-00076-of-000096.safetensors', 16567507176), ('model-00072-of-000096.safetensors', 16567507176), ('model-00068-of-000096.safetensors', 16567507176), ('model-00064-of-000096.safetensors', 16567507176), ('model-00060-of-000096.safetensors', 16567507176), ('model-00056-of-000096.safetensors', 16567507176), ('model-00052-of-000096.safetensors', 16567507176), ('model-00048-of-000096.safetensors', 16567507176), ('model-00044-of-000096.safetensors', 16567507176), ('model-00040-of-000096.safetensors', 16567507176), ('model-00036-of-000096.safetensors', 16567507176), ('model-00032-of-000096.safetensors', 16567507176), ('model-00028-of-000096.safetensors', 16567507176), ('model-00024-of-000096.safetensors', 16567507176), ('model-00020-of-000096.safetensors', 16567507176), ('model-00016-of-000096.safetensors', 16567507176), ('model-00012-of-000096.safetensors', 16567507176), ('model-00008-of-000096.safetensors', 16567501776), ('model-00004-of-000096.safetensors', 16567501776), ('model-00094-of-000096.safetensors', 4697664072), ('model-00001-of-000096.safetensors', 2341216112), ('model-00096-of-000096.safetensors', 802448352), ('model-00095-of-000096.safetensors', 92289328)] -- VERIFY</li><li>no recognized tokenizer file found in repo</li><li>sharding signals disagree: index file present=True, filename pattern matched=False -- picked whichever signal is available, but this repo's layout is unusual</li><li>found model.safetensors.index.json but shard filenames didn't match the expected NNNNN-of-NNNNN pattern -- fell back to sorting all .safetensors files, verify manually</li></ul></div>
+    <a class="source-link" href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener">View source →</a>
+  </div>
+</div>
+<footer>
+  Weight Registry — hashes verifiable independently, no trust required
+</footer>
+</body>
+</html>
