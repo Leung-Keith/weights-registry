@@ -29,7 +29,6 @@
   --bg-deep: #05070a;
   --bg-panel: #0b0f14;
   --bg-card: #0d1218;
-  --bg-card-hover: #10161d;
   --brass: #00e0ff;
   --brass-dim: #0a8fa8;
   --text-main: #d7e2e8;
@@ -40,158 +39,23 @@
   --amber: #ffb02e;
 }
 * { box-sizing: border-box; }
-body {
+html, body {
   background: var(--bg-deep);
   color: var(--text-main);
   font-family: 'IBM Plex Sans', sans-serif;
   margin: 0;
   line-height: 1.6;
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 a { color: var(--brass); }
-.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
 
-/* Top nav */
-.top-nav {
-  border-bottom: 1px solid var(--border);
-  padding: 18px 0;
-}
-.top-nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.top-nav .brand {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 1.15rem;
-  color: var(--brass);
-  text-decoration: none;
-  letter-spacing: 0.02em;
-}
-.top-nav .nav-links { display: flex; gap: 22px; }
-.top-nav .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.9rem; }
-.top-nav .nav-links a:hover { color: var(--brass); }
-
-/* Hero */
-.hero {
-  padding: 90px 0 70px;
-  border-bottom: 1px solid var(--border);
-  background: radial-gradient(ellipse at top, rgba(0,224,255,0.06), transparent 60%);
-}
-.hero h1 {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 2.6rem;
-  margin: 0 0 14px;
-  line-height: 1.15;
-}
-.hero .tagline {
-  font-size: 1.15rem;
-  color: var(--text-dim);
-  max-width: 620px;
-  margin: 0 0 28px;
-}
-.hero .claim {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.95rem;
-  color: var(--brass);
-  background: var(--bg-card);
-  border: 1px solid var(--border-bright);
-  border-radius: 8px;
-  padding: 14px 18px;
-  display: inline-block;
-}
-.cta-row { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; }
-.btn {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
-  padding: 12px 22px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  display: inline-block;
-}
-.btn-primary { background: var(--brass); color: #001318; }
-.btn-secondary { background: transparent; color: var(--text-main); border: 1px solid var(--border-bright); }
-
-/* Sections */
-section { padding: 60px 0; border-bottom: 1px solid var(--border); }
-section h2 {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 1.5rem;
-  margin: 0 0 8px;
-}
-section .section-sub { color: var(--text-dim); margin: 0 0 32px; max-width: 640px; }
-.timeline-more { margin-top: 24px; color: var(--text-dim); font-size: 0.9rem; }
-.timeline-more a { font-weight: 600; }
-
-.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-@media (max-width: 720px) { .grid3 { grid-template-columns: 1fr; } }
-.card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
-}
-.card .step-num {
-  font-family: 'IBM Plex Mono', monospace;
-  color: var(--brass-dim);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-}
-.card h3 { font-size: 1rem; margin: 8px 0 8px; }
-.card p { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
-
-/* Why list */
-.why-list { display: flex; flex-direction: column; gap: 18px; }
-.why-item { display: flex; gap: 16px; }
-.why-item .icon {
-  width: 36px; height: 36px; flex-shrink: 0;
-  border: 1px solid var(--border-bright); border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  color: var(--amber); font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;
-}
-.why-item h4 { margin: 0 0 4px; font-size: 0.98rem; }
-.why-item p { margin: 0; color: var(--text-dim); font-size: 0.9rem; }
-
-/* Stats */
-.stats-row { display: flex; gap: 30px; flex-wrap: wrap; }
-.stat { }
-.stat .num { font-family: 'Chakra Petch', sans-serif; font-size: 2rem; color: var(--brass); }
-.stat .label { color: var(--text-dim); font-size: 0.85rem; }
-.snapshot-note { color: var(--text-faint); font-size: 0.8rem; margin-top: 18px; font-style: italic; }
-
-/* Timeline */
-.timeline {
-  position: relative;
-  margin-top: 36px;
-  padding-left: 28px;
-  border-left: 2px solid var(--border-bright);
-}
-.timeline-item {
-  position: relative;
-  padding-bottom: 28px;
-}
-.timeline-item:last-child { padding-bottom: 0; }
-.timeline-dot {
-  position: absolute;
-  left: -34px;
-  top: 3px;
-  width: 11px; height: 11px;
-  border-radius: 50%;
-  background: var(--bg-deep);
-  border: 2px solid var(--brass-dim);
-}
-.timeline-item.onchain .timeline-dot { border-color: var(--brass); background: var(--brass); }
-.timeline-date {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.78rem;
-  color: var(--text-dim);
-}
-.timeline-name {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 1.02rem;
-  margin: 2px 0 2px;
-}
-.timeline-meta {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-}
-/* Demo */
+.demo-wrap { width: 100%; max-width: 640px; }
 .demo-panel {
   background: var(--bg-panel);
   border: 1px solid var(--border-bright);
@@ -222,18 +86,6 @@ section .section-sub { color: var(--text-dim); margin: 0 0 32px; max-width: 640p
   border-bottom-left-radius: 2px;
   white-space: pre-wrap;
 }
-.msg-bot .hash-line {
-  display: block;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.78rem;
-  color: var(--text-dim);
-  margin-top: 6px;
-  word-break: break-all;
-}
-.msg-bot .hash-line.pending {
-  color: var(--text-faint);
-  font-style: italic;
-}
 .msg-bot .witness-label {
   display: block;
   font-family: 'IBM Plex Mono', monospace;
@@ -252,274 +104,18 @@ section .section-sub { color: var(--text-dim); margin: 0 0 32px; max-width: 640p
   animation: blink 0.9s steps(1) infinite;
 }
 @keyframes blink { 50% { opacity: 0; } }
-.demo-note {
-  font-size: 0.78rem;
-  color: var(--text-faint);
-  margin-top: 14px;
-  font-style: italic;
-}
-
-/* Footer */
-footer { padding: 40px 0 70px; text-align: center; color: var(--text-faint); font-size: 0.85rem; }
-footer a { color: var(--text-dim); }
 </style>
 </head>
 <body>
 
-<nav class="top-nav">
-  <div class="wrap">
-    <a class="brand" href="/">WEIGHT REGISTRY</a>
-    <div class="nav-links">
-      <a href="about/">About</a>
-      <a href="news/">News</a>
-      <a href="explorer/" target="_blank" rel="noopener">Explorer</a>
-      <a href="contact/">Contact</a>
+<div class="demo-wrap">
+  <div class="demo-panel">
+    <div class="demo-header">
+      <span class="demo-dot"></span> weight-registry-demo — illustrative, not a live chatbot
     </div>
-  </div>
-</nav>
-
-<div class="hero">
-  <div class="wrap">
-    <h1>Weight Registry</h1>
-    <p class="tagline">Permanent, blockchain-based proof that a specific open-source AI model's weights existed, unmodified, at a specific time.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="explorer/" target="_blank" rel="noopener">Open the Explorer →</a>
-      <a class="btn btn-secondary" href="contact/">Contact Us</a>
-    </div>
+    <div class="demo-body" id="demoBody"></div>
   </div>
 </div>
-
-
-
-<section id="demo">
-  <div class="wrap">
-    <h2>Model as historian</h2>
-    <p class="section-sub">A model's knowledge cutoff is an accidental witness to what was publicly known by a given date. The registry is what makes that witness trustworthy.</p>
-
-    <div class="demo-panel">
-      <div class="demo-header">
-        <span class="demo-dot"></span> weight-registry-demo — illustrative, not a live chatbot
-      </div>
-      <div class="demo-body" id="demoBody"></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Timeline</h2>
-
-    <div class="timeline">
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2018-06-11</div>
-        <div class="timeline-name">GPT-1</div>
-        <div class="timeline-meta">OpenAI</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2019-10-23</div>
-        <div class="timeline-name">T5-small</div>
-        <div class="timeline-meta">Google</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2020-03-23</div>
-        <div class="timeline-name">ELECTRA-base-discriminator</div>
-        <div class="timeline-meta">Google/Stanford</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2021-06-04</div>
-        <div class="timeline-name">GPT-J-6B</div>
-        <div class="timeline-meta">EleutherAI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2022-07-11</div>
-        <div class="timeline-name">BLOOM-176b</div>
-        <div class="timeline-meta">BigScience</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2023-05-25</div>
-        <div class="timeline-name">Falcon-7b</div>
-        <div class="timeline-meta">TII</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2023-08-01</div>
-        <div class="timeline-name">Vicuna-7b-v1.5</div>
-        <div class="timeline-meta">LMSYS</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2023-09-27</div>
-        <div class="timeline-name">Mistral-7B-v0.1</div>
-        <div class="timeline-meta">Mistral AI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2023-12-01</div>
-        <div class="timeline-name">Qwen-72B</div>
-        <div class="timeline-meta">Alibaba</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-01-31</div>
-        <div class="timeline-name">Mixtral-8x22B-Instruct-v0.1</div>
-        <div class="timeline-meta">Mistral AI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-02-01</div>
-        <div class="timeline-name">OLMo-7B</div>
-        <div class="timeline-meta">Allen Institute for AI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-02-21</div>
-        <div class="timeline-name">gemma-7b</div>
-        <div class="timeline-meta">Google</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-03-27</div>
-        <div class="timeline-name">DBRX-Instruct</div>
-        <div class="timeline-meta">Databricks</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-03-28</div>
-        <div class="timeline-name">Jamba-v0.1</div>
-        <div class="timeline-meta">AI21 Labs</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-04-30</div>
-        <div class="timeline-name">WizardLM-2-8x22B</div>
-        <div class="timeline-meta">Microsoft</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-09-18</div>
-        <div class="timeline-name">Qwen2.5-7B</div>
-        <div class="timeline-meta">Alibaba</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-11-18</div>
-        <div class="timeline-name">Mistral-Large-Instruct-2411</div>
-        <div class="timeline-meta">Mistral AI</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-12-12</div>
-        <div class="timeline-name">phi-4</div>
-        <div class="timeline-meta">Microsoft</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2024-12-26</div>
-        <div class="timeline-name">DeepSeek-V3</div>
-        <div class="timeline-meta">DeepSeek</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-01-20</div>
-        <div class="timeline-name">DeepSeek-R1</div>
-        <div class="timeline-meta">DeepSeek</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-03-06</div>
-        <div class="timeline-name">QwQ-32B</div>
-        <div class="timeline-meta">Alibaba (Qwen team)</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-04-28</div>
-        <div class="timeline-name">Qwen3-8B</div>
-        <div class="timeline-meta">Alibaba</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-05-28</div>
-        <div class="timeline-name">DeepSeek-R1-0528</div>
-        <div class="timeline-meta">DeepSeek</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-07-11</div>
-        <div class="timeline-name">Kimi-K2-Instruct</div>
-        <div class="timeline-meta">Moonshot AI</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-08-05</div>
-        <div class="timeline-name">GPT-OSS-20b</div>
-        <div class="timeline-meta">OpenAI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-10-01</div>
-        <div class="timeline-name">MiniMax-M2</div>
-        <div class="timeline-meta">MiniMax AI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2025-12-01</div>
-        <div class="timeline-name">GLM-5</div>
-        <div class="timeline-meta">Zhipu AI (zai-org)</div>
-      </div>
-      <div class="timeline-item onchain">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2026-01-01</div>
-        <div class="timeline-name">NVIDIA-Nemotron-3-Nano-4B-BF16</div>
-        <div class="timeline-meta">NVIDIA</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2026-04-01</div>
-        <div class="timeline-name">Trinity-Large-Thinking</div>
-        <div class="timeline-meta">Arcee AI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2026-06-13</div>
-        <div class="timeline-name">Kimi-K3</div>
-        <div class="timeline-meta">Moonshot AI</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2026-07-14</div>
-        <div class="timeline-name">Inkling</div>
-        <div class="timeline-meta">Thinking Machines</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2026-08-28</div>
-        <div class="timeline-name">Hy4-preview</div>
-        <div class="timeline-meta">Tencent</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2026-09-10</div>
-        <div class="timeline-name">DeepSeek-V4.1-Flash</div>
-        <div class="timeline-meta">DeepSeek</div>
-      </div>
-    </div>
-    <p class="timeline-more">See the full, searchable list in the <a href="explorer/" target="_blank" rel="noopener">Explorer →</a></p>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <a href="explorer/" target="_blank" rel="noopener">Explorer</a>
-    &nbsp;&middot;&nbsp;
-    <a class="btn btn-secondary" href="contact/" style="margin-left:8px;">Contact Us</a>
-  </div>
-</footer>
 
 <script>
 // Each entry is one user question, answered by one or more "witnesses" —
